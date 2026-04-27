@@ -5,30 +5,33 @@ Construida en **HTML / CSS / JavaScript plano**. Sin build, sin dependencias.
 
 ## Cómo verla en local
 
-Abrí `index.html` en cualquier navegador. Listo.
+Toda la web vive dentro de `public/` (es la carpeta que Vercel sirve como root).
 
-> Si querés que el scroll suave entre secciones funcione perfecto y que las fuentes de Google Fonts carguen sin advertencias, conviene servirla con un mini servidor local. Una opción:
->
-> ```bash
-> # Si tenés Python instalado:
-> python3 -m http.server 5500
-> # Después abrí http://localhost:5500
-> ```
+```bash
+cd public
+python3 -m http.server 8080
+# Después abrí http://localhost:8080
+```
+
+> O simplemente abrí `public/index.html` en cualquier navegador.
 
 ## Estructura
 
 ```
 Web-Meli/
-├── index.html              ← Toda la web (one-page)
-├── css/
-│   ├── variables.css       ← Paleta, tipografías, espaciados, sombras
-│   ├── base.css            ← Reset + tipografía base + utilidades
-│   └── styles.css          ← Estilos por sección
-├── js/
-│   └── main.js             ← Header scroll, menú mobile, scroll reveal
-├── assets/
-│   ├── images/             ← Fotos de Melisa (pegar acá las reales)
-│   └── icons/              ← SVGs adicionales
+├── public/                 ← TODO el sitio vive acá (Vercel sirve esto)
+│   ├── index.html          ← La web one-page
+│   ├── perfil-meli.jpeg    ← Foto de Meli (Sobre mí)
+│   ├── vercel.json         ← Config de routing
+│   ├── css/
+│   │   ├── variables.css   ← Paleta, tipografías, espaciados, sombras
+│   │   ├── base.css        ← Reset + tipografía base + utilidades
+│   │   └── styles.css      ← Estilos por sección
+│   ├── js/
+│   │   └── main.js         ← Header scroll, menú mobile, scroll reveal
+│   └── assets/
+│       ├── images/         ← Fotos adicionales
+│       └── icons/          ← SVGs adicionales
 └── README.md
 ```
 
