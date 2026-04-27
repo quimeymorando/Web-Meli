@@ -1,0 +1,253 @@
+/* =========================================================
+   BASE — Reset + tipografía base + utilidades comunes
+   ========================================================= */
+
+/* ---------- RESET MODERNO (mínimo, basado en Josh Comeau) ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+* { margin: 0; }
+
+html, body { height: 100%; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--color-tinta);
+  background-color: var(--color-crema-claro);
+  overflow-x: hidden;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select { font: inherit; }
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--t-fast);
+}
+
+ul, ol { list-style: none; padding: 0; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* ---------- TIPOGRAFÍA BASE ---------- */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: var(--w-regular);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  color: var(--color-tinta);
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); line-height: var(--lh-snug); }
+h3 { font-size: var(--fs-h3); line-height: var(--lh-snug); }
+h4 { font-size: var(--fs-h4); }
+
+/* Cursiva dorada para palabras clave dentro de títulos serif */
+h1 em, h2 em, h3 em {
+  font-style: italic;
+  color: var(--color-dorado);
+  font-weight: inherit;
+}
+
+p { line-height: var(--lh-relaxed); }
+
+/* ---------- UTILIDADES ---------- */
+
+/* Microcopy: labels mayúsculas con letter-spacing amplio */
+.eyebrow {
+  font-family: var(--font-micro);
+  font-size: var(--fs-micro);
+  font-weight: var(--w-medium);
+  letter-spacing: var(--ls-xwide);
+  text-transform: uppercase;
+  color: var(--color-dorado);
+}
+
+.eyebrow--violeta { color: var(--color-violeta-medio); }
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-base);
+  margin-inline: auto;
+  padding-inline: var(--section-px);
+}
+
+.container--narrow { max-width: var(--container-narrow); }
+.container--wide   { max-width: var(--container-wide); }
+
+/* Section */
+.section {
+  padding-block: var(--section-py);
+}
+
+.section--violeta {
+  background-color: var(--color-violeta-profundo);
+  color: var(--color-crema);
+}
+
+.section--violeta h1,
+.section--violeta h2,
+.section--violeta h3,
+.section--violeta h4 {
+  color: var(--color-crema-claro);
+}
+
+.section--lavanda {
+  background-color: var(--color-lavanda-claro);
+}
+
+/* Botones */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-6);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--w-medium);
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: transform var(--t-base), box-shadow var(--t-base), background-color var(--t-base), color var(--t-base);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Botón primario: violeta sólido con sombra dorada al hover */
+.btn--primary {
+  background-color: var(--color-violeta-profundo);
+  color: var(--color-crema-claro);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-violeta-noche);
+  box-shadow: var(--shadow-gold);
+}
+
+/* Botón secundario: outline dorado sobre crema */
+.btn--ghost {
+  background-color: transparent;
+  color: var(--color-violeta-profundo);
+  border: 1.5px solid var(--color-dorado);
+}
+
+.btn--ghost:hover {
+  background-color: var(--color-violeta-profundo);
+  color: var(--color-crema-claro);
+  border-color: var(--color-violeta-profundo);
+}
+
+/* Variante de botones para fondos violeta oscuro */
+.section--violeta .btn--ghost {
+  color: var(--color-crema-claro);
+  border-color: var(--color-dorado);
+}
+
+.section--violeta .btn--ghost:hover {
+  background-color: var(--color-dorado);
+  color: var(--color-violeta-profundo);
+  border-color: var(--color-dorado);
+}
+
+/* Ícono dentro de botón (ej. WhatsApp) */
+.btn__icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Divisor dorado con rombo central — SVG inline en HTML, esto solo le da espacio */
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: var(--space-7);
+  color: var(--color-dorado);
+}
+
+/* Scroll reveal — estado inicial y final */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 800ms var(--ease-out), transform 800ms var(--ease-out);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reveal con delay escalonado para listas */
+.reveal[data-delay="1"] { transition-delay: 100ms; }
+.reveal[data-delay="2"] { transition-delay: 200ms; }
+.reveal[data-delay="3"] { transition-delay: 300ms; }
+.reveal[data-delay="4"] { transition-delay: 400ms; }
+
+/* Accesibilidad: respeta prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Utilidades de texto */
+.text-center { text-align: center; }
+.text-balance { text-wrap: balance; }
+.text-pretty { text-wrap: pretty; }
+
+/* Visualmente oculto pero accesible para lectores de pantalla */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Selección de texto en color de marca */
+::selection {
+  background-color: var(--color-violeta-profundo);
+  color: var(--color-dorado);
+}

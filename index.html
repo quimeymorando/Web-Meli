@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2D1B4E" />
+
+  <!-- SEO -->
+  <title>MelisArt — Arquitectura de Realidades | Coaching y Tarot Evolutivo</title>
+  <meta name="description" content="Transformo confusión emocional en claridad, dirección y acción real. Coaching, tarot evolutivo y activación energética. Método MelisArt — Arquitectura de Realidades." />
+  <meta name="author" content="Melisa Rodríguez — MelisArt" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MelisArt — Arquitectura de Realidades" />
+  <meta property="og:description" content="No te falta claridad. Te falta orden, dirección y sostén. Método MelisArt." />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- Tipografías: Playfair Display (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Favicon SVG inline (compás + flor de la vida simplificado) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232D1B4E'/%3E%3Cpath d='M32 14 L42 38 L22 38 Z M32 14 L32 50 M22 38 L42 38' stroke='%23C9A961' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='6' stroke='%23C9A961' stroke-width='1' fill='none'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+
+      <!-- Logo: compás + flor de la vida simplificada + nombre -->
+      <a href="#top" class="header__logo" aria-label="MelisArt — inicio">
+        <svg class="header__logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <!-- Compás triangular (precisión, plano) -->
+          <path d="M24 6 L36 38 L12 38 Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          <!-- Eje vertical del compás -->
+          <line x1="24" y1="6" x2="24" y2="42" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+          <!-- Línea horizontal de medición -->
+          <line x1="12" y1="38" x2="36" y2="38" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+          <!-- Flor de la vida simplificada en el centro (3 círculos superpuestos) -->
+          <circle cx="24" cy="26" r="4.5" stroke="currentColor" stroke-width="0.9" fill="none" />
+          <circle cx="20" cy="29" r="4.5" stroke="currentColor" stroke-width="0.9" fill="none" />
+          <circle cx="28" cy="29" r="4.5" stroke="currentColor" stroke-width="0.9" fill="none" />
+          <!-- Rombo central -->
+          <path d="M24 22 L26 26 L24 30 L22 26 Z" fill="currentColor" />
+        </svg>
+        <span class="header__logo-text">
+          <span class="header__logo-name">MelisArt</span>
+          <span class="header__logo-tagline">Arquitectura de Realidades</span>
+        </span>
+      </a>
+
+      <!-- Nav desktop -->
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#para-vos" class="nav__link">Para vos</a>
+        <a href="#metodo" class="nav__link">Método</a>
+        <a href="#servicios" class="nav__link">Servicios</a>
+        <a href="#sobre-mi" class="nav__link">Sobre mí</a>
+        <a href="#como-trabajo" class="nav__link">Cómo trabajo</a>
+        <a href="#testimonios" class="nav__link">Testimonios</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
+
+      <a class="btn btn--primary header__cta"
+         href="https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20aplicar%20al%20*M%C3%A9todo%20MelisArt*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20arranca%20el%20proceso%3F"
+         target="_blank" rel="noopener">
+        Aplicar al Método
+      </a>
+
+      <!-- Botón menú mobile -->
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer mobile (fuera del header para que el background no quede translúcido por el backdrop-filter del header) -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <a href="#para-vos" class="mobile-nav__link">Para vos</a>
+    <a href="#metodo" class="mobile-nav__link">Método</a>
+    <a href="#servicios" class="mobile-nav__link">Servicios</a>
+    <a href="#sobre-mi" class="mobile-nav__link">Sobre mí</a>
+    <a href="#como-trabajo" class="mobile-nav__link">Cómo trabajo</a>
+    <a href="#testimonios" class="mobile-nav__link">Testimonios</a>
+    <a href="#contacto" class="mobile-nav__link">Contacto</a>
+    <a class="btn btn--primary mobile-nav__cta"
+       href="https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20aplicar%20al%20*M%C3%A9todo%20MelisArt*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20arranca%20el%20proceso%3F"
+       target="_blank" rel="noopener">
+      Aplicar al Método
+    </a>
+  </div>
+
+  <main id="top">
+
+    <!-- =========================================================
+         HERO
+         Layout asimétrico editorial: copy 7/12 + visual 5/12
+         ========================================================= -->
+    <section class="hero" aria-labelledby="hero-title">
+
+      <!-- Ornamento blueprint sutil al fondo derecho (sólo decorativo) -->
+      <svg class="hero__bg-ornament" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+        <!-- Líneas técnicas tipo plano de arquitectura -->
+        <g stroke="currentColor" stroke-width="0.8">
+          <circle cx="300" cy="300" r="280" />
+          <circle cx="300" cy="300" r="200" />
+          <circle cx="300" cy="300" r="120" />
+          <line x1="20"  y1="300" x2="580" y2="300" />
+          <line x1="300" y1="20"  x2="300" y2="580" />
+          <line x1="100" y1="100" x2="500" y2="500" />
+          <line x1="100" y1="500" x2="500" y2="100" />
+          <!-- Marcas de medición -->
+          <line x1="20"  y1="295" x2="20"  y2="305" stroke-width="1.5" />
+          <line x1="580" y1="295" x2="580" y2="305" stroke-width="1.5" />
+          <line x1="295" y1="20"  x2="305" y2="20"  stroke-width="1.5" />
+          <line x1="295" y1="580" x2="305" y2="580" stroke-width="1.5" />
+        </g>
+      </svg>
+
+      <div class="hero__inner">
+
+        <!-- COPY -->
+        <div class="hero__copy">
+
+          <p class="hero__eyebrow eyebrow">
+            <span class="hero__eyebrow-line"></span>
+            Arquitectura de Realidades
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            Dejá de habitar <em>estructuras prestadas.</em>
+          </h1>
+
+          <p class="hero__subtitle text-pretty">
+            Transformo confusión emocional en claridad, dirección y acción real.
+          </p>
+
+          <p class="hero__lead text-pretty">
+            Acompaño procesos de transformación profunda integrando coaching, tarot evolutivo y activación energética
+            para que dejes de repetir patrones y empieces a elegir tu vida con conciencia.
+          </p>
+
+          <div class="hero__ctas">
+            <a class="btn btn--primary"
+               href="https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20aplicar%20al%20*M%C3%A9todo%20MelisArt*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20arranca%20el%20proceso%3F"
+               target="_blank" rel="noopener">
+              Aplicar al Método
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="btn btn--ghost"
+               href="https://wa.me/34625330619?text=Hola%20Meli!%20Vi%20tu%20web%20y%20quiero%20reservar%20una%20*Activaci%C3%B3n*.%20%C2%BFMe%20cont%C3%A1s%20los%20pr%C3%B3ximos%20pasos%3F"
+               target="_blank" rel="noopener">
+              Empezar por una activación
+            </a>
+          </div>
+
+          <!-- Meta strip: 3 anclajes de credibilidad sutiles -->
+          <div class="hero__meta">
+            <span class="hero__meta-item"><span class="hero__meta-dot"></span>Coaching integrativo</span>
+            <span class="hero__meta-item"><span class="hero__meta-dot"></span>Tarot evolutivo</span>
+            <span class="hero__meta-item"><span class="hero__meta-dot"></span>Activación energética</span>
+          </div>
+        </div>
+
+        <!-- VISUAL: placeholder con blueprint dorado + silueta arquitectónica.
+             Cuando llegue la foto real de Melisa, reemplazar este bloque por <img>. -->
+        <div class="hero__visual" role="img" aria-label="Imagen de Melisa caminando hacia una estructura terminada (placeholder)">
+
+          <!-- Capa 1: blueprint dorado (líneas técnicas) -->
+          <svg class="hero__visual-blueprint" viewBox="0 0 400 540" fill="none" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <g stroke="currentColor" stroke-width="0.6">
+              <!-- Cuadrícula técnica -->
+              <line x1="0"   y1="60"  x2="400" y2="60"  />
+              <line x1="0"   y1="120" x2="400" y2="120" />
+              <line x1="0"   y1="180" x2="400" y2="180" />
+              <line x1="0"   y1="420" x2="400" y2="420" />
+              <line x1="0"   y1="480" x2="400" y2="480" />
+              <line x1="60"  y1="0"   x2="60"  y2="540" />
+              <line x1="340" y1="0"   x2="340" y2="540" />
+              <!-- Diagonales arquitectónicas -->
+              <line x1="60"  y1="120" x2="340" y2="420" />
+              <line x1="60"  y1="420" x2="340" y2="120" />
+            </g>
+            <g stroke="currentColor" stroke-width="1">
+              <!-- Estructura central tipo arco/edificio -->
+              <path d="M120 420 L120 220 Q200 150 280 220 L280 420" fill="none" />
+              <line x1="120" y1="320" x2="280" y2="320" />
+              <line x1="200" y1="220" x2="200" y2="420" />
+              <!-- Marca dimensional -->
+              <line x1="100" y1="220" x2="100" y2="420" />
+              <line x1="95"  y1="220" x2="105" y2="220" />
+              <line x1="95"  y1="420" x2="105" y2="420" />
+            </g>
+          </svg>
+
+          <!-- Capa 2: silueta abstracta (placeholder de la figura humana) -->
+          <svg class="hero__visual-silhouette" viewBox="0 0 400 540" fill="none" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="silhouette-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"   stop-color="#C9A961" stop-opacity="0" />
+                <stop offset="40%"  stop-color="#C9A961" stop-opacity="0.35" />
+                <stop offset="100%" stop-color="#C9A961" stop-opacity="0.7" />
+              </linearGradient>
+            </defs>
+            <!-- Silueta femenina estilizada caminando hacia la estructura -->
+            <path d="M200 320
+                     C 195 320 188 322 186 332
+                     L 184 360
+                     C 184 365 186 368 188 370
+                     L 188 410
+                     C 188 415 186 420 184 425
+                     L 178 470
+                     C 177 478 180 484 184 488
+                     L 192 528
+                     C 193 534 196 540 200 540
+                     L 206 540
+                     L 210 488
+                     C 212 484 214 478 213 472
+                     L 215 425
+                     C 213 420 211 415 211 410
+                     L 211 370
+                     C 213 368 215 365 215 360
+                     L 213 332
+                     C 211 322 204 320 200 320 Z"
+                  fill="url(#silhouette-grad)" />
+            <!-- Cabeza -->
+            <circle cx="200" cy="306" r="11" fill="url(#silhouette-grad)" />
+          </svg>
+
+          <!-- Sello esquina superior -->
+          <span class="hero__visual-seal" aria-hidden="true">
+            <span class="hero__visual-seal-dot"></span>
+            Método MelisArt
+          </span>
+
+          <!-- Caption inferior -->
+          <span class="hero__visual-caption" aria-hidden="true">
+            <span class="hero__visual-caption-line"></span>
+            <span class="hero__visual-caption-text">Diagnóstico · Diseño · Obra</span>
+          </span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =========================================================
+         SECCIÓN — "Esto es para vos si…"
+         Espejo emocional · prepara la venta del Método
+         ========================================================= -->
+    <section class="section para-vos" id="para-vos" aria-labelledby="para-vos-title">
+      <!-- Ornamento geométrico: triángulo sutil con círculo -->
+      <svg class="para-vos__ornament" viewBox="0 0 300 300" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <circle cx="150" cy="150" r="120" />
+          <circle cx="150" cy="150" r="80" opacity="0.6" />
+          <path d="M150 50 L235 200 L65 200 Z" />
+          <path d="M150 250 L65 100 L235 100 Z" opacity="0.5" />
+        </g>
+      </svg>
+
+      <div class="container container--wide">
+        <div class="para-vos__inner">
+
+          <!-- Columna izquierda: intro -->
+          <div class="para-vos__intro reveal">
+            <p class="para-vos__eyebrow eyebrow">
+              <span class="para-vos__eyebrow-line"></span>
+              Diagnóstico
+            </p>
+
+            <h2 class="para-vos__title" id="para-vos-title">
+              Esto es <em>para vos</em> si…
+            </h2>
+
+            <p class="para-vos__lead">
+              No estás rota. Estás repitiendo. Y eso se interviene.
+            </p>
+          </div>
+
+          <!-- Columna derecha: lista -->
+          <ol class="para-vos__list" aria-label="Señales que indican que este proceso es para vos">
+            <li class="para-vos__item reveal" data-delay="1">
+              <span class="para-vos__num" aria-hidden="true">01</span>
+              <p class="para-vos__text">Te sentís en un loop emocional y no sabés cómo salir.</p>
+            </li>
+            <li class="para-vos__item reveal" data-delay="2">
+              <span class="para-vos__num" aria-hidden="true">02</span>
+              <p class="para-vos__text">Pensás mucho, pero te cuesta avanzar.</p>
+            </li>
+            <li class="para-vos__item reveal" data-delay="3">
+              <span class="para-vos__num" aria-hidden="true">03</span>
+              <p class="para-vos__text">Tenés momentos de claridad, pero no los sostenés.</p>
+            </li>
+            <li class="para-vos__item reveal" data-delay="4">
+              <span class="para-vos__num" aria-hidden="true">04</span>
+              <p class="para-vos__text">Repetís patrones en vínculos, decisiones o trabajo.</p>
+            </li>
+            <li class="para-vos__item reveal" data-delay="4">
+              <span class="para-vos__num" aria-hidden="true">05</span>
+              <p class="para-vos__text">Sabés que querés algo distinto, pero no terminás de accionar.</p>
+            </li>
+          </ol>
+
+          <!-- Cierre con quote destacada -->
+          <blockquote class="para-vos__quote reveal">
+            <!-- Esquinas decorativas estilo paspartú -->
+            <span class="para-vos__quote-corner para-vos__quote-corner--tl" aria-hidden="true"></span>
+            <span class="para-vos__quote-corner para-vos__quote-corner--tr" aria-hidden="true"></span>
+            <span class="para-vos__quote-corner para-vos__quote-corner--bl" aria-hidden="true"></span>
+            <span class="para-vos__quote-corner para-vos__quote-corner--br" aria-hidden="true"></span>
+
+            <!-- Comilla SVG decorativa -->
+            <svg class="para-vos__quote-mark" viewBox="0 0 80 60" fill="none" aria-hidden="true">
+              <path d="M5 50 Q5 30 15 20 Q25 10 35 12 L30 20 Q22 22 18 30 Q22 30 26 34 Q30 38 30 44 Q30 52 22 54 Q14 56 8 52 Q5 50 5 50 Z M45 50 Q45 30 55 20 Q65 10 75 12 L70 20 Q62 22 58 30 Q62 30 66 34 Q70 38 70 44 Q70 52 62 54 Q54 56 48 52 Q45 50 45 50 Z" fill="currentColor"/>
+            </svg>
+
+            <!-- Eyebrow superior -->
+            <p class="para-vos__quote-eyebrow">
+              <span class="para-vos__quote-eyebrow-line"></span>
+              El reencuadre
+            </p>
+
+            <p class="para-vos__quote-text">
+              No te falta claridad. Te falta <strong>orden, dirección y sostén.</strong>
+            </p>
+
+            <!-- Sello inferior con diamante -->
+            <footer class="para-vos__quote-seal">
+              <span class="para-vos__quote-seal-line"></span>
+              <span class="para-vos__quote-seal-diamond" aria-hidden="true"></span>
+              <span class="para-vos__quote-seal-line"></span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECCIÓN — MÉTODO MELISART (preview de los 8 módulos)
+         Bloque corazón. Fondo violeta, íconos SVG dorados.
+         ========================================================= -->
+    <section class="section metodo" id="metodo" aria-labelledby="metodo-title">
+      <!-- Ornamento geométrico: flor de la vida en esquina superior izquierda -->
+      <svg class="metodo__ornament" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <circle cx="200" cy="200" r="40" />
+          <circle cx="200" cy="160" r="40" />
+          <circle cx="200" cy="240" r="40" />
+          <circle cx="165" cy="180" r="40" />
+          <circle cx="235" cy="180" r="40" />
+          <circle cx="165" cy="220" r="40" />
+          <circle cx="235" cy="220" r="40" />
+          <circle cx="200" cy="120" r="40" />
+          <circle cx="200" cy="280" r="40" />
+          <circle cx="130" cy="200" r="40" />
+          <circle cx="270" cy="200" r="40" />
+          <circle cx="200" cy="200" r="80" stroke-width="1.2" />
+        </g>
+      </svg>
+
+      <!-- Ornamento secundario: vesica piscis -->
+      <svg class="metodo__ornament-2" viewBox="0 0 300 200" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <circle cx="120" cy="100" r="80" />
+          <circle cx="180" cy="100" r="80" />
+          <circle cx="150" cy="100" r="40" stroke-width="1.2" />
+        </g>
+      </svg>
+
+      <!-- Constelación de puntos dorados -->
+      <svg class="metodo__stars" viewBox="0 0 200 200" fill="currentColor" aria-hidden="true">
+        <circle cx="20" cy="30" r="1.5" />
+        <circle cx="60" cy="50" r="2" />
+        <circle cx="100" cy="20" r="1" />
+        <circle cx="140" cy="70" r="1.5" />
+        <circle cx="180" cy="40" r="2" />
+        <circle cx="40" cy="100" r="1" />
+        <circle cx="90" cy="120" r="1.8" />
+        <circle cx="160" cy="150" r="1.5" />
+        <circle cx="30" cy="170" r="2" />
+        <circle cx="120" cy="180" r="1" />
+        <circle cx="80" cy="80" r="1.2" />
+        <circle cx="180" cy="100" r="1.5" />
+        <line x1="60" y1="50" x2="100" y2="20" stroke="currentColor" stroke-width="0.5" opacity="0.5" />
+        <line x1="100" y1="20" x2="140" y2="70" stroke="currentColor" stroke-width="0.5" opacity="0.5" />
+        <line x1="40" y1="100" x2="90" y2="120" stroke="currentColor" stroke-width="0.5" opacity="0.5" />
+        <line x1="90" y1="120" x2="160" y2="150" stroke="currentColor" stroke-width="0.5" opacity="0.5" />
+      </svg>
+
+      <div class="container container--wide">
+
+        <header class="metodo__header reveal">
+          <p class="metodo__eyebrow eyebrow">
+            <span class="metodo__eyebrow-line"></span>
+            Método MelisArt
+            <span class="metodo__eyebrow-line"></span>
+          </p>
+
+          <h2 class="metodo__title" id="metodo-title">
+            Arquitectura de <em>Realidades</em>
+          </h2>
+
+          <p class="metodo__anchor">
+            Este no es un programa más. Es un proceso de transformación donde dejás de vivir en automático y empezás a
+            construir tu realidad desde la conciencia y la elección.
+          </p>
+
+          <p class="metodo__lead">
+            8 módulos · 3 meses · Un rediseño completo de tu vida desde los cimientos.
+          </p>
+        </header>
+
+        <!-- Divisor blueprint -->
+        <div class="metodo__divider" aria-hidden="true">
+          <span class="metodo__divider-line"></span>
+          <span class="metodo__divider-diamond"></span>
+          <span class="metodo__divider-line"></span>
+        </div>
+
+        <!-- Grilla de los 8 módulos -->
+        <ol class="metodo__grid" aria-label="Los 8 módulos del Método MelisArt">
+
+          <!-- 01 Claridad -->
+          <li class="metodo__card reveal" data-delay="1">
+            <span class="metodo__card-num" aria-hidden="true">01</span>
+            <svg class="metodo__card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <!-- Ojo abierto: Claridad = ver -->
+              <path d="M4 24 C 12 12, 36 12, 44 24 C 36 36, 12 36, 4 24 Z" />
+              <circle cx="24" cy="24" r="6" />
+              <circle cx="24" cy="24" r="2" fill="currentColor" />
+            </svg>
+            <h3 class="metodo__card-name">Claridad</h3>
+            <p class="metodo__card-desc">Ver lo que estaba oculto. El primer plano de la obra.</p>
+          </li>
+
+          <!-- 02 Identidad -->
+          <li class="metodo__card reveal" data-delay="1">
+            <span class="metodo__card-num" aria-hidden="true">02</span>
+            <svg class="metodo__card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <!-- Compás de arquitecto: Identidad = quién soy -->
+              <path d="M24 6 L36 38 L12 38 Z" />
+              <line x1="24" y1="6" x2="24" y2="42" />
+              <circle cx="24" cy="14" r="2.5" fill="currentColor" />
+            </svg>
+            <h3 class="metodo__card-name">Identidad</h3>
+            <p class="metodo__card-desc">Quién sos cuando dejás de actuar lo que esperan.</p>
+          </li>
+
+          <!-- 03 Creencias -->
+          <li class="metodo__card reveal" data-delay="2">
+            <span class="metodo__card-num" aria-hidden="true">03</span>
+            <svg class="metodo__card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <!-- Capas/cimientos: Creencias = lo que está debajo -->
+              <rect x="8" y="10" width="32" height="6" rx="1" />
+              <rect x="8" y="20" width="32" height="6" rx="1" />
+              <rect x="8" y="30" width="32" height="6" rx="1" />
+              <line x1="14" y1="13" x2="20" y2="13" />
+              <line x1="14" y1="23" x2="26" y2="23" />
+              <line x1="14" y1="33" x2="34" y2="33" />
+            </svg>
+            <h3 class="metodo__card-name">Creencias</h3>
+            <p class="metodo__card-desc">Las estructuras invisibles que sostienen lo visible.</p>
+          </li>
+
+          <!-- 04 Energía -->
+          <li class="metodo__card reveal" data-delay="2">
+            <span class="metodo__card-num" aria-hidden="true">04</span>
+            <svg class="metodo__card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <!-- Rayo / chispa: Energía -->
+              <path d="M28 6 L14 26 H22 L18 42 L34 22 H26 Z" fill="currentColor" fill-opacity="0.1" />
+            </svg>
+            <h3 class="metodo__card-name">Energía</h3>
+            <p class="metodo__card-desc">Activación de lo que estaba dormido. Cuerpo + alma.</p>
+          </li>
+
+          <!-- 05 Decisiones -->
+          <li class="metodo__card reveal" data-delay="3">
+            <span class="metodo__card-num" aria-hidden="true">05</span>
+            <svg class="metodo__card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <!-- Bifurcación: Decisiones -->
+              <path d="M24 8 V20" />
+              <path d="M24 20 L12 38" />
+              <path d="M24 20 L36 38" />
+              <circle cx="24" cy="20" r="3" fill="currentColor" />
+              <circle cx="12" cy="38" r="2.5" />
+              <circle cx="36" cy="38" r="2.5" />
+            </svg>
+            <h3 class="metodo__card-name">Decisiones</h3>
+            <p class="metodo__card-desc">Elegir conscientemente, no por descarte ni por miedo.</p>
+          </li>
+
+          <!-- 06 Estrategia -->
+          <li class="metodo__card reveal" data-delay="3">
+            <span class="metodo__card-num" aria-hidden="true">06</span>
+            <svg class="metodo__card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <!-- Plano con marcas: Estrategia -->
+              <rect x="8" y="10" width="32" height="28" rx="1" />
+              <line x1="14" y1="18" x2="34" y2="18" />
+              <line x1="14" y1="26" x2="26" y2="26" />
+              <line x1="14" y1="32" x2="22" y2="32" />
+              <circle cx="32" cy="30" r="3" />
+            </svg>
+            <h3 class="metodo__card-name">Estrategia</h3>
+            <p class="metodo__card-desc">El plano. Cómo se construye lo que querés vivir.</p>
+          </li>
+
+          <!-- 07 Acción -->
+          <li class="metodo__card reveal" data-delay="4">
+            <span class="metodo__card-num" aria-hidden="true">07</span>
+            <svg class="metodo__card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <!-- Flecha hacia adelante: Acción -->
+              <path d="M8 24 H38" />
+              <path d="M28 14 L38 24 L28 34" />
+              <circle cx="8" cy="24" r="2" fill="currentColor" />
+            </svg>
+            <h3 class="metodo__card-name">Acción</h3>
+            <p class="metodo__card-desc">Lo que se piensa pero no se hace, no transforma.</p>
+          </li>
+
+          <!-- 08 Expansión -->
+          <li class="metodo__card reveal" data-delay="4">
+            <span class="metodo__card-num" aria-hidden="true">08</span>
+            <svg class="metodo__card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <!-- Flor de la vida simplificada: Expansión -->
+              <circle cx="24" cy="24" r="6" />
+              <circle cx="24" cy="14" r="6" />
+              <circle cx="24" cy="34" r="6" />
+              <circle cx="15" cy="19" r="6" />
+              <circle cx="33" cy="19" r="6" />
+              <circle cx="15" cy="29" r="6" />
+              <circle cx="33" cy="29" r="6" />
+            </svg>
+            <h3 class="metodo__card-name">Expansión</h3>
+            <p class="metodo__card-desc">Sostener lo construido. Multiplicar lo creado.</p>
+          </li>
+        </ol>
+
+        <!-- CTA final del bloque -->
+        <div class="metodo__cta-wrap reveal">
+          <p class="metodo__cta-text">
+            El Método MelisArt no te acompaña. <em>Te reconstruye.</em>
+          </p>
+          <a class="btn section--metodo-cta"
+             href="https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20aplicar%20al%20*M%C3%A9todo%20MelisArt*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20arranca%20el%20proceso%3F"
+             target="_blank" rel="noopener">
+            Aplicar al Método
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECCIÓN — SERVICIOS (3 tarjetas escalera)
+         Activación · Acompañamiento 1:1 · Método (destacada)
+         ========================================================= -->
+    <section class="section servicios" id="servicios" aria-labelledby="servicios-title">
+      <!-- Ornamento geométrico: estrella de seis puntas (hexagrama) -->
+      <svg class="servicios__ornament" viewBox="0 0 300 300" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <path d="M150 40 L240 200 L60 200 Z" />
+          <path d="M150 260 L60 100 L240 100 Z" />
+          <circle cx="150" cy="150" r="100" opacity="0.55" />
+          <circle cx="150" cy="150" r="60" opacity="0.7" />
+        </g>
+      </svg>
+
+      <!-- Ornamento secundario: cuadrado rotado dentro de círculos -->
+      <svg class="servicios__ornament-2" viewBox="0 0 280 280" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <circle cx="140" cy="140" r="120" />
+          <rect x="60" y="60" width="160" height="160" transform="rotate(45 140 140)" />
+          <rect x="80" y="80" width="120" height="120" opacity="0.6" />
+          <circle cx="140" cy="140" r="40" opacity="0.7" />
+        </g>
+      </svg>
+
+      <div class="container container--wide">
+
+        <header class="servicios__header reveal">
+          <p class="servicios__eyebrow eyebrow">
+            <span class="servicios__eyebrow-line"></span>
+            Tres formas de construir
+            <span class="servicios__eyebrow-line"></span>
+          </p>
+          <h2 class="servicios__title" id="servicios-title">
+            Elegí <em>desde dónde</em> empezar
+          </h2>
+          <p class="servicios__lead">
+            Cada proceso tiene su escala. Una sesión puntual, un acompañamiento sostenido, o la reconstrucción completa.
+            Lo que cambia no es la profundidad de mi trabajo: cambia el alcance del tuyo.
+          </p>
+        </header>
+
+        <div class="servicios__grid">
+
+          <!-- ===== 1. ACTIVACIÓN ===== -->
+          <article class="servicio reveal" data-delay="1">
+            <div class="servicio__header">
+              <span class="servicio__num" aria-hidden="true">I.</span>
+              <!-- Edificio 1 piso (puerta de entrada) -->
+              <svg class="servicio__edificio" viewBox="0 0 56 80" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <!-- Base -->
+                <line x1="4" y1="76" x2="52" y2="76" />
+                <!-- Estructura simple 1 piso -->
+                <rect x="14" y="50" width="28" height="26" />
+                <!-- Techo a dos aguas -->
+                <path d="M10 50 L28 36 L46 50" />
+                <!-- Puerta -->
+                <rect x="24" y="62" width="8" height="14" />
+                <!-- Ventana -->
+                <rect x="18" y="56" width="4" height="4" />
+                <rect x="34" y="56" width="4" height="4" />
+              </svg>
+            </div>
+
+            <h3 class="servicio__name">Activación MelisArt</h3>
+            <p class="servicio__subtitle">Puerta de entrada</p>
+
+            <p class="servicio__desc">
+              Sesión individual de destrabe. Tarot evolutivo, coaching integrativo y meditación consciente combinados
+              en un único encuentro para abrir lo que está cerrado.
+            </p>
+
+            <div class="servicio__resultado">
+              <span class="servicio__resultado-label">Resultado</span>
+              <p class="servicio__resultado-text">Claridad interna y un nuevo punto de partida.</p>
+            </div>
+
+            <p class="servicio__quote">No se construye sin ver la grieta.</p>
+
+            <hr class="servicio__divider" aria-hidden="true" />
+
+            <div class="servicio__listas">
+              <div>
+                <p class="servicio__lista-titulo">Para vos si</p>
+                <ul class="servicio__lista servicio__lista--si">
+                  <li>Necesitás destrabar algo puntual y rápido.</li>
+                  <li>Querés probar mi forma de trabajar antes de comprometerte.</li>
+                  <li>Estás en un momento de decisión y necesitás claridad.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="servicio__lista-titulo servicio__lista-titulo--no">No es para vos si</p>
+                <ul class="servicio__lista servicio__lista--no">
+                  <li>Buscás un proceso largo de transformación profunda.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="servicio__cta">
+              <a class="btn btn--ghost"
+                 href="https://wa.me/34625330619?text=Hola%20Meli!%20Vi%20tu%20web%20y%20quiero%20reservar%20una%20*Activaci%C3%B3n*.%20%C2%BFMe%20cont%C3%A1s%20los%20pr%C3%B3ximos%20pasos%3F"
+                 target="_blank" rel="noopener">
+                Reservar activación
+              </a>
+            </div>
+          </article>
+
+          <!-- ===== 2. ACOMPAÑAMIENTO 1:1 ===== -->
+          <article class="servicio reveal" data-delay="2">
+            <div class="servicio__header">
+              <span class="servicio__num" aria-hidden="true">II.</span>
+              <!-- Edificio 2 pisos (intermedio) -->
+              <svg class="servicio__edificio" viewBox="0 0 56 80" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" y1="76" x2="52" y2="76" />
+                <!-- 2 pisos -->
+                <rect x="12" y="32" width="32" height="44" />
+                <line x1="12" y1="54" x2="44" y2="54" />
+                <!-- Techo -->
+                <path d="M8 32 L28 18 L48 32" />
+                <!-- Ventanas piso 2 -->
+                <rect x="18" y="38" width="6" height="8" />
+                <rect x="32" y="38" width="6" height="8" />
+                <!-- Puerta + ventana piso 1 -->
+                <rect x="24" y="62" width="8" height="14" />
+                <rect x="16" y="60" width="4" height="6" />
+                <rect x="36" y="60" width="4" height="6" />
+              </svg>
+            </div>
+
+            <h3 class="servicio__name">Acompañamiento 1:1</h3>
+            <p class="servicio__subtitle">Proceso intermedio</p>
+
+            <p class="servicio__desc">
+              Sesiones individuales o proceso mensual de ordenamiento. Integración energética y práctica con seguimiento
+              cercano. Pensado para sostener lo que la activación abrió.
+            </p>
+
+            <div class="servicio__resultado">
+              <span class="servicio__resultado-label">Resultado</span>
+              <p class="servicio__resultado-text">Enfoque y acción sostenida en el tiempo.</p>
+            </div>
+
+            <hr class="servicio__divider" aria-hidden="true" />
+
+            <div class="servicio__listas">
+              <div>
+                <p class="servicio__lista-titulo">Para vos si</p>
+                <ul class="servicio__lista servicio__lista--si">
+                  <li>Ya tuviste claridad puntual y querés sostenerla.</li>
+                  <li>Necesitás un espacio fijo de pensamiento y dirección.</li>
+                  <li>Buscás acompañamiento sin un compromiso de meses.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="servicio__lista-titulo servicio__lista-titulo--no">No es para vos si</p>
+                <ul class="servicio__lista servicio__lista--no">
+                  <li>Querés una transformación estructural completa: ese es el Método.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="servicio__cta">
+              <a class="btn btn--ghost"
+                 href="https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20info%20sobre%20el%20*Acompa%C3%B1amiento%201%3A1*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20es%20el%20proceso%3F"
+                 target="_blank" rel="noopener">
+                Quiero trabajar 1:1
+              </a>
+            </div>
+          </article>
+
+          <!-- ===== 3. MÉTODO MELISART (destacado) ===== -->
+          <article class="servicio servicio--destacado reveal" data-delay="3">
+            <span class="servicio__badge">Transformación profunda</span>
+
+            <div class="servicio__header">
+              <span class="servicio__num" aria-hidden="true">III.</span>
+              <!-- Edificio 4 pisos (high ticket) -->
+              <svg class="servicio__edificio" viewBox="0 0 56 80" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="2" y1="76" x2="54" y2="76" />
+                <!-- Estructura 4 niveles -->
+                <rect x="10" y="14" width="36" height="62" />
+                <line x1="10" y1="30" x2="46" y2="30" />
+                <line x1="10" y1="46" x2="46" y2="46" />
+                <line x1="10" y1="62" x2="46" y2="62" />
+                <!-- Antena/símbolo arriba -->
+                <line x1="28" y1="14" x2="28" y2="6" />
+                <circle cx="28" cy="4" r="1.5" fill="currentColor" />
+                <!-- Ventanas -->
+                <rect x="16" y="20" width="4" height="6" />
+                <rect x="26" y="20" width="4" height="6" />
+                <rect x="36" y="20" width="4" height="6" />
+                <rect x="16" y="36" width="4" height="6" />
+                <rect x="26" y="36" width="4" height="6" />
+                <rect x="36" y="36" width="4" height="6" />
+                <rect x="16" y="52" width="4" height="6" />
+                <rect x="26" y="52" width="4" height="6" />
+                <rect x="36" y="52" width="4" height="6" />
+                <!-- Puerta -->
+                <rect x="24" y="66" width="8" height="10" />
+              </svg>
+            </div>
+
+            <h3 class="servicio__name">Método MelisArt</h3>
+            <p class="servicio__subtitle">3 meses · 8 módulos · Un rediseño completo</p>
+
+            <p class="servicio__desc">
+              El programa central. Reconfiguración de identidad, creencias y energía con una estructura sostenida en
+              el tiempo. Seguimiento cercano + plan real + obra terminada.
+            </p>
+
+            <div class="servicio__resultado">
+              <span class="servicio__resultado-label">Resultado</span>
+              <p class="servicio__resultado-text">Reconfiguración de identidad y materialización de cambios reales.</p>
+            </div>
+
+            <p class="servicio__quote">El Método no te acompaña. Te reconstruye.</p>
+
+            <hr class="servicio__divider" aria-hidden="true" />
+
+            <div class="servicio__listas">
+              <div>
+                <p class="servicio__lista-titulo">Para vos si</p>
+                <ul class="servicio__lista servicio__lista--si">
+                  <li>Estás lista para una transformación estructural, no parches.</li>
+                  <li>Querés un proceso con método, plan y resultados medibles.</li>
+                  <li>Te comprometés con tu obra y necesitás dirección clara.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="servicio__lista-titulo servicio__lista-titulo--no">No es para vos si</p>
+                <ul class="servicio__lista servicio__lista--no">
+                  <li>Buscás motivación rápida o soluciones inmediatas.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="servicio__cta">
+              <a class="btn"
+                 href="https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20aplicar%20al%20*M%C3%A9todo%20MelisArt*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20arranca%20el%20proceso%3F"
+                 target="_blank" rel="noopener">
+                Aplicar al Método
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECCIÓN — SOBRE MÍ (3 capítulos editoriales en zigzag)
+         Demolición y Cimiento. Quote final destacada.
+         ========================================================= -->
+    <section class="section sobre-mi" id="sobre-mi" aria-labelledby="sobre-mi-title">
+      <!-- Ornamento geométrico: árbol de la vida (10 sephiroth conectados) -->
+      <svg class="sobre-mi__ornament" viewBox="0 0 200 320" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <line x1="100" y1="30" x2="60" y2="80" />
+          <line x1="100" y1="30" x2="140" y2="80" />
+          <line x1="60" y1="80" x2="140" y2="80" />
+          <line x1="60" y1="80" x2="100" y2="130" />
+          <line x1="140" y1="80" x2="100" y2="130" />
+          <line x1="60" y1="80" x2="60" y2="180" />
+          <line x1="140" y1="80" x2="140" y2="180" />
+          <line x1="100" y1="130" x2="60" y2="180" />
+          <line x1="100" y1="130" x2="140" y2="180" />
+          <line x1="100" y1="130" x2="100" y2="230" />
+          <line x1="60" y1="180" x2="140" y2="180" />
+          <line x1="60" y1="180" x2="100" y2="230" />
+          <line x1="140" y1="180" x2="100" y2="230" />
+          <line x1="100" y1="230" x2="100" y2="290" />
+          <circle cx="100" cy="30" r="14" fill="currentColor" fill-opacity="0.15" />
+          <circle cx="60" cy="80" r="14" fill="currentColor" fill-opacity="0.15" />
+          <circle cx="140" cy="80" r="14" fill="currentColor" fill-opacity="0.15" />
+          <circle cx="100" cy="130" r="14" fill="currentColor" fill-opacity="0.15" />
+          <circle cx="60" cy="180" r="14" fill="currentColor" fill-opacity="0.15" />
+          <circle cx="140" cy="180" r="14" fill="currentColor" fill-opacity="0.15" />
+          <circle cx="100" cy="230" r="14" fill="currentColor" fill-opacity="0.15" />
+          <circle cx="100" cy="290" r="14" fill="currentColor" fill-opacity="0.15" />
+        </g>
+      </svg>
+
+      <!-- Ornamento secundario: espiral de Fibonacci abstracta -->
+      <svg class="sobre-mi__ornament-2" viewBox="0 0 280 280" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1" fill="none">
+          <circle cx="140" cy="140" r="120" />
+          <path d="M140 20 A120 120 0 0 1 260 140 A120 120 0 0 1 140 260 A60 60 0 0 1 80 200 A60 60 0 0 1 140 140 A30 30 0 0 1 170 170 A15 15 0 0 1 155 185" />
+          <circle cx="140" cy="140" r="60" opacity="0.6" />
+        </g>
+      </svg>
+
+      <div class="container">
+
+        <header class="sobre-mi__header reveal">
+          <p class="sobre-mi__eyebrow eyebrow">
+            <span class="sobre-mi__eyebrow-line"></span>
+            Sobre mí
+            <span class="sobre-mi__eyebrow-line"></span>
+          </p>
+          <h2 class="sobre-mi__title" id="sobre-mi-title">
+            Demolición <em>y cimiento</em>
+          </h2>
+          <p class="sobre-mi__lead">
+            Antes de acompañar a otras a rediseñar su vida, tuve que demoler la mía. Esta historia no es un currículum
+            espiritual: es la grieta que me convirtió en arquitecta.
+          </p>
+        </header>
+
+        <!-- ===== TARJETA DE PERFIL: FOTO + BIO ===== -->
+        <div class="sobre-mi__perfil reveal">
+          <!-- Foto con marco dorado y esquinas decorativas -->
+          <figure class="sobre-mi__perfil-foto">
+            <div class="sobre-mi__perfil-frame">
+              <span class="sobre-mi__perfil-corner sobre-mi__perfil-corner--tl" aria-hidden="true"></span>
+              <span class="sobre-mi__perfil-corner sobre-mi__perfil-corner--tr" aria-hidden="true"></span>
+              <span class="sobre-mi__perfil-corner sobre-mi__perfil-corner--bl" aria-hidden="true"></span>
+              <span class="sobre-mi__perfil-corner sobre-mi__perfil-corner--br" aria-hidden="true"></span>
+              <img
+                src="public/perfil-meli.jpeg"
+                alt="Melisa Rodríguez, creadora del Método MelisArt"
+                class="sobre-mi__perfil-img"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="sobre-mi__perfil-caption">
+              <span class="sobre-mi__perfil-line" aria-hidden="true"></span>
+              Melisa Rodríguez
+            </figcaption>
+          </figure>
+
+          <!-- Bio editorial -->
+          <div class="sobre-mi__perfil-bio">
+            <p class="sobre-mi__perfil-eyebrow eyebrow">
+              <span class="sobre-mi__perfil-eyebrow-line"></span>
+              Quién soy
+            </p>
+            <h3 class="sobre-mi__perfil-title">
+              Arquitecta de espacios <em>y de realidades.</em>
+            </h3>
+            <p class="sobre-mi__perfil-text">
+              Soy <strong>arquitecta</strong> de profesión y formación. Durante años diseñé espacios que sostenían vidas
+              ajenas hasta que entendí que la misma lógica con la que se proyecta una casa se puede aplicar a una
+              identidad: cimientos, estructura, luz, escala humana.
+            </p>
+            <p class="sobre-mi__perfil-text">
+              Hoy acompaño a personas a rediseñar su realidad desde la conciencia. Mi trabajo cruza
+              <strong>arquitectura, mentoría y trabajo emocional profundo</strong>: tomo herramientas del diseño y las
+              uso para que dejes de habitar una vida que no elegiste.
+            </p>
+            <ul class="sobre-mi__perfil-creds" aria-label="Lo que hago">
+              <li><span class="sobre-mi__perfil-cred-dot" aria-hidden="true"></span> Arquitecta titulada</li>
+              <li><span class="sobre-mi__perfil-cred-dot" aria-hidden="true"></span> Mentora &amp; acompañante 1:1</li>
+              <li><span class="sobre-mi__perfil-cred-dot" aria-hidden="true"></span> Creadora del Método MelisArt</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ===== 3 CAPÍTULOS ===== -->
+        <div class="sobre-mi__chapters">
+
+          <!-- Capítulo 1 — La Base Original -->
+          <article class="chapter reveal">
+
+            <div class="chapter__visual chapter__visual--1">
+              <!-- Placeholder narrativo: muro de cimiento con líneas técnicas. Reemplazar por <img> cuando llegue la foto. -->
+              <svg class="chapter__visual-svg" viewBox="0 0 400 500" fill="none" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <g stroke="currentColor" stroke-width="0.8" opacity="0.5">
+                  <!-- Cuadrícula técnica -->
+                  <line x1="0" y1="100" x2="400" y2="100"/>
+                  <line x1="0" y1="200" x2="400" y2="200"/>
+                  <line x1="0" y1="300" x2="400" y2="300"/>
+                  <line x1="0" y1="400" x2="400" y2="400"/>
+                  <line x1="100" y1="0" x2="100" y2="500"/>
+                  <line x1="300" y1="0" x2="300" y2="500"/>
+                </g>
+                <g stroke="currentColor" stroke-width="1.2" opacity="0.85">
+                  <!-- Cimiento sobre el suelo: ladrillos en hilada -->
+                  <rect x="60"  y="380" width="80" height="40"/>
+                  <rect x="140" y="380" width="80" height="40"/>
+                  <rect x="220" y="380" width="80" height="40"/>
+                  <rect x="60"  y="340" width="40" height="40"/>
+                  <rect x="100" y="340" width="80" height="40"/>
+                  <rect x="180" y="340" width="80" height="40"/>
+                  <rect x="260" y="340" width="80" height="40"/>
+                  <rect x="60"  y="300" width="80" height="40"/>
+                  <rect x="140" y="300" width="80" height="40"/>
+                  <rect x="220" y="300" width="80" height="40"/>
+                  <!-- Línea de suelo -->
+                  <line x1="0" y1="420" x2="400" y2="420" stroke-width="1.5"/>
+                  <!-- Marca dimensional vertical lateral -->
+                  <line x1="40" y1="300" x2="40" y2="420"/>
+                  <line x1="35" y1="300" x2="45" y2="300"/>
+                  <line x1="35" y1="420" x2="45" y2="420"/>
+                </g>
+              </svg>
+              <span class="chapter__seal" aria-hidden="true">Capítulo I</span>
+              <span class="chapter__visual-num" aria-hidden="true">I</span>
+            </div>
+
+            <div class="chapter__copy">
+              <p class="chapter__label">
+                <span class="chapter__label-line"></span>
+                La Base Original
+              </p>
+              <h3 class="chapter__title">Lo que se construyó sin que yo eligiera.</h3>
+              <p class="chapter__text">
+                Una infancia marcada por heridas profundas que estructuraron una falsa resiliencia: la del aguante,
+                la fuerza, el "bancarla". Aprendí a sostener estructuras que nunca elegí, creyendo que sostener era
+                construir. Era resistir.
+              </p>
+            </div>
+          </article>
+
+          <!-- Capítulo 2 — La Grieta -->
+          <article class="chapter chapter--reverse reveal">
+
+            <div class="chapter__visual chapter__visual--2">
+              <!-- Placeholder: muro fracturado con grieta dorada en diagonal -->
+              <svg class="chapter__visual-svg" viewBox="0 0 400 500" fill="none" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <g stroke="currentColor" stroke-width="0.7" opacity="0.35">
+                  <!-- Líneas de muro horizontal -->
+                  <line x1="0" y1="80"  x2="400" y2="80"/>
+                  <line x1="0" y1="160" x2="400" y2="160"/>
+                  <line x1="0" y1="240" x2="400" y2="240"/>
+                  <line x1="0" y1="320" x2="400" y2="320"/>
+                  <line x1="0" y1="400" x2="400" y2="400"/>
+                  <!-- Verticales tipo ladrillo -->
+                  <line x1="80"  y1="0" x2="80"  y2="500"/>
+                  <line x1="200" y1="0" x2="200" y2="500"/>
+                  <line x1="320" y1="0" x2="320" y2="500"/>
+                </g>
+                <!-- LA GRIETA: trazo dorado fracturado en diagonal -->
+                <path d="M280 40 L240 110 L280 160 L210 220 L260 280 L180 360 L230 420 L160 480"
+                      stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+                <!-- Bifurcaciones de la grieta -->
+                <path d="M240 110 L210 130 M210 220 L240 250 M180 360 L150 380 M260 280 L290 310"
+                      stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+              </svg>
+              <span class="chapter__seal" aria-hidden="true">Capítulo II</span>
+              <span class="chapter__visual-num" aria-hidden="true">II</span>
+            </div>
+
+            <div class="chapter__copy">
+              <p class="chapter__label">
+                <span class="chapter__label-line"></span>
+                La Grieta
+              </p>
+              <h3 class="chapter__title">El día que el muro dejó de sostener.</h3>
+              <p class="chapter__text">
+                Pérdidas materiales irreparables en mi propio hogar y quiebres vinculares que no pude tapar con
+                voluntad. Por primera vez tuve que mirar la obra por dentro. Lo que parecía firme tenía fisuras
+                de origen. La grieta no era un problema: era la información que había estado evitando.
+              </p>
+            </div>
+          </article>
+
+          <!-- Capítulo 3 — La Hoja en Blanco -->
+          <article class="chapter reveal">
+
+            <div class="chapter__visual chapter__visual--3">
+              <!-- Placeholder: plano técnico vacío con líneas de medición — la posibilidad -->
+              <svg class="chapter__visual-svg" viewBox="0 0 400 500" fill="none" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <g stroke="currentColor" stroke-width="0.8">
+                  <!-- Marco del plano -->
+                  <rect x="40" y="40" width="320" height="420" />
+                  <rect x="50" y="50" width="300" height="400" />
+                  <!-- Cuadrícula interna sutil -->
+                  <line x1="200" y1="50" x2="200" y2="450" stroke-width="0.4"/>
+                  <line x1="50" y1="250" x2="350" y2="250" stroke-width="0.4"/>
+                  <line x1="125" y1="50" x2="125" y2="450" stroke-width="0.3" opacity="0.5"/>
+                  <line x1="275" y1="50" x2="275" y2="450" stroke-width="0.3" opacity="0.5"/>
+                  <line x1="50" y1="150" x2="350" y2="150" stroke-width="0.3" opacity="0.5"/>
+                  <line x1="50" y1="350" x2="350" y2="350" stroke-width="0.3" opacity="0.5"/>
+                  <!-- Marcas dimensionales en esquinas -->
+                  <line x1="50" y1="30" x2="350" y2="30" stroke-width="1"/>
+                  <line x1="50" y1="25" x2="50" y2="35"/>
+                  <line x1="350" y1="25" x2="350" y2="35"/>
+                  <line x1="200" y1="20" x2="200" y2="30"/>
+                  <!-- Círculo central tipo brújula/compás (posibilidad) -->
+                  <circle cx="200" cy="250" r="40" stroke-width="1.2"/>
+                  <circle cx="200" cy="250" r="3" fill="currentColor"/>
+                  <line x1="200" y1="210" x2="200" y2="200"/>
+                  <line x1="200" y1="290" x2="200" y2="300"/>
+                  <line x1="160" y1="250" x2="150" y2="250"/>
+                  <line x1="240" y1="250" x2="250" y2="250"/>
+                </g>
+              </svg>
+              <span class="chapter__seal" aria-hidden="true">Capítulo III</span>
+              <span class="chapter__visual-num" aria-hidden="true">III</span>
+            </div>
+
+            <div class="chapter__copy">
+              <p class="chapter__label">
+                <span class="chapter__label-line"></span>
+                La Hoja en Blanco
+              </p>
+              <h3 class="chapter__title">Emigrar hacia adentro y empezar de nuevo.</h3>
+              <p class="chapter__text">
+                La decisión radical de irme. No solo de país: de identidad. Salir de lo conocido para dejar de habitar
+                estructuras prestadas y empezar a diseñar la propia. Ahí nació el método. No vino de un manual: vino
+                de tener que reconstruirme desde cero. Lo que enseño es lo que tuve que hacer.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ===== QUOTE FINAL DESTACADA ===== -->
+        <blockquote class="sobre-mi__quote reveal">
+          <div class="sobre-mi__quote-bar" aria-hidden="true"></div>
+          <div class="sobre-mi__quote-content">
+            <p class="sobre-mi__quote-text">
+              No te acompaño a sentirte mejor. Te acompaño a <em>vivir distinto.</em>
+            </p>
+            <footer class="sobre-mi__quote-author">
+              <span class="sobre-mi__quote-author-name">Melisa Rodríguez</span>
+              <span class="sobre-mi__quote-author-role">Creadora del Método MelisArt</span>
+            </footer>
+          </div>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECCIÓN — CÓMO TRABAJO (3 disciplinas integradas)
+         Emocional · Energética · Acción concreta
+         ========================================================= -->
+    <section class="section como-trabajo" id="como-trabajo" aria-labelledby="como-trabajo-title">
+      <!-- Ornamento geométrico: trinidad de círculos (vesica piscis) -->
+      <svg class="como-trabajo__ornament" viewBox="0 0 360 320" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <circle cx="120" cy="160" r="100" />
+          <circle cx="240" cy="160" r="100" />
+          <circle cx="180" cy="80" r="100" opacity="0.6" />
+          <circle cx="180" cy="160" r="40" stroke-width="1.2" />
+        </g>
+      </svg>
+
+      <div class="container">
+
+        <header class="como-trabajo__header reveal">
+          <p class="como-trabajo__eyebrow eyebrow">
+            <span class="como-trabajo__eyebrow-line"></span>
+            Cómo trabajo
+            <span class="como-trabajo__eyebrow-line"></span>
+          </p>
+          <h2 class="como-trabajo__title" id="como-trabajo-title">
+            Tres disciplinas, <em>una sola obra</em>
+          </h2>
+          <p class="como-trabajo__lead">
+            No es coaching, no es tarot, no es activación energética por separado. Es la integración estructural
+            de los tres ejes en un mismo proceso. Eso es lo que hace que funcione.
+          </p>
+        </header>
+
+        <!-- ===== 3 DISCIPLINAS ===== -->
+        <ol class="como-trabajo__grid" aria-label="Las tres disciplinas que integro en cada proceso">
+
+          <!-- I — Emocional -->
+          <li class="disciplina reveal" data-delay="1">
+            <div class="disciplina__icon-wrap">
+              <svg class="disciplina__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <!-- Corazón geométrico hecho con dos arcos arquitectónicos -->
+                <path d="M24 38 L10 24 C 6 20, 6 12, 12 10 C 18 8, 22 12, 24 16 C 26 12, 30 8, 36 10 C 42 12, 42 20, 38 24 Z"/>
+                <!-- Punto central: el foco emocional -->
+                <circle cx="24" cy="22" r="2" fill="currentColor"/>
+                <!-- Líneas técnicas internas (como un plano del corazón) -->
+                <line x1="24" y1="16" x2="24" y2="20" opacity="0.5"/>
+                <line x1="24" y1="24" x2="24" y2="32" opacity="0.5"/>
+              </svg>
+              <span class="disciplina__num" aria-hidden="true">I</span>
+            </div>
+            <h3 class="disciplina__name">Emocional</h3>
+            <p class="disciplina__desc">
+              Identificamos lo que te pasa y los patrones que se repiten. No para entenderlos en abstracto: para
+              poder intervenirlos.
+            </p>
+            <p class="disciplina__detalle">Diagnóstico</p>
+          </li>
+
+          <!-- II — Energética -->
+          <li class="disciplina reveal" data-delay="2">
+            <div class="disciplina__icon-wrap">
+              <svg class="disciplina__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <!-- Estrella de 8 puntas geométrica (geometría sagrada) -->
+                <path d="M24 4 L28 20 L44 24 L28 28 L24 44 L20 28 L4 24 L20 20 Z"/>
+                <!-- Diagonales internas (rayos finos) -->
+                <line x1="13" y1="13" x2="35" y2="35" stroke-width="1" opacity="0.5"/>
+                <line x1="35" y1="13" x2="13" y2="35" stroke-width="1" opacity="0.5"/>
+                <!-- Punto central -->
+                <circle cx="24" cy="24" r="2" fill="currentColor"/>
+              </svg>
+              <span class="disciplina__num" aria-hidden="true">II</span>
+            </div>
+            <h3 class="disciplina__name">Energética</h3>
+            <p class="disciplina__desc">
+              Accedemos a información profunda a través del tarot evolutivo, la canalización y la activación.
+              Lo que la mente no ve, el cuerpo y la energía sí.
+            </p>
+            <p class="disciplina__detalle">Diseño</p>
+          </li>
+
+          <!-- III — Acción concreta -->
+          <li class="disciplina reveal" data-delay="3">
+            <div class="disciplina__icon-wrap">
+              <svg class="disciplina__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <!-- Cuadrado con flecha hacia abajo: acción aterrizada -->
+                <rect x="8" y="8" width="32" height="32" rx="2"/>
+                <!-- Flecha hacia abajo dentro del cuadrado -->
+                <line x1="24" y1="14" x2="24" y2="32"/>
+                <path d="M16 24 L24 32 L32 24"/>
+                <!-- Línea de base / suelo -->
+                <line x1="14" y1="36" x2="34" y2="36" stroke-width="1.2"/>
+              </svg>
+              <span class="disciplina__num" aria-hidden="true">III</span>
+            </div>
+            <h3 class="disciplina__name">Acción concreta</h3>
+            <p class="disciplina__desc">
+              Bajamos todo a decisiones reales y pasos claros. Lo que no se baja a la acción, no transforma.
+              La obra existe en el mundo, no en la cabeza.
+            </p>
+            <p class="disciplina__detalle">Obra</p>
+          </li>
+
+        </ol>
+
+        <!-- ===== FRASE ANCLA CIERRE ===== -->
+        <div class="como-trabajo__anchor reveal">
+          <p class="como-trabajo__anchor-text">
+            Claridad sin acción no transforma. Acción sin claridad no se sostiene. <strong>Acá trabajamos ambas.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECCIÓN — TESTIMONIOS
+         ⚠️ Los textos actuales son PLACEHOLDERS coherentes con la marca.
+         Reemplazar con testimonios reales cuando estén disponibles.
+         Mantener el formato: testimonio · separador · avatar · nombre · contexto.
+         ========================================================= -->
+    <section class="section testimonios" id="testimonios" aria-labelledby="testimonios-title">
+      <!-- Ornamento geométrico: triángulo con ojo (providencia) -->
+      <svg class="testimonios__ornament" viewBox="0 0 320 280" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <path d="M160 30 L290 250 L30 250 Z" />
+          <path d="M160 80 L240 220 L80 220 Z" opacity="0.6" />
+          <ellipse cx="160" cy="170" rx="50" ry="28" />
+          <circle cx="160" cy="170" r="14" fill="currentColor" fill-opacity="0.18" stroke="none" />
+          <circle cx="160" cy="170" r="6" fill="currentColor" stroke="none" />
+        </g>
+      </svg>
+
+      <!-- Ornamento secundario: cuadrado dentro de círculos concéntricos -->
+      <svg class="testimonios__ornament-2" viewBox="0 0 280 280" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <circle cx="140" cy="140" r="120" />
+          <circle cx="140" cy="140" r="90" opacity="0.6" />
+          <circle cx="140" cy="140" r="60" opacity="0.4" />
+          <rect x="60" y="60" width="160" height="160" transform="rotate(45 140 140)" opacity="0.55" />
+        </g>
+      </svg>
+
+      <div class="container container--wide">
+
+        <header class="testimonios__header reveal">
+          <p class="testimonios__eyebrow eyebrow">
+            <span class="testimonios__eyebrow-line"></span>
+            Testimonios
+            <span class="testimonios__eyebrow-line"></span>
+          </p>
+          <h2 class="testimonios__title" id="testimonios-title">
+            Voces de quienes <em>ya construyeron</em>
+          </h2>
+          <p class="testimonios__lead">
+            No hablan de magia ni de revelaciones. Hablan de cambios reales: decisiones, vínculos, dirección.
+          </p>
+        </header>
+
+        <div class="testimonios__grid">
+
+          <!-- ===== Testimonio 1 — placeholder Activación ===== -->
+          <article class="testimonio reveal" data-delay="1">
+            <p class="testimonio__text">
+              Llegué a una sesión sin saber bien qué buscar. Salí con una claridad que no había tenido en meses.
+              Meli no te dice qué hacer: te muestra lo que ya sabías y no te animabas a ver.
+            </p>
+            <hr class="testimonio__divider" aria-hidden="true" />
+            <div class="testimonio__author">
+              <div class="testimonio__avatar" aria-hidden="true">CR</div>
+              <div class="testimonio__meta">
+                <span class="testimonio__name">Carolina R.</span>
+                <span class="testimonio__context">Activación MelisArt</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Testimonio 2 — placeholder Acompañamiento 1:1 ===== -->
+          <article class="testimonio reveal" data-delay="2">
+            <p class="testimonio__text">
+              Llevo cuatro meses de proceso y se nota afuera. Tomé una decisión laboral que venía postergando hace
+              dos años. No fue magia: fue tener un espacio fijo donde pensar, ordenar y elegir.
+            </p>
+            <hr class="testimonio__divider" aria-hidden="true" />
+            <div class="testimonio__author">
+              <div class="testimonio__avatar" aria-hidden="true">SF</div>
+              <div class="testimonio__meta">
+                <span class="testimonio__name">Sofía F.</span>
+                <span class="testimonio__context">Acompañamiento 1:1</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Testimonio 3 — placeholder Método ===== -->
+          <article class="testimonio reveal" data-delay="3">
+            <p class="testimonio__text">
+              El Método me reconfiguró. Entré pensando que necesitaba un cambio puntual y salí con otra identidad.
+              No es coaching, no es tarot: es un proceso real de demolición y reconstrucción. Lo recomendaría
+              con los ojos cerrados.
+            </p>
+            <hr class="testimonio__divider" aria-hidden="true" />
+            <div class="testimonio__author">
+              <div class="testimonio__avatar" aria-hidden="true">VG</div>
+              <div class="testimonio__meta">
+                <span class="testimonio__name">Valentina G.</span>
+                <span class="testimonio__context">Método MelisArt · 2024</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECCIÓN — CONTACTO
+         Cierre violeta. WhatsApp como CTA principal.
+         ========================================================= -->
+    <section class="section contacto" id="contacto" aria-labelledby="contacto-title">
+
+      <!-- Geometría sagrada: flor de la vida estática al fondo -->
+      <svg class="contacto__ornament" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <circle cx="200" cy="200" r="40" />
+          <circle cx="200" cy="160" r="40" />
+          <circle cx="200" cy="240" r="40" />
+          <circle cx="165" cy="180" r="40" />
+          <circle cx="235" cy="180" r="40" />
+          <circle cx="165" cy="220" r="40" />
+          <circle cx="235" cy="220" r="40" />
+          <circle cx="200" cy="120" r="40" />
+          <circle cx="200" cy="280" r="40" />
+          <circle cx="130" cy="200" r="40" />
+          <circle cx="270" cy="200" r="40" />
+          <circle cx="200" cy="200" r="80" stroke-width="1.2" />
+          <circle cx="200" cy="200" r="120" opacity="0.5" />
+        </g>
+      </svg>
+
+      <!-- Ornamento secundario: triángulo invertido con punto -->
+      <svg class="contacto__ornament-2" viewBox="0 0 240 240" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1">
+          <path d="M120 200 L40 60 L200 60 Z" />
+          <circle cx="120" cy="105" r="50" opacity="0.6" />
+          <circle cx="120" cy="105" r="20" opacity="0.8" />
+        </g>
+      </svg>
+
+      <div class="container">
+        <div class="contacto__inner">
+
+          <div class="contacto__copy reveal">
+            <p class="contacto__eyebrow eyebrow">
+              <span class="contacto__eyebrow-line"></span>
+              Contacto
+              <span class="contacto__eyebrow-line"></span>
+            </p>
+
+            <h2 class="contacto__title" id="contacto-title">
+              Hoy diseñamos <em>una vida posible</em>
+            </h2>
+
+            <p class="contacto__lead">
+              Si llegaste hasta acá, algo en vos ya está listo para empezar. Escribime por WhatsApp y conversamos
+              cómo seguir.
+            </p>
+
+            <div class="contacto__cta">
+              <a class="btn contacto__cta-btn"
+                 href="https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20aplicar%20al%20*M%C3%A9todo%20MelisArt*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20arranca%20el%20proceso%3F"
+                 target="_blank" rel="noopener">
+                <svg class="btn__icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                  <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.115.553 4.181 1.604 6.003L4 29l8.197-1.557A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.628 28 15S22.628 3 16.001 3zm5.518 17.418c-.302-.151-1.789-.882-2.067-.983-.277-.101-.479-.151-.681.151s-.781.983-.957 1.184c-.176.201-.353.227-.655.076-.302-.151-1.275-.469-2.43-1.498-.898-.801-1.504-1.79-1.681-2.092-.176-.302-.019-.466.132-.616.135-.135.302-.353.453-.529.151-.176.201-.302.302-.504.101-.201.05-.378-.025-.529-.076-.151-.681-1.642-.933-2.247-.245-.59-.495-.51-.681-.519l-.58-.011c-.201 0-.529.076-.806.378-.277.302-1.058 1.034-1.058 2.523 0 1.49 1.083 2.929 1.234 3.13.151.201 2.131 3.252 5.16 4.561.721.311 1.283.497 1.722.636.723.23 1.381.198 1.901.12.58-.087 1.789-.731 2.041-1.437.252-.706.252-1.31.176-1.437-.075-.126-.277-.201-.579-.353z"/>
+                </svg>
+                Escribime por WhatsApp
+              </a>
+            </div>
+
+            <div class="contacto__tags">
+              <span class="contacto__tag"><span class="contacto__tag-dot"></span>Activación</span>
+              <span class="contacto__tag"><span class="contacto__tag-dot"></span>Acompañamiento 1:1</span>
+              <span class="contacto__tag"><span class="contacto__tag-dot"></span>Método MelisArt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER (minimal, centrado)
+       ========================================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__center">
+
+        <!-- Logo -->
+        <a href="#top" class="footer__logo" aria-label="MelisArt — inicio">
+          <svg class="footer__logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M24 6 L36 38 L12 38 Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <line x1="24" y1="6" x2="24" y2="42" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+            <line x1="12" y1="38" x2="36" y2="38" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+            <circle cx="24" cy="26" r="4.5" stroke="currentColor" stroke-width="0.9" fill="none" />
+            <circle cx="20" cy="29" r="4.5" stroke="currentColor" stroke-width="0.9" fill="none" />
+            <circle cx="28" cy="29" r="4.5" stroke="currentColor" stroke-width="0.9" fill="none" />
+            <path d="M24 22 L26 26 L24 30 L22 26 Z" fill="currentColor" />
+          </svg>
+          <span class="footer__logo-text">
+            <span class="footer__logo-name">MelisArt</span>
+            <span class="footer__logo-tagline">Arquitectura de Realidades</span>
+          </span>
+        </a>
+
+        <!-- Frase ancla de marca -->
+        <p class="footer__phrase">
+          Donde la construcción, la conciencia y el alma son una misma Obra.
+        </p>
+
+        <!-- Divisor blueprint -->
+        <div class="footer__divider" aria-hidden="true">
+          <span class="footer__divider-line"></span>
+          <span class="footer__divider-diamond"></span>
+          <span class="footer__divider-line"></span>
+        </div>
+
+        <!-- Copy -->
+        <p class="footer__copy">
+          © <span id="footer-year">2025</span> MelisArt · Melisa Rodríguez. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       STICKY WHATSAPP MOBILE
+       Apunta al CTA principal: aplicar al Método
+       ========================================================= -->
+  <a class="sticky-wa"
+     href="https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20aplicar%20al%20*M%C3%A9todo%20MelisArt*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20arranca%20el%20proceso%3F"
+     target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+      <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.115.553 4.181 1.604 6.003L4 29l8.197-1.557A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.628 28 15S22.628 3 16.001 3zm0 21.6c-1.795 0-3.555-.48-5.097-1.391l-.366-.217-4.866.924.927-4.74-.238-.378A9.564 9.564 0 0 1 6.4 15c0-5.292 4.308-9.6 9.601-9.6 5.293 0 9.6 4.308 9.6 9.6 0 5.292-4.307 9.6-9.6 9.6zm5.518-7.182c-.302-.151-1.789-.882-2.067-.983-.277-.101-.479-.151-.681.151s-.781.983-.957 1.184c-.176.201-.353.227-.655.076-.302-.151-1.275-.469-2.43-1.498-.898-.801-1.504-1.79-1.681-2.092-.176-.302-.019-.466.132-.616.135-.135.302-.353.453-.529.151-.176.201-.302.302-.504.101-.201.05-.378-.025-.529-.076-.151-.681-1.642-.933-2.247-.245-.59-.495-.51-.681-.519l-.58-.011c-.201 0-.529.076-.806.378-.277.302-1.058 1.034-1.058 2.523 0 1.49 1.083 2.929 1.234 3.13.151.201 2.131 3.252 5.16 4.561.721.311 1.283.497 1.722.636.723.23 1.381.198 1.901.12.58-.087 1.789-.731 2.041-1.437.252-.706.252-1.31.176-1.437-.075-.126-.277-.201-.579-.353z"/>
+    </svg>
+  </a>
+
+  <!-- JS al final para no bloquear render -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
