@@ -7,12 +7,13 @@
 :root {
   /* ---------- PALETA ---------- */
   /* Violetas (20%) */
-  --color-violeta-profundo: #2D1B4E;
-  --color-violeta-noche:    #3C2A5C;
-  --color-violeta-medio:    #6B4B8A;
-  --color-violeta-mistico:  #7B5BA1;
-  --color-lavanda:          #C8B6E2;
-  --color-lavanda-claro:    #D9C9EC;
+  --color-violeta-profundo: #1E0E3E;
+  --color-violeta-noche:    #3A1F6E;
+  --color-violeta-medio:    #5C3A9A;
+  --color-violeta-mistico:  #8B62C4;
+  --color-lavanda:          #C8B0E0;
+  --color-lavanda-claro:    #DDD0F5;
+  --color-lavanda-card:     #EDE6FF;
 
   /* Cremas (70%) */
   --color-crema:        #F5F0E8;

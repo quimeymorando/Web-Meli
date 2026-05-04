@@ -1,12 +1,34 @@
 /* =========================================================
    MELISART — JS principal
    - Header sombra al scroll
-   - Menú mobile (toggle + cerrar al click en link)
-   - Scroll reveal sutil con IntersectionObserver
+   - Menú mobile
+   - Scroll reveal con IntersectionObserver
+   - WhatsApp links (cambiá WA_NUMBER aquí para actualizar todos)
    ========================================================= */
 
 (function () {
   'use strict';
+
+  /* ---------- WHATSAPP: número centralizado ---------- */
+  const WA_NUMBER = '34625330619';
+
+  const WA_MSGS = {
+    escribime:     'Hola%20Meli!%20Vi%20tu%20web%20y%20quiero%20escribirte.%20%C2%BFPodemos%20hablar%3F',
+    cambio:        'Hola%20Meli!%20Estoy%20lista%20para%20el%20cambio.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20empezamos%3F',
+    'primer-paso': 'Hola%20Meli!%20Quiero%20dar%20el%20primer%20paso.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20funciona%3F',
+    activacion:    'Hola%20Meli!%20Vi%20tu%20web%20y%20quiero%20reservar%20una%20*Activaci%C3%B3n*.%20%C2%BFMe%20cont%C3%A1s%20los%20pr%C3%B3ximos%20pasos%3F',
+    acompanamiento:'Hola%20Meli!%20Quiero%20info%20sobre%20el%20*Acompa%C3%B1amiento%201%3A1*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20es%20el%20proceso%3F',
+    metodo:        'Hola%20Meli!%20Quiero%20aplicar%20al%20*M%C3%A9todo%20MelisArt*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20arranca%20el%20proceso%3F',
+    empezar:       'Hola%20Meli!%20No%20s%C3%A9%20bien%20por%20d%C3%B3nde%20empezar.%20%C2%BFMe%20acompa%C3%B1%C3%A1s%20a%20elegir%3F',
+  };
+
+  document.querySelectorAll('[data-wa]').forEach((el) => {
+    const key = el.getAttribute('data-wa');
+    const msg = WA_MSGS[key] || WA_MSGS.escribime;
+    el.setAttribute('href', `https://wa.me/${WA_NUMBER}?text=${msg}`);
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener');
+  });
 
   /* ---------- HEADER: sombra al scrollear ---------- */
   const header = document.querySelector('.header');
@@ -20,7 +42,7 @@
 
   /* ---------- MENÚ MOBILE ---------- */
   const menuToggle = document.querySelector('.menu-toggle');
-  const mobileNav = document.querySelector('.mobile-nav');
+  const mobileNav  = document.querySelector('.mobile-nav');
 
   if (menuToggle && mobileNav) {
     const closeMenu = () => {
@@ -44,12 +66,10 @@
       isOpen ? closeMenu() : openMenu();
     });
 
-    // Cerrar el menú al hacer click en un enlace
     mobileNav.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', closeMenu);
     });
 
-    // Cerrar con Escape
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && mobileNav.classList.contains('is-open')) {
         closeMenu();
@@ -63,7 +83,7 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
-  /* ---------- SCROLL REVEAL (sutil, una sola vez por elemento) ---------- */
+  /* ---------- SCROLL REVEAL ---------- */
   const revealEls = document.querySelectorAll('.reveal');
 
   if ('IntersectionObserver' in window && revealEls.length > 0) {
@@ -76,15 +96,23 @@
           }
         });
       },
-      {
-        threshold: 0.12,
-        rootMargin: '0px 0px -40px 0px'
-      }
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
     );
-
     revealEls.forEach((el) => io.observe(el));
   } else {
-    // Fallback: si no hay IO, mostrar todo de una
     revealEls.forEach((el) => el.classList.add('is-visible'));
   }
+
+  /* ---------- GEOMETRÍA SAGRADA: rotación lenta hero ---------- */
+  const ornament = document.querySelector('.hero__bg-ornament');
+  if (ornament && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    let angle = 0;
+    const rotate = () => {
+      angle += 0.003;
+      ornament.style.transform = `rotate(${angle}deg)`;
+      requestAnimationFrame(rotate);
+    };
+    requestAnimationFrame(rotate);
+  }
+
 })();
