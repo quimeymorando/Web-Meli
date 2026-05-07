@@ -2483,9 +2483,10 @@ body.menu-open .header { z-index: 210; }
   background: linear-gradient(
     to right,
     transparent 0%,
-    transparent 35%,
-    rgba(240, 235, 248, 0.55) 60%,
-    rgba(240, 235, 248, 0.90) 78%,
+    transparent 30%,
+    rgba(240, 235, 248, 0.20) 50%,
+    rgba(240, 235, 248, 0.55) 65%,
+    rgba(240, 235, 248, 0.85) 80%,
     #F0EBF8 100%
   );
   pointer-events: none;
