@@ -2672,47 +2672,43 @@ body.menu-open .header { z-index: 210; }
 /* ---- Mobile ---- */
 @media (max-width: 768px) {
   .contacto {
-    min-height: auto;
-    background-position: center top;
+    min-height: 100vh;
+    background-image: url('final.jpeg');
+    background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
 
   .contacto__layout {
     flex-direction: column;
-    min-height: auto;
+    min-height: 100vh;
     position: relative;
+    display: flex;
+    align-items: flex-end;
   }
 
   .contacto__imagen {
-    width: 100%;
-    height: 280px;
-    position: relative;
-    z-index: 0;
-  }
-
-  .contacto__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
+    display: none;
   }
 
   .contacto__img-fade-right {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: linear-gradient(
       to bottom,
       transparent 0%,
-      transparent 30%,
-      rgba(245, 240, 250, 0.70) 50%,
-      rgba(245, 240, 250, 0.95) 65%,
-      #F5F0FA 78%,
+      transparent 25%,
+      rgba(245, 240, 250, 0.65) 45%,
+      rgba(245, 240, 250, 0.85) 65%,
+      #F5F0FA 85%,
       #F5F0FA 100%
     );
     z-index: 1;
+    pointer-events: none;
   }
 
   .contacto__copy {
@@ -2724,6 +2720,7 @@ body.menu-open .header { z-index: 210; }
     justify-content: center;
     position: relative;
     z-index: 2;
+    background: transparent;
   }
 
   .contacto__label {
@@ -2756,7 +2753,6 @@ body.menu-open .header { z-index: 210; }
 
   .contacto__btn-obra {
     width: 100%;
-    padding: 20px 16px;
     max-width: 100%;
   }
 
