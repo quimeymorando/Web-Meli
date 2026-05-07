@@ -2526,6 +2526,7 @@ body.menu-open .header { z-index: 210; }
   height: 90vh;
   position: relative;
   z-index: 2;
+  background: linear-gradient(135deg, #FAF7F2 0%, #F0EBF8 60%, #E8DFF5 100%);
 }
 
 /* Label versales */
