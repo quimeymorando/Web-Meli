@@ -1150,70 +1150,110 @@
           </p>
         </header>
 
-        <div class="testimonios__grid">
+        <div class="testimonios__carousel reveal" id="testimoniosCarousel">
 
-          <article class="testimonio reveal" data-delay="1">
-            <p class="testimonio__quote">"No te da respuestas. Te hace las preguntas exactas para que las encuentres vos."</p>
-            <p class="testimonio__text">
-              Lo que Meli construyó es diferente a todo lo que conocía. Viví la
-              transformación en tiempo real. Vi cómo cada herramienta me permitía pasar de
-              la confusión a la claridad, del dispersarme al enfoque, de la acción desconectada
-              a una acción alineada con quién soy.
-              Y hoy, como coach: lo que diferencia a Meli es su pedagogía. No te da respuestas.
-              Te hace las preguntas exactas para que las encuentres vos. No te impone un sistema.
-              Te ayuda a diseñar el tuyo y luego a habitarlo con integridad.
-            </p>
-            <hr class="testimonio__divider" aria-hidden="true" />
-            <div class="testimonio__author">
-              <div class="testimonio__avatar" aria-hidden="true">ML</div>
-              <div class="testimonio__meta">
-                <span class="testimonio__name">María Lourdes Miranda</span>
-                <span class="testimonio__context">Coach</span>
-              </div>
+          <button class="carousel__arrow carousel__arrow--prev" id="carouselPrev" aria-label="Testimonio anterior">
+            <i data-lucide="chevron-left"></i>
+          </button>
+
+          <div class="carousel__track-wrapper">
+            <div class="carousel__track" id="carouselTrack">
+
+              <article class="testimonio-card" data-index="0">
+                <div class="testimonio-card__comilla" aria-hidden="true">"</div>
+                <p class="testimonio-card__quote">"No te da respuestas. Te hace las preguntas exactas para que las encuentres vos."</p>
+                <div class="testimonio-card__divider" aria-hidden="true"></div>
+                <p class="testimonio-card__text">
+                  Lo que Meli construyó es diferente a todo lo que conocía. Viví la transformación en tiempo real.
+                  Vi cómo cada herramienta me permitía pasar de la confusión a la claridad, del dispersarme al enfoque,
+                  de la acción desconectada a una acción alineada con quién soy. Y hoy, como coach: lo que diferencia
+                  a Meli es su pedagogía. No te da respuestas. Te hace las preguntas exactas para que las encuentres vos.
+                  No te impone un sistema. Te ayuda a diseñar el tuyo y luego a habitarlo con integridad.
+                </p>
+                <div class="testimonio-card__author">
+                  <div class="testimonio-card__avatar" aria-hidden="true">ML</div>
+                  <div class="testimonio-card__meta">
+                    <span class="testimonio-card__name">María Lourdes Miranda</span>
+                    <span class="testimonio-card__rol">Coach</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="testimonio-card" data-index="1">
+                <div class="testimonio-card__comilla" aria-hidden="true">"</div>
+                <p class="testimonio-card__quote">"Fue un punto de inflexión real en mi vida."</p>
+                <div class="testimonio-card__divider" aria-hidden="true"></div>
+                <p class="testimonio-card__text">
+                  Conocí a Meli en uno de los momentos más desordenados de mi vida. Estaba bloqueado, estresado,
+                  sin trabajo estable. Tenía muchas ideas e ilusión, pero no sabía cómo convertir eso en una realidad
+                  concreta. Empezó un proceso que fue mucho más que coaching. Hoy, gracias a ese proceso, estoy
+                  trabajando en el sector inmobiliario con estabilidad laboral y haciendo algo que realmente me gusta.
+                  El mayor valor de Meli no es solo lo que sabe, sino cómo te acompaña. Fue un punto de inflexión
+                  real en mi vida. La recomiendo sin dudarlo.
+                </p>
+                <div class="testimonio-card__author">
+                  <div class="testimonio-card__avatar" aria-hidden="true">FV</div>
+                  <div class="testimonio-card__meta">
+                    <span class="testimonio-card__name">Federico Valdez</span>
+                    <span class="testimonio-card__rol">Agente Inmobiliario</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="testimonio-card" data-index="2">
+                <div class="testimonio-card__comilla" aria-hidden="true">"</div>
+                <p class="testimonio-card__quote">"Asumirme y accionar fue el verdadero cambio."</p>
+                <div class="testimonio-card__divider" aria-hidden="true"></div>
+                <p class="testimonio-card__text">
+                  Hice coaching con Meli y ha sido toda una transformación en el sentido de asumirme y tomar los pasos
+                  necesarios para continuar con mi emprendimiento. Siempre ha estado con una sonrisa, además de con
+                  mucha seriedad y orden. También empujaba con fuerza y optimismo cuando me encontraba en un bloqueo.
+                  Ha sido un placer. Muy agradecida, gracias Meli.
+                </p>
+                <div class="testimonio-card__author">
+                  <div class="testimonio-card__avatar" aria-hidden="true">CR</div>
+                  <div class="testimonio-card__meta">
+                    <span class="testimonio-card__name">Carla Ramírez</span>
+                    <span class="testimonio-card__rol">Vuelve a tu Esencia</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="testimonio-card" data-index="3">
+                <div class="testimonio-card__comilla" aria-hidden="true">"</div>
+                <p class="testimonio-card__quote">"Te quiero agradecer mucho por tu acompañamiento durante todo este tiempo."</p>
+                <div class="testimonio-card__divider" aria-hidden="true"></div>
+                <p class="testimonio-card__text">
+                  Siempre te he sentido muy equilibrada entre abierta, comprensiva y empática y contundente, directa
+                  y enfocada. Esto me ha ayudado mucho a sentirme aceptada en mi propio ritmo y también ser apoyada
+                  y motivada a seguir a través de acciones reales (para no aflojar demás en ciertos momentos) a
+                  alcanzar mis propósitos. Te agradezco infinitamente.
+                </p>
+                <div class="testimonio-card__author">
+                  <div class="testimonio-card__avatar" aria-hidden="true">A</div>
+                  <div class="testimonio-card__meta">
+                    <span class="testimonio-card__name">Angelika</span>
+                    <span class="testimonio-card__rol">Testimonio</span>
+                  </div>
+                </div>
+              </article>
+
             </div>
-          </article>
+          </div>
 
-          <article class="testimonio reveal" data-delay="2">
-            <p class="testimonio__quote">"Fue un punto de inflexión real en mi vida."</p>
-            <p class="testimonio__text">
-              Conocí a Meli en uno de los momentos más desordenados de mi vida.
-              Estaba bloqueado, estresado, sin trabajo estable. Tenía muchas ideas e ilusión,
-              pero no sabía cómo convertir eso en una realidad concreta.
-              Empezó un proceso que fue mucho más que coaching. Hoy, gracias a ese proceso,
-              estoy trabajando en el sector inmobiliario con estabilidad laboral y haciendo
-              algo que realmente me gusta.
-              El mayor valor de Meli no es solo lo que sabe, sino cómo te acompaña.
-              Fue un punto de inflexión real en mi vida. La recomiendo sin dudarlo.
-            </p>
-            <hr class="testimonio__divider" aria-hidden="true" />
-            <div class="testimonio__author">
-              <div class="testimonio__avatar" aria-hidden="true">FV</div>
-              <div class="testimonio__meta">
-                <span class="testimonio__name">Federico Valdez</span>
-                <span class="testimonio__context">Agente Inmobiliario</span>
-              </div>
-            </div>
-          </article>
+          <button class="carousel__arrow carousel__arrow--next" id="carouselNext" aria-label="Siguiente testimonio">
+            <i data-lucide="chevron-right"></i>
+          </button>
 
-          <article class="testimonio reveal" data-delay="3">
-            <p class="testimonio__quote">"Asumirme y accionar fue el verdadero cambio."</p>
-            <p class="testimonio__text">
-              Hice coaching con Meli y ha sido toda una transformación en el sentido
-              de asumirme y tomar los pasos necesarios para continuar con mi emprendimiento.
-              Siempre ha estado con una sonrisa, además de con mucha seriedad y orden.
-              También empujaba con fuerza y optimismo cuando me encontraba en un bloqueo.
-              Ha sido un placer. Muy agradecida, gracias Meli.
-            </p>
-            <hr class="testimonio__divider" aria-hidden="true" />
-            <div class="testimonio__author">
-              <div class="testimonio__avatar" aria-hidden="true">CR</div>
-              <div class="testimonio__meta">
-                <span class="testimonio__name">Carla Ramírez</span>
-                <span class="testimonio__context">Vuelve a tu Esencia</span>
-              </div>
-            </div>
-          </article>
+        </div>
 
+        <div class="carousel__controls">
+          <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Testimonios">
+            <button class="carousel__dot carousel__dot--active" data-dot="0" role="tab" aria-selected="true" aria-label="Testimonio 1"></button>
+            <button class="carousel__dot" data-dot="1" role="tab" aria-selected="false" aria-label="Testimonio 2"></button>
+            <button class="carousel__dot" data-dot="2" role="tab" aria-selected="false" aria-label="Testimonio 3"></button>
+            <button class="carousel__dot" data-dot="3" role="tab" aria-selected="false" aria-label="Testimonio 4"></button>
+          </div>
         </div>
 
         <div class="testimonios__chips reveal">
