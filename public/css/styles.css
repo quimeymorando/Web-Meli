@@ -3753,12 +3753,32 @@ body.menu-open .header { z-index: 210; }
   opacity: 0.7;
 }
 
-/* Tercera card: Método MelisArt Premium */
+/* Tercera card: Método MelisArt Premium (Violeta) */
 .servicios__grid > .servicio:nth-child(3) {
+  background-color: var(--color-violeta-profundo);
+  color: var(--color-crema);
   border: 1.5px solid rgba(212, 168, 67, 0.70);
-  box-shadow: 0 8px 40px rgba(212, 168, 67, 0.15), 0 2px 8px rgba(59, 37, 104, 0.10);
-  background: linear-gradient(180deg, rgba(255, 250, 240, 1) 0%, rgba(255, 255, 255, 1) 100%);
   border-top: 3px solid #D4A843;
+  box-shadow: 0 8px 40px rgba(212, 168, 67, 0.15), 0 2px 8px rgba(59, 37, 104, 0.10);
+}
+
+.servicios__grid > .servicio:nth-child(3):hover {
+  border-color: rgba(212, 168, 67, 0.90);
+  box-shadow: 0 16px 56px rgba(212, 168, 67, 0.25), 0 4px 12px rgba(59, 37, 104, 0.15);
+}
+
+.servicios__grid > .servicio:nth-child(3) .servicio__name {
+  color: var(--color-crema-claro);
+}
+
+.servicios__grid > .servicio:nth-child(3) .servicio__subtitle,
+.servicios__grid > .servicio:nth-child(3) .servicio__desc,
+.servicios__grid > .servicio:nth-child(3) .servicio__lista li {
+  color: var(--color-lavanda);
+}
+
+.servicios__grid > .servicio:nth-child(3) .servicio__resultado-label {
+  color: var(--color-crema-claro);
 }
 
 .servicios__grid > .servicio:nth-child(3) .servicio__badge-tag {
@@ -3770,6 +3790,20 @@ body.menu-open .header { z-index: 210; }
   font-size: 11px;
   letter-spacing: 0.12em;
   opacity: 1;
+  margin-bottom: var(--space-2);
+}
+
+.servicios__grid > .servicio:nth-child(3) .servicio__para-quien {
+  color: var(--color-lavanda);
+}
+
+.servicios__grid > .servicio:nth-child(3) .servicio__divider {
+  border-top-color: rgba(201, 169, 97, 0.3);
+}
+
+.servicios__grid > .servicio:nth-child(3) .servicio__cta a {
+  background: linear-gradient(135deg, #D4A843, #E8C460);
+  color: #FFFFFF;
 }
 
 .servicios__bottom {
