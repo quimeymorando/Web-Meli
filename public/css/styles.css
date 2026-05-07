@@ -2802,36 +2802,9 @@ body.menu-open .header { z-index: 210; }
   opacity: 0.70;
 }
 
-/* Fila 2: Navegación */
-.footer__row--nav {
-  gap: 0;
-  margin-bottom: 8px;
-}
-
-.footer__nav-link {
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 13px;
-  letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.55);
-  text-decoration: none;
-  transition: color 0.2s ease;
-  padding: 0 8px;
-}
-
-.footer__nav-link:hover {
-  color: #C8922A;
-}
-
-.footer__nav-sep {
-  color: rgba(255, 255, 255, 0.30);
-  padding: 0 16px;
-}
-
-/* Fila 3: Redes sociales */
+/* Fila 2: Redes sociales */
 .footer__row--social {
   gap: 0;
-  margin-bottom: 8px;
 }
 
 .footer__social-link {
@@ -2866,8 +2839,8 @@ body.menu-open .header { z-index: 210; }
   padding: 0 12px;
 }
 
-/* Fila 4: Copyright + Frase */
-.footer__row--4 {
+/* Fila 3: Copyright + Frase */
+.footer__row--3 {
   flex-direction: column;
   gap: 6px;
   text-align: center;
