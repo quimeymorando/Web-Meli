@@ -3452,11 +3452,11 @@ body.menu-open .header { z-index: 210; }
 }
 
 .metodo2__corner--left {
-  left: -60px;
+  left: -120px;
 }
 
 .metodo2__corner--right {
-  right: -60px;
+  right: -120px;
 }
 
 @media (max-width: 767px) {
