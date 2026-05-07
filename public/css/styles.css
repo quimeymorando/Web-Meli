@@ -1702,10 +1702,6 @@ body.menu-open .header { z-index: 210; }
   letter-spacing: var(--ls-tight);
 }
 
-.chapter__visual--3 .chapter__visual-num {
-  color: var(--color-violeta-medio);
-  opacity: 0.5;
-}
 
 /* Copy del capítulo */
 .chapter__copy {
