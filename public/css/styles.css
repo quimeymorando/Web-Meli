@@ -3774,7 +3774,7 @@ body.menu-open .header { z-index: 210; }
 .servicios__grid > .servicio:nth-child(3) .servicio__subtitle,
 .servicios__grid > .servicio:nth-child(3) .servicio__desc,
 .servicios__grid > .servicio:nth-child(3) .servicio__lista li {
-  color: var(--color-lavanda);
+  color: #FFFFFF;
 }
 
 .servicios__grid > .servicio:nth-child(3) .servicio__resultado-label {
@@ -3794,7 +3794,7 @@ body.menu-open .header { z-index: 210; }
 }
 
 .servicios__grid > .servicio:nth-child(3) .servicio__para-quien {
-  color: var(--color-lavanda);
+  color: #FFFFFF;
 }
 
 .servicios__grid > .servicio:nth-child(3) .servicio__divider {
@@ -3812,6 +3812,10 @@ body.menu-open .header { z-index: 210; }
   background-color: var(--color-dorado-claro);
   color: #FFFFFF;
   border-color: var(--color-dorado-claro);
+}
+
+.servicios__grid > .servicio:nth-child(3) .servicio__resultado-text {
+  color: #FFFFFF;
 }
 
 .servicios__bottom {
