@@ -2680,10 +2680,21 @@ body.menu-open .header { z-index: 210; }
   .contacto__layout {
     flex-direction: column;
     min-height: auto;
+    position: relative;
   }
 
   .contacto__imagen {
-    display: none;
+    width: 100%;
+    height: 280px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .contacto__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
   }
 
   .contacto__img-fade-right {
@@ -2707,7 +2718,7 @@ body.menu-open .header { z-index: 210; }
   .contacto__copy {
     width: 100%;
     margin-left: 0;
-    padding: 320px 24px 60px 24px;
+    padding: 40px 24px 60px 24px;
     text-align: center;
     align-items: center;
     justify-content: center;
