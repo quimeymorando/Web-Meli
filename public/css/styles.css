@@ -1336,7 +1336,7 @@ body.menu-open .header { z-index: 210; }
 .sobre-mi {
   background: linear-gradient(160deg, #EDE8F5 0%, #D9CCF0 50%, #C8B4E0 100%);
   position: relative;
-  overflow: clip;
+  overflow: visible;
 }
 
 /* Ornamento geométrico: flor de la vida */
@@ -2093,7 +2093,7 @@ body.menu-open .header { z-index: 210; }
 .testimonios {
   background: linear-gradient(160deg, #EDE8F5 0%, #D9CCF0 50%, #C8B4E0 100%);
   position: relative;
-  overflow: clip;
+  overflow: visible;
 }
 
 /* Ornamento geométrico: ojo de la providencia / triángulo con círculo */
@@ -4183,6 +4183,32 @@ body.menu-open .header { z-index: 210; }
 }
 .testimonios .testimonio__text {
   color: #3B2568;
+}
+
+/* Decoraciones esquinas inferiores reutilizables */
+.corner-decoration {
+  position: absolute;
+  bottom: 0;
+  height: 550px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.corner-decoration--left {
+  left: -120px;
+}
+
+.corner-decoration--right {
+  right: -120px;
+}
+
+@media (max-width: 767px) {
+  .corner-decoration {
+    display: none;
+  }
 }
 
 /* SVG wave transitions */
