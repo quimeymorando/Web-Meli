@@ -3801,16 +3801,16 @@ body.menu-open .header { z-index: 210; }
   border-top-color: rgba(201, 169, 97, 0.3);
 }
 
-.servicios__grid > .servicio:nth-child(3) .servicio__cta .btn {
-  background-color: var(--color-crema);
-  color: var(--color-violeta-profundo);
-  border-color: var(--color-crema);
-  font-weight: var(--w-semibold);
+.servicios__grid > .servicio:nth-child(3) .servicio__cta .btn--ghost {
+  background-color: transparent;
+  color: var(--color-crema-claro);
+  border: 1.5px solid var(--color-dorado);
 }
 
-.servicios__grid > .servicio:nth-child(3) .servicio__cta .btn:hover {
-  background-color: rgba(250, 247, 242, 0.9);
+.servicios__grid > .servicio:nth-child(3) .servicio__cta .btn--ghost:hover {
+  background-color: var(--color-dorado);
   color: var(--color-violeta-profundo);
+  border-color: var(--color-dorado);
 }
 
 .servicios__bottom {
