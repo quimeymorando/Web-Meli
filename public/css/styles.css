@@ -2691,7 +2691,7 @@ body.menu-open .header { z-index: 210; }
     background-image: url('../final.jpeg');
     background-position: center center;
     background-size: cover;
-    filter: blur(0.8px);
+    filter: blur(6px);
     z-index: -1;
   }
 
