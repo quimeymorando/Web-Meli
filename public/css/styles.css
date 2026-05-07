@@ -118,7 +118,6 @@
 @media (min-width: 1080px) {
   .header__cta {
     display: inline-flex;
-    padding: var(--space-3) var(--space-5);
     font-size: 0.92rem;
   }
 }
@@ -1315,19 +1314,40 @@ body.menu-open .header { z-index: 210; }
 
 .servicio__cta .btn {
   width: 100%;
+  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
-/* CTA específico de la card destacada: dorado sólido sobre violeta */
+.servicio__cta .btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(184,130,10,0.35);
+}
+
+/* CTA específico de la card destacada: gradient dorado brillante */
 .servicio--destacado .servicio__cta .btn {
-  background-color: var(--color-dorado);
-  color: var(--color-violeta-profundo);
-  border-color: var(--color-dorado);
-  font-weight: var(--w-semibold);
+  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
 .servicio--destacado .servicio__cta .btn:hover {
-  background-color: var(--color-dorado-claro);
-  color: var(--color-violeta-profundo);
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(184,130,10,0.35);
 }
 
 /* =========================================================
@@ -2386,18 +2406,22 @@ body.menu-open .header { z-index: 210; }
 }
 
 .contacto__cta-btn {
-  background-color: var(--color-dorado);
-  color: var(--color-violeta-profundo);
-  font-weight: var(--w-semibold);
-  padding: var(--space-4) var(--space-7);
-  font-size: 1.05rem;
-  box-shadow: 0 12px 32px rgba(201, 169, 97, 0.3);
+  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: var(--shadow-md);
 }
 
 .contacto__cta-btn:hover {
-  background-color: var(--color-dorado-claro);
-  color: var(--color-violeta-profundo);
-  box-shadow: 0 16px 40px rgba(201, 169, 97, 0.45);
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(184,130,10,0.35);
 }
 
 .contacto__cta-note {
@@ -2641,19 +2665,27 @@ body.menu-open .header { z-index: 210; }
 
 /* ---------- BOTÓN DORADO ---------- */
 .btn--gold {
-  background-color: var(--color-dorado);
-  color: var(--color-violeta-profundo);
+  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
   box-shadow: var(--shadow-md);
 }
 .btn--gold:hover {
-  background-color: var(--color-dorado-claro);
-  box-shadow: var(--shadow-gold);
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(184,130,10,0.35);
 }
 .section--violeta .btn--gold,
 .metodo .btn--gold,
 .testimonios .btn--gold {
-  background-color: var(--color-dorado);
-  color: var(--color-violeta-profundo);
+  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
+  color: #FFFFFF;
 }
 
 /* ---------- HERO: WA inline link ---------- */
