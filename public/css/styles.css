@@ -2663,6 +2663,17 @@ body.menu-open .header { z-index: 210; }
   color: var(--color-violeta-profundo);
 }
 
+.testimonios .btn--ghost {
+  color: var(--color-violeta-profundo);
+  border-color: var(--color-violeta-profundo);
+}
+
+.testimonios .btn--ghost:hover {
+  background-color: var(--color-violeta-profundo);
+  color: var(--color-crema-claro);
+  border-color: var(--color-violeta-profundo);
+}
+
 /* ---------- HERO: WA inline link ---------- */
 .hero__wa-line {
   display: flex;
