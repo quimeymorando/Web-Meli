@@ -2670,43 +2670,89 @@ body.menu-open .header { z-index: 210; }
 }
 
 /* ---- Mobile ---- */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .contacto {
+    min-height: auto;
+    background-position: center top;
+    background-size: cover;
+  }
+
   .contacto__layout {
     flex-direction: column;
     min-height: auto;
   }
 
   .contacto__imagen {
-    width: 100%;
-    min-height: 280px;
-    height: 280px;
-    position: relative;
-  }
-
-  .contacto__img {
-    position: absolute;
+    display: none;
   }
 
   .contacto__img-fade-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(
       to bottom,
-      transparent 50%,
-      #FAF7F2 100%
+      transparent 0%,
+      transparent 30%,
+      rgba(245, 240, 250, 0.70) 50%,
+      rgba(245, 240, 250, 0.95) 65%,
+      #F5F0FA 78%,
+      #F5F0FA 100%
     );
+    z-index: 1;
   }
 
   .contacto__copy {
     width: 100%;
     margin-left: 0;
-    padding: 40px 24px;
+    padding: 320px 24px 60px 24px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .contacto__label {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacto__divisor {
+    justify-content: center;
   }
 
   .contacto__title {
-    font-size: 38px;
+    font-size: 36px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacto__subtexto {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacto__divisor-fino {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contacto__btn-obra {
+    width: 100%;
+    padding: 20px 16px;
     max-width: 100%;
+  }
+
+  .contacto__wa-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
