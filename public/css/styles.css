@@ -2673,7 +2673,7 @@ body.menu-open .header { z-index: 210; }
 @media (max-width: 768px) {
   .contacto {
     min-height: 100vh;
-    background-image: url('final.jpeg');
+    background-image: url('../final.jpeg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
