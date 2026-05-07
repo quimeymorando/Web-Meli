@@ -2122,31 +2122,6 @@ body.menu-open .header { z-index: 210; }
   overflow: visible;
 }
 
-/* Ornamento geométrico: ojo de la providencia / triángulo con círculo */
-.testimonios__ornament {
-  position: absolute;
-  top: -8%;
-  right: -8%;
-  width: clamp(320px, 40vw, 540px);
-  opacity: 0.13;
-  color: var(--color-violeta-profundo);
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-
-.testimonios__ornament-2 {
-  position: absolute;
-  bottom: -10%;
-  left: -10%;
-  width: clamp(280px, 34vw, 460px);
-  opacity: 0.11;
-  color: var(--color-dorado);
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-
 .testimonios > .container {
   position: relative;
   z-index: 1;
