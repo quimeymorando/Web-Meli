@@ -3801,9 +3801,16 @@ body.menu-open .header { z-index: 210; }
   border-top-color: rgba(201, 169, 97, 0.3);
 }
 
-.servicios__grid > .servicio:nth-child(3) .servicio__cta a {
-  background: linear-gradient(135deg, #D4A843, #E8C460);
-  color: #FFFFFF;
+.servicios__grid > .servicio:nth-child(3) .servicio__cta .btn {
+  background-color: var(--color-crema);
+  color: var(--color-violeta-profundo);
+  border-color: var(--color-crema);
+  font-weight: var(--w-semibold);
+}
+
+.servicios__grid > .servicio:nth-child(3) .servicio__cta .btn:hover {
+  background-color: rgba(250, 247, 242, 0.9);
+  color: var(--color-violeta-profundo);
 }
 
 .servicios__bottom {
