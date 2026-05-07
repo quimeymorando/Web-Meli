@@ -2669,14 +2669,15 @@ body.menu-open .header { z-index: 210; }
 }
 
 .testimonios .btn--ghost {
-  color: var(--color-violeta-profundo);
+  background-color: var(--color-violeta-profundo);
+  color: var(--color-blanco);
   border-color: var(--color-violeta-profundo);
 }
 
 .testimonios .btn--ghost:hover {
-  background-color: var(--color-violeta-profundo);
-  color: var(--color-crema-claro);
-  border-color: var(--color-violeta-profundo);
+  background-color: var(--color-violeta-medio);
+  color: var(--color-blanco);
+  border-color: var(--color-violeta-medio);
 }
 
 /* ---------- HERO: WA inline link ---------- */
