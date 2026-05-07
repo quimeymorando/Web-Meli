@@ -2587,17 +2587,6 @@ body.menu-open .header { z-index: 210; }
   margin-bottom: 28px;
 }
 
-/* Headline del botón */
-.contacto__headline {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 20px;
-  color: #3B2568;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
 /* Botón principal "Declaro en Obra" */
 .contacto__btn-obra {
   display: flex;
@@ -2653,19 +2642,7 @@ body.menu-open .header { z-index: 210; }
   line-height: 1.3;
 }
 
-/* Texto secundario debajo del botón */
-.contacto__btn-subtext {
-  font-family: var(--font-body);
-  font-style: italic;
-  font-size: 14px;
-  color: rgba(59, 37, 104, 0.60);
-  text-align: center;
-  margin-top: 12px;
-  margin-bottom: 0;
-  line-height: 1.4;
-}
-
-/* Texto secundario (antiguo) */
+/* Texto secundario */
 .contacto__wa-text {
   font-family: var(--font-body);
   font-weight: 400;
@@ -2673,6 +2650,30 @@ body.menu-open .header { z-index: 210; }
   color: #1E1035;
   margin: 0;
   line-height: 1.4;
+}
+
+/* Botón WhatsApp secundario */
+.btn-whatsapp-contacto {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
+  color: #FFFFFF;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-top: 16px;
+}
+
+.btn-whatsapp-contacto:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(184, 130, 10, 0.35);
 }
 
 /* ---- Mobile ---- */
