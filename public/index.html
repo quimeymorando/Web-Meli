@@ -1373,15 +1373,15 @@
   </main>
 
   <!-- =========================================================
-       FOOTER — barra delgada compacta
+       FOOTER
        ========================================================= -->
   <footer class="footer" role="contentinfo">
-    <div class="footer__inner">
 
-      <!-- IZQUIERDA: Logo + Texto -->
-      <div class="footer__left">
-        <a href="#top" class="footer__logo-link" aria-label="MelisArt — inicio">
-          <svg class="footer__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+    <!-- COLUMNA IZQUIERDA: Logo + Tagline -->
+    <div class="footer__col footer__col--left">
+      <div class="footer__logo-section">
+        <a href="#top" class="footer__logo" aria-label="MelisArt — inicio">
+          <svg class="footer__logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
             <path d="M24 6 L36 38 L12 38 Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
             <line x1="24" y1="6" x2="24" y2="42" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
             <line x1="12" y1="38" x2="36" y2="38" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
@@ -1390,34 +1390,37 @@
             <circle cx="28" cy="29" r="4.5" stroke="currentColor" stroke-width="0.9" fill="none" />
             <path d="M24 22 L26 26 L24 30 L22 26 Z" fill="currentColor" />
           </svg>
-        </a>
-        <span class="footer__name">MelisArt</span>
-        <span class="footer__sep">·</span>
-        <span class="footer__tagline-text">Arquitecta de Realidades</span>
-      </div>
-
-      <!-- CENTRO: Copyright (solo desktop) -->
-      <div class="footer__center">
-        <p class="footer__copy">© <span id="footer-year">2025</span> MelisArt</p>
-      </div>
-
-      <!-- DERECHA: Redes sociales -->
-      <div class="footer__right">
-        <a href="https://instagram.com/melisart" class="footer__social" target="_blank" rel="noopener" aria-label="Instagram">
-          <i data-lucide="instagram"></i>
-          <span>@melisart</span>
-        </a>
-        <a href="mailto:hola@melisart.com" class="footer__social" aria-label="Correo electrónico">
-          <i data-lucide="mail"></i>
-          <span>hola@melisart.com</span>
-        </a>
-        <a data-wa="empezar" href="#contacto" class="footer__social" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <i data-lucide="message-circle"></i>
-          <span>WhatsApp</span>
+          <div class="footer__logo-text">
+            <span class="footer__logo-name">MelisArt</span>
+            <span class="footer__logo-tagline">Arquitecta de Realidades</span>
+          </div>
         </a>
       </div>
-
+      <p class="footer__tagline">Donde la construcción, la conciencia y el alma son una misma Obra.</p>
     </div>
+
+    <!-- COLUMNA CENTRAL: Copyright + Frase -->
+    <div class="footer__col footer__col--center">
+      <p class="footer__copy">© <span id="footer-year">2026</span> MelisArt – Arquitecta de Realidades.</p>
+      <p class="footer__frase">Tu vida dejó de ser un intento. Se vuelve una Obra.</p>
+    </div>
+
+    <!-- COLUMNA DERECHA: Redes sociales -->
+    <div class="footer__col footer__col--right">
+      <a href="https://instagram.com/melisart" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">
+        <i data-lucide="instagram"></i>
+        <span>@melisart</span>
+      </a>
+      <a href="mailto:hola@melisart.com" class="footer__social-link" aria-label="Correo electrónico">
+        <i data-lucide="mail"></i>
+        <span>hola@melisart.com</span>
+      </a>
+      <a data-wa="empezar" href="#contacto" class="footer__social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i data-lucide="message-circle"></i>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+
   </footer>
 
   <!-- STICKY WHATSAPP BUTTON -->
