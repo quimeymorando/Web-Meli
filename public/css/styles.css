@@ -2501,7 +2501,7 @@ body.menu-open .header { z-index: 210; }
   z-index: 1;
 }
 
-/* fade arriba y abajo: disuelve los bordes superior e inferior */
+/* fade arriba y abajo: toque mínimo solo en los extremos */
 .contacto__img-fade-tb {
   position: absolute;
   top: 0;
@@ -2510,12 +2510,10 @@ body.menu-open .header { z-index: 210; }
   height: 100%;
   background: linear-gradient(
     to bottom,
-    #F5F0FA 0%,
-    rgba(245, 240, 250, 0.85) 6%,
-    transparent 20%,
-    transparent 80%,
-    rgba(237, 232, 245, 0.85) 94%,
-    #EDE8F5 100%
+    rgba(245, 240, 250, 0.30) 0%,
+    transparent 6%,
+    transparent 94%,
+    rgba(237, 232, 245, 0.30) 100%
   );
   pointer-events: none;
   z-index: 1;
