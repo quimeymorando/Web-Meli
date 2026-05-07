@@ -2386,154 +2386,312 @@ body.menu-open .header { z-index: 210; }
 
 /* =========================================================
    SECCIÓN — CONTACTO
-   Cierre con fondo violeta profundo. WhatsApp es el CTA principal.
+   Fondo crema suave, layout dos columnas: imagen + copy
    ========================================================= */
 
 .contacto {
-  background-color: #2D1B52;
-  color: var(--color-crema);
+  background: linear-gradient(135deg, #FAF7F2 0%, #F0EBF8 60%, #E8DFF5 100%);
   position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Flor de la vida — esquina superior derecha */
+.contacto__flor {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  opacity: 0.18;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+/* Destellos dorados */
+.contacto__destello {
+  position: absolute;
+  font-size: 14px;
+  color: #C8922A;
+  opacity: 0.40;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+.contacto__destello--1 { top: 12%;  right: 52%; }
+.contacto__destello--2 { top: 28%;  right: 38%; }
+.contacto__destello--3 { top: 55%;  right: 30%; }
+.contacto__destello--4 { top: 72%;  right: 48%; }
+.contacto__destello--5 { top: 40%;  right: 22%; }
+
+/* ---- Layout dos columnas ---- */
+.contacto__layout {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+  position: relative;
+}
+
+/* ---- Columna izquierda: imagen ---- */
+.contacto__imagen {
+  position: relative;
+  width: 50%;
+  min-height: 90vh;
+  flex-shrink: 0;
   overflow: hidden;
 }
 
-/* Geometría sagrada decorativa — flor de la vida estática al fondo */
-.contacto__ornament {
+.contacto__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
   position: absolute;
-  bottom: -18%;
-  right: -12%;
-  width: clamp(460px, 60vw, 820px);
-  opacity: 0.12;
-  color: var(--color-dorado);
-  pointer-events: none;
-  user-select: none;
+  top: 0;
+  left: 0;
 }
 
-/* Segundo ornamento contacto: triángulo invertido en esquina opuesta */
-.contacto__ornament-2 {
+.contacto__img-fade-right {
   position: absolute;
-  top: -8%;
-  left: -6%;
-  width: clamp(220px, 28vw, 380px);
-  opacity: 0.08;
-  color: var(--color-dorado);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 40%,
+    rgba(240, 235, 248, 0.60) 65%,
+    rgba(240, 235, 248, 0.92) 82%,
+    #F0EBF8 100%
+  );
   pointer-events: none;
-  user-select: none;
+  z-index: 1;
 }
 
-.contacto__inner {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--space-5);
-  max-width: 760px;
-  margin-inline: auto;
+.contacto__img-fade-tb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(250, 247, 242, 0.40) 0%,
+    transparent 15%,
+    transparent 85%,
+    rgba(250, 247, 242, 0.40) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
 }
 
-/* ---- Copy + CTA centrados ---- */
+/* ---- Columna derecha: copy ---- */
 .contacto__copy {
+  width: 50%;
+  padding: 80px 60px 80px 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--space-5);
+  justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 
-.contacto__eyebrow {
+/* Label versales */
+.contacto__label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #A07820;
+  margin-bottom: 16px;
+}
+
+/* Divisor con rombo */
+.contacto__divisor {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  color: var(--color-dorado);
+  gap: 10px;
+  margin-bottom: 24px;
 }
-
-.contacto__eyebrow-line {
-  width: 32px;
+.contacto__divisor-line {
+  flex: 1;
   height: 1px;
-  background-color: currentColor;
+  background: rgba(212, 168, 67, 0.45);
+  max-width: 48px;
+}
+.contacto__divisor-rombo {
+  font-size: 8px;
+  color: #C8922A;
+  opacity: 0.70;
 }
 
+/* H2 */
 .contacto__title {
-  font-size: clamp(2rem, 1.6rem + 2vw, 3.4rem);
-  line-height: 1.05;
-  color: var(--color-crema-claro);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 1.8rem + 2vw, 3.5rem);
+  line-height: 1.15;
+  color: #1E1035;
+  margin-bottom: 20px;
   text-wrap: balance;
 }
 
-.contacto__title em {
-  font-style: italic;
-  color: var(--color-dorado-claro);
-}
-
-.contacto__lead {
-  font-size: var(--fs-lead);
-  line-height: 1.5;
-  color: var(--color-lavanda);
-  max-width: 580px;
-  text-wrap: pretty;
-}
-
-.contacto__cta {
-  margin-top: var(--space-3);
-}
-
-.contacto__cta-btn.btn--gold {
-  background: linear-gradient(135deg, #D4A843, #E8C460);
-  color: #ffffff !important;
-  font-weight: var(--w-semibold);
-  padding: var(--space-4) var(--space-7);
-  font-size: 1.05rem;
-  box-shadow: 0 12px 32px rgba(212, 168, 67, 0.3);
-}
-
-.contacto__cta-btn.btn--gold:hover {
-  filter: brightness(1.08);
-  transform: translateY(-2px);
-  color: #ffffff !important;
-  box-shadow: 0 16px 40px rgba(212, 168, 67, 0.45);
-}
-
-.contacto__cta-note {
-  font-family: var(--font-micro);
-  font-size: var(--fs-micro);
-  letter-spacing: var(--ls-xwide);
-  text-transform: uppercase;
-  color: var(--color-dorado);
-  margin-top: var(--space-2);
-  opacity: 0.85;
-}
-
-.contacto__tags {
+/* Subtextos */
+.contacto__subtexto {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--space-2);
-  margin-top: var(--space-5);
-  padding-top: var(--space-5);
-  border-top: 1px solid rgba(201, 169, 97, 0.2);
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 28px;
+}
+.contacto__subtexto-1 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 20px;
+  color: #1E1035;
+  line-height: 1.4;
+}
+.contacto__subtexto-2 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  color: #C8922A;
+  line-height: 1.4;
+}
+
+/* Divisor fino */
+.contacto__divisor-fino {
   width: 100%;
-  max-width: 540px;
+  height: 1px;
+  background: rgba(212, 168, 67, 0.30);
+  margin-bottom: 28px;
 }
 
-.contacto__tag {
-  display: inline-flex;
+/* Botón principal "Declaro en Obra" */
+.contacto__btn-obra {
+  display: flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-pill);
-  border: 1px solid rgba(201, 169, 97, 0.35);
-  font-family: var(--font-micro);
-  font-size: 0.72rem;
-  letter-spacing: var(--ls-xwide);
-  text-transform: uppercase;
-  color: var(--color-lavanda);
+  gap: 16px;
+  padding: 18px 28px;
+  max-width: 460px;
+  border: 1.5px solid rgba(212, 168, 67, 0.60);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.50);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 24px;
 }
 
-.contacto__tag-dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: var(--color-dorado);
+.contacto__btn-obra:hover {
+  border-color: rgba(212, 168, 67, 0.90);
+  background: rgba(255, 255, 255, 0.80);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(212, 168, 67, 0.20);
+}
+
+.contacto__btn-icono {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(212, 168, 67, 0.50);
+  border-radius: 8px;
+  background: rgba(212, 168, 67, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C8922A;
+}
+
+.contacto__btn-icono svg {
+  width: 24px;
+  height: 24px;
+  stroke: #C8922A;
+  stroke-width: 1.2;
+}
+
+.contacto__btn-texto {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1E1035;
+  line-height: 1.3;
+}
+
+/* Link WhatsApp secundario */
+.contacto__wa-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contacto__wa-ico {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #7B5BAA;
+  transition: color 0.2s ease;
+}
+
+.contacto__wa-link span {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  color: #3B2568;
+  transition: color 0.2s ease;
+}
+
+.contacto__wa-link:hover .contacto__wa-ico,
+.contacto__wa-link:hover span {
+  color: #C8922A;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 767px) {
+  .contacto__layout {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .contacto__imagen {
+    width: 100%;
+    min-height: 280px;
+    height: 280px;
+    position: relative;
+  }
+
+  .contacto__img {
+    position: absolute;
+  }
+
+  .contacto__img-fade-right {
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      #FAF7F2 100%
+    );
+  }
+
+  .contacto__copy {
+    width: 100%;
+    padding: 40px 24px;
+  }
+
+  .contacto__title {
+    font-size: 38px;
+  }
+
+  .contacto__btn-obra {
+    max-width: 100%;
+  }
 }
 
 /* =========================================================
