@@ -1628,11 +1628,15 @@ body.menu-open .header { z-index: 210; }
 }
 
 .chapter__visual--2 {
-  background: linear-gradient(160deg, var(--color-violeta-medio) 0%, var(--color-violeta-mistico) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .chapter__visual--3 {
-  background: linear-gradient(160deg, var(--color-lavanda-claro) 0%, var(--color-crema) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .chapter__visual-overlay {
