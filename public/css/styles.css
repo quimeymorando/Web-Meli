@@ -2408,6 +2408,12 @@ body.menu-open .header { z-index: 210; }
    ========================================================= */
 
 .contacto {
+  background: linear-gradient(
+    135deg,
+    #FAF7F2 0%,
+    #F5F0FA 50%,
+    #EDE8F5 100%
+  );
   position: relative;
   overflow: hidden;
   padding: 0;
@@ -2510,6 +2516,7 @@ body.menu-open .header { z-index: 210; }
   align-items: flex-start;
   position: relative;
   z-index: 3;
+  background: transparent;
 }
 
 /* Label versales */
