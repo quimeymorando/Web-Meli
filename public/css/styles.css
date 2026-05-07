@@ -2377,7 +2377,7 @@ body.menu-open .header { z-index: 210; }
 
 .contacto__title em {
   font-style: italic;
-  color: var(--color-dorado);
+  color: var(--color-dorado-claro);
 }
 
 .contacto__lead {
@@ -2393,18 +2393,19 @@ body.menu-open .header { z-index: 210; }
 }
 
 .contacto__cta-btn {
-  background-color: var(--color-dorado);
-  color: var(--color-violeta-profundo);
+  background: linear-gradient(135deg, #D4A843, #E8C460);
+  color: #ffffff;
   font-weight: var(--w-semibold);
   padding: var(--space-4) var(--space-7);
   font-size: 1.05rem;
-  box-shadow: 0 12px 32px rgba(201, 169, 97, 0.3);
+  box-shadow: 0 12px 32px rgba(212, 168, 67, 0.3);
 }
 
 .contacto__cta-btn:hover {
-  background-color: var(--color-dorado-claro);
-  color: var(--color-violeta-profundo);
-  box-shadow: 0 16px 40px rgba(201, 169, 97, 0.45);
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  color: #ffffff;
+  box-shadow: 0 16px 40px rgba(212, 168, 67, 0.45);
 }
 
 .contacto__cta-note {
