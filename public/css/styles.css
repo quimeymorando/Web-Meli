@@ -3562,12 +3562,12 @@ body.menu-open .header { z-index: 210; }
   align-items: center;
   padding: var(--space-3) var(--space-5);
   border-radius: var(--radius-pill);
-  border: 1px solid rgba(201,169,97,0.4);
+  border: 1px solid rgba(201,169,97,0.6);
   font-family: var(--font-display);
   font-style: italic;
   font-size: var(--fs-small);
-  color: var(--color-lavanda);
-  background: rgba(255,255,255,0.05);
+  color: var(--color-violeta-profundo);
+  background: rgba(255,255,255,0.15);
   transition: border-color var(--t-fast), background var(--t-fast);
 }
 
