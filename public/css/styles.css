@@ -3753,6 +3753,25 @@ body.menu-open .header { z-index: 210; }
   opacity: 0.7;
 }
 
+/* Tercera card: Método MelisArt Premium */
+.servicios__grid > .servicio:nth-child(3) {
+  border: 1.5px solid rgba(212, 168, 67, 0.70);
+  box-shadow: 0 8px 40px rgba(212, 168, 67, 0.15), 0 2px 8px rgba(59, 37, 104, 0.10);
+  background: linear-gradient(180deg, rgba(255, 250, 240, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  border-top: 3px solid #D4A843;
+}
+
+.servicios__grid > .servicio:nth-child(3) .servicio__badge-tag {
+  background: linear-gradient(135deg, #B8820A, #D4A843);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  opacity: 1;
+}
+
 .servicios__bottom {
   margin-top: var(--space-8);
   background: var(--color-violeta-profundo);
