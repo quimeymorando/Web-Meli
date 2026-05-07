@@ -118,6 +118,7 @@
 @media (min-width: 1080px) {
   .header__cta {
     display: inline-flex;
+    padding: var(--space-3) var(--space-5);
     font-size: 0.92rem;
   }
 }
@@ -1314,40 +1315,19 @@ body.menu-open .header { z-index: 210; }
 
 .servicio__cta .btn {
   width: 100%;
-  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
-  color: #FFFFFF;
-  border: none;
-  border-radius: 50px;
-  padding: 16px 36px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.25s ease;
 }
 
-.servicio__cta .btn:hover {
-  filter: brightness(1.08);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(184,130,10,0.35);
-}
-
-/* CTA específico de la card destacada: gradient dorado brillante */
+/* CTA específico de la card destacada: dorado sólido sobre violeta */
 .servicio--destacado .servicio__cta .btn {
-  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
-  color: #FFFFFF;
-  border: none;
-  border-radius: 50px;
-  padding: 16px 36px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.25s ease;
+  background-color: var(--color-dorado);
+  color: var(--color-violeta-profundo);
+  border-color: var(--color-dorado);
+  font-weight: var(--w-semibold);
 }
 
 .servicio--destacado .servicio__cta .btn:hover {
-  filter: brightness(1.08);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(184,130,10,0.35);
+  background-color: var(--color-dorado-claro);
+  color: var(--color-violeta-profundo);
 }
 
 /* =========================================================
@@ -1361,14 +1341,13 @@ body.menu-open .header { z-index: 210; }
   overflow: clip;
 }
 
-/* Ornamento geométrico: árbol de la vida (Sephiroth) */
+/* Ornamento geométrico: flor de la vida */
 .sobre-mi__ornament {
   position: absolute;
-  top: 12%;
-  right: -8%;
-  width: clamp(280px, 34vw, 460px);
-  opacity: 0.12;
-  color: var(--color-violeta-profundo);
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  height: 180px;
   pointer-events: none;
   user-select: none;
   z-index: 0;
@@ -1471,60 +1450,22 @@ body.menu-open .header { z-index: 210; }
   }
 }
 
-.sobre-mi__perfil-frame {
-  position: relative;
-  width: 100%;
-  max-width: 360px;
-  aspect-ratio: 4 / 5;
-  border: 1px solid rgba(201, 169, 97, 0.35);
-  padding: var(--space-3);
-  background-color: var(--color-blanco);
+.sobre-mi__perfil-arc {
+  width: 320px;
+  height: 420px;
+  border-radius: 160px 160px 12px 12px;
+  overflow: hidden;
+  border: 2px solid rgba(212, 168, 67, 0.60);
   box-shadow: var(--shadow-md), var(--shadow-gold);
-  isolation: isolate;
-}
-
-.sobre-mi__perfil-frame::before {
-  content: "";
-  position: absolute;
-  inset: 8px;
-  border: 1px solid var(--color-dorado);
-  pointer-events: none;
-  z-index: 2;
-  opacity: 0.5;
+  flex-shrink: 0;
 }
 
 .sobre-mi__perfil-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   display: block;
-  filter: saturate(0.95) contrast(1.02);
-}
-
-/* Esquinas dorada estilo paspartú */
-.sobre-mi__perfil-corner {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  border: 1.5px solid var(--color-dorado);
-  z-index: 3;
-  pointer-events: none;
-}
-.sobre-mi__perfil-corner--tl {
-  top: -2px; left: -2px;
-  border-right: none; border-bottom: none;
-}
-.sobre-mi__perfil-corner--tr {
-  top: -2px; right: -2px;
-  border-left: none; border-bottom: none;
-}
-.sobre-mi__perfil-corner--bl {
-  bottom: -2px; left: -2px;
-  border-right: none; border-top: none;
-}
-.sobre-mi__perfil-corner--br {
-  bottom: -2px; right: -2px;
-  border-left: none; border-top: none;
 }
 
 .sobre-mi__perfil-caption {
@@ -1795,35 +1736,76 @@ body.menu-open .header { z-index: 210; }
 }
 
 /* ---- Quote final destacada ---- */
-.sobre-mi__quote {
-  margin-top: var(--space-8);
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: var(--space-6);
-  align-items: start;
-  max-width: 900px;
-  margin-inline: auto;
-  padding: var(--space-6) var(--space-6);
-}
-
-@media (min-width: 700px) {
-  .sobre-mi__quote {
-    padding: var(--space-8) var(--space-9);
-    gap: var(--space-7);
-  }
-}
-
-.sobre-mi__quote-bar {
-  width: 2px;
-  background-color: var(--color-dorado);
-  border-radius: 2px;
-  align-self: stretch;
-}
-
-.sobre-mi__quote-content {
+/* ---------- SOBRE MÍ: frase card ---------- */
+.sobre-mi__frase-card {
+  max-width: 720px;
+  margin: 48px auto 0;
+  background: rgba(237, 232, 245, 0.60);
+  border: 1px solid rgba(212, 168, 67, 0.35);
+  border-radius: 16px;
+  padding: 28px 36px;
   display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
+  align-items: center;
+  gap: 24px;
+}
+
+.sobre-mi__frase-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(212, 168, 67, 0.12);
+  border: 1px solid rgba(212, 168, 67, 0.40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sobre-mi__frase-icon {
+  width: 32px;
+  height: 32px;
+  stroke: #C8922A;
+  stroke-width: 1.2;
+  fill: none;
+}
+
+.sobre-mi__frase-sep {
+  width: 1px;
+  height: 60px;
+  background: rgba(212, 168, 67, 0.40);
+  flex-shrink: 0;
+}
+
+.sobre-mi__frase-texto {
+  margin: 0;
+  padding: 0;
+}
+
+.sobre-mi__frase-texto p {
+  margin: 0;
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #1E1035;
+}
+
+.sobre-mi__frase-texto p em {
+  font-style: italic;
+  color: #C8922A;
+}
+
+@media (max-width: 600px) {
+  .sobre-mi__frase-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+  .sobre-mi__frase-sep {
+    width: 60px;
+    height: 1px;
+  }
 }
 
 .sobre-mi__quote-text {
@@ -2406,22 +2388,18 @@ body.menu-open .header { z-index: 210; }
 }
 
 .contacto__cta-btn {
-  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
-  color: #FFFFFF;
-  border: none;
-  border-radius: 50px;
-  padding: 16px 36px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  box-shadow: var(--shadow-md);
+  background-color: var(--color-dorado);
+  color: var(--color-violeta-profundo);
+  font-weight: var(--w-semibold);
+  padding: var(--space-4) var(--space-7);
+  font-size: 1.05rem;
+  box-shadow: 0 12px 32px rgba(201, 169, 97, 0.3);
 }
 
 .contacto__cta-btn:hover {
-  filter: brightness(1.08);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(184,130,10,0.35);
+  background-color: var(--color-dorado-claro);
+  color: var(--color-violeta-profundo);
+  box-shadow: 0 16px 40px rgba(201, 169, 97, 0.45);
 }
 
 .contacto__cta-note {
@@ -2665,27 +2643,19 @@ body.menu-open .header { z-index: 210; }
 
 /* ---------- BOTÓN DORADO ---------- */
 .btn--gold {
-  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
-  color: #FFFFFF;
-  border: none;
-  border-radius: 50px;
-  padding: 16px 36px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.25s ease;
+  background-color: var(--color-dorado);
+  color: var(--color-violeta-profundo);
   box-shadow: var(--shadow-md);
 }
 .btn--gold:hover {
-  filter: brightness(1.08);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(184,130,10,0.35);
+  background-color: var(--color-dorado-claro);
+  box-shadow: var(--shadow-gold);
 }
 .section--violeta .btn--gold,
 .metodo .btn--gold,
 .testimonios .btn--gold {
-  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
-  color: #FFFFFF;
+  background-color: var(--color-dorado);
+  color: var(--color-violeta-profundo);
 }
 
 /* ---------- HERO: WA inline link ---------- */
@@ -3429,39 +3399,70 @@ body.menu-open .header { z-index: 210; }
   opacity: 0.8;
 }
 
-/* ---------- SOBRE MÍ: badges ---------- */
-.sobre-mi__badges {
+/* ---------- SOBRE MÍ: credenciales ---------- */
+.sobre-mi__creds {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-5) 0 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  margin-top: var(--space-5);
+  gap: 0;
 }
 
-.sobre-mi__badge {
+.sobre-mi__cred {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  font-family: var(--font-micro);
-  font-size: var(--fs-small);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-tinta-suave);
-  padding: var(--space-3) var(--space-4);
-  background: rgba(255,255,255,0.5);
-  border: 1px solid rgba(201,169,97,0.25);
-  border-radius: var(--radius-md);
-  border-left: 3px solid var(--color-dorado);
+  gap: 16px;
+  margin-bottom: 20px;
 }
 
-.sobre-mi__badge strong {
-  color: var(--color-violeta-profundo);
-}
-
-.sobre-mi__badge-icon {
-  width: 20px;
-  height: 20px;
+.sobre-mi__cred-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(196, 168, 224, 0.25);
+  border: 1px solid rgba(212, 168, 67, 0.30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  color: var(--color-dorado);
+}
+
+.sobre-mi__cred-icon {
+  width: 22px;
+  height: 22px;
+  stroke: #C8922A;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.sobre-mi__cred-sep {
+  width: 1px;
+  height: 40px;
+  background: rgba(212, 168, 67, 0.50);
+  flex-shrink: 0;
+}
+
+.sobre-mi__cred-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sobre-mi__cred-title {
+  font-family: var(--font-micro);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #1E1035;
+  text-transform: uppercase;
+}
+
+.sobre-mi__cred-sub {
+  font-family: var(--font-micro);
+  font-size: 12px;
+  font-weight: 400;
+  color: #C8922A;
 }
 
 /* ---------- MI HISTORIA (nueva sección) ---------- */
