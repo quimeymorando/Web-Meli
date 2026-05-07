@@ -2697,6 +2697,7 @@ body.menu-open .header { z-index: 210; }
 
   .contacto__copy {
     width: 100%;
+    margin-left: 0;
     padding: 40px 24px;
   }
 
@@ -4263,7 +4264,6 @@ body.menu-open .header { z-index: 210; }
   overflow: hidden;
   line-height: 0;
   margin-top: -2px;
-}
 }
 
 /* ---- WhatsApp sticky (todos los dispositivos) ---- */
