@@ -2657,10 +2657,15 @@ body.menu-open .header { z-index: 210; }
   box-shadow: var(--shadow-gold);
 }
 .section--violeta .btn--gold,
-.metodo .btn--gold,
-.testimonios .btn--gold {
+.metodo .btn--gold {
   background-color: var(--color-dorado);
   color: var(--color-violeta-profundo);
+}
+
+.testimonios .btn--gold {
+  background-color: var(--color-dorado-claro);
+  color: var(--color-violeta-profundo);
+  box-shadow: 0 8px 24px rgba(232, 196, 96, 0.35);
 }
 
 .testimonios .btn--ghost {
@@ -3562,14 +3567,12 @@ body.menu-open .header { z-index: 210; }
   align-items: center;
   padding: var(--space-3) var(--space-5);
   border-radius: var(--radius-pill);
-  border: 1px solid rgba(201,169,97,0.6);
+  border: 1.5px solid var(--color-dorado-claro);
   font-family: var(--font-display);
   font-style: italic;
   font-size: var(--fs-small);
   color: var(--color-violeta-profundo);
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.35);
   transition: border-color var(--t-fast), background var(--t-fast);
 }
 
