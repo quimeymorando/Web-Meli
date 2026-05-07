@@ -3449,6 +3449,32 @@ body.menu-open .header { z-index: 210; }
   .metodo2__btn { width: 100%; max-width: 320px; }
 }
 
+/* Esquinas decorativas inferiores */
+.metodo2__corner {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  opacity: 0.8;
+  object-fit: contain;
+}
+
+.metodo2__corner--left {
+  left: 0;
+}
+
+.metodo2__corner--right {
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .metodo2__corner {
+    width: 120px;
+    height: 120px;
+    opacity: 0.6;
+  }
+}
+
 /* ---------- 3 PILARES ---------- */
 .pilares {
   background-color: #2D1B52;
