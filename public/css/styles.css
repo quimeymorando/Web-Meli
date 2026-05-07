@@ -46,8 +46,8 @@
 }
 
 .header__logo-mark {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -70,10 +70,7 @@
   font-size: 0.6rem;
   letter-spacing: var(--ls-xwide);
   text-transform: uppercase;
-  background: linear-gradient(135deg, #C8952A 0%, #F0D060 35%, #E8C460 50%, #F5E88A 65%, #D4A843 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-violeta-profundo);
   margin-top: 4px;
 }
 
@@ -284,10 +281,7 @@ body.menu-open .header { z-index: 210; }
 
 .hero__title em {
   font-style: italic;
-  background: linear-gradient(135deg, #C8952A 0%, #F0D060 35%, #E8C460 50%, #F5E88A 65%, #D4A843 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #D4A843;
 }
 
 /* Divisor dorado con rombo central */
@@ -3502,7 +3496,7 @@ body.menu-open .header { z-index: 210; }
 
 .metodo2__frase em {
   font-style: italic;
-  background: linear-gradient(135deg, #5C3A9A 0%, #8B62C4 25%, #C8B0E0 50%, #8B62C4 75%, #5C3A9A 100%);
+  background: linear-gradient(135deg, #FFD700 0%, #FFF8DC 30%, #FFD700 50%, #FFF8DC 70%, #FFD700 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
