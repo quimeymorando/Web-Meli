@@ -1,0 +1,509 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "MelisArt — inicio" [ref=e4] [cursor=pointer]:
+        - /url: "#top"
+        - img "MelisArt Logo" [ref=e5]
+        - generic [ref=e6]:
+          - generic [ref=e7]: MelisArt
+          - generic [ref=e8]: Arquitecta de Realidades
+      - navigation "Navegación principal" [ref=e9]:
+        - link "Inicio" [ref=e10] [cursor=pointer]:
+          - /url: "#top"
+        - link "Método" [ref=e11] [cursor=pointer]:
+          - /url: "#metodo"
+        - link "Servicios" [ref=e12] [cursor=pointer]:
+          - /url: "#servicios"
+        - link "Sobre mí" [ref=e13] [cursor=pointer]:
+          - /url: "#sobre-mi"
+        - link "Testimonios" [ref=e14] [cursor=pointer]:
+          - /url: "#testimonios"
+        - link "Contacto" [ref=e15] [cursor=pointer]:
+          - /url: "#contacto"
+      - link "Escribime" [ref=e16] [cursor=pointer]:
+        - /url: https://wa.me/34625330619?text=Hola%20Meli!%20Vi%20tu%20web%20y%20quiero%20escribirte.%20%C2%BFPodemos%20hablar%3F
+        - img [ref=e17]
+        - text: Escribime
+  - main [ref=e19]:
+    - region "Dejá de habitar, estructuras prestadas." [ref=e20]:
+      - generic [ref=e22]:
+        - heading "Dejá de habitar, estructuras prestadas." [level=1] [ref=e23]:
+          - text: Dejá de habitar,
+          - emphasis [ref=e24]: estructuras prestadas.
+        - generic [ref=e27]: ◆
+        - paragraph [ref=e29]: Transformo confusión emocional en claridad, dirección y acción real.
+        - paragraph [ref=e30]: Acompaño procesos de transformación profunda integrando coaching, tarot evolutivo y activación energética para que dejes de repetir patrones y empieces a elegir tu vida con conciencia.
+        - generic [ref=e31]:
+          - link "Estoy lista para el cambio →" [ref=e32] [cursor=pointer]:
+            - /url: https://wa.me/34625330619?text=Hola%20Meli!%20Estoy%20lista%20para%20el%20cambio.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20empezamos%3F
+          - link "Doy el primer paso" [ref=e33] [cursor=pointer]:
+            - /url: https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20dar%20el%20primer%20paso.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20funciona%3F
+      - generic [ref=e34]:
+        - generic [ref=e35]: SCROLL PARA DESCUBRIR
+        - img [ref=e36]
+    - region "¿Te reconocés en alguno de estos?" [ref=e38]:
+      - img
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Esto es para vos si…
+          - heading "¿Te reconocés en alguno de estos?" [level=2] [ref=e44]:
+            - text: ¿Te reconocés en
+            - emphasis [ref=e45]: alguno de estos?
+          - paragraph [ref=e46]: No estás rota. Estás repitiendo. Y eso se interviene.
+        - list "Señales que indican que este proceso es para vos" [ref=e47]:
+          - listitem [ref=e48]:
+            - generic [ref=e49]: ✦
+            - paragraph [ref=e50]: Te sentís en un loop emocional y no sabés cómo salir.
+          - listitem [ref=e51]:
+            - generic [ref=e52]: ✦
+            - paragraph [ref=e53]: Pensás mucho pero te cuesta avanzar.
+          - listitem [ref=e54]:
+            - generic [ref=e55]: ✦
+            - paragraph [ref=e56]: Tenés momentos de claridad, pero no los sostenés.
+          - listitem [ref=e57]:
+            - generic [ref=e58]: ✦
+            - paragraph [ref=e59]: Repetís patrones en vínculos, decisiones o trabajo.
+          - listitem [ref=e60]:
+            - generic [ref=e61]: ✦
+            - paragraph [ref=e62]: Sabés que querés algo distinto, pero no terminás de accionar.
+        - blockquote [ref=e63]:
+          - img
+          - paragraph [ref=e64]: El reencuadre
+          - paragraph [ref=e66]:
+            - text: No te falta claridad.
+            - text: Te falta
+            - strong [ref=e67]: orden, dirección y sostén.
+    - img [ref=e73]
+    - region "Método M.E.L.I.S.A.R.T." [ref=e75]:
+      - img
+      - img
+      - img
+      - img
+      - img
+      - img
+      - img
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: ✦ EL PLANO MAESTRO ✦
+        - heading "Método M.E.L.I.S.A.R.T." [level=2] [ref=e78]:
+          - text: Método
+          - text: M.E.L.I.S.A.R.T.
+        - generic [ref=e81]: ◆
+        - paragraph [ref=e83]: Ascensión estructural de la conciencia
+        - paragraph [ref=e84]: Cada etapa trabaja una dimensión esencial de tu ser y de tu realidad. Este método ordena tu proceso en etapas claras para que el cambio no sea momentáneo, sino real y sostenido.
+      - generic [ref=e85]:
+        - img [ref=e87]
+        - generic [ref=e88]:
+          - generic:
+            - generic: ✦
+            - generic: ✦
+            - generic: ✦
+            - generic: ✦
+            - generic: ✦
+            - generic: ✦
+            - generic: ✦
+            - generic: ✦
+          - list "Las 8 etapas del Método M.E.L.I.S.A.R.T." [ref=e89]:
+            - listitem [ref=e90]:
+              - generic [ref=e91]: M
+              - img [ref=e93]
+              - generic [ref=e96]:
+                - generic [ref=e97]:
+                  - text: M – Materia
+                  - emphasis [ref=e98]: (Cimiento)
+                - generic [ref=e99]: Observación del suelo interno y la energía física.
+            - listitem [ref=e100]:
+              - generic [ref=e101]: E
+              - img [ref=e103]
+              - generic [ref=e106]:
+                - generic [ref=e107]:
+                  - text: E – Espejo
+                  - emphasis [ref=e108]: (Visión)
+                - generic [ref=e109]: Diagnóstico. Detectar grietas, valorar pilares.
+            - listitem [ref=e110]:
+              - generic [ref=e111]: L
+              - img [ref=e113]
+              - generic [ref=e115]:
+                - generic [ref=e116]:
+                  - text: L – Libertad
+                  - emphasis [ref=e117]: (Diseño)
+                - generic [ref=e118]: Trabajar la hoja en blanco. Anteproyecto.
+            - listitem [ref=e119]:
+              - generic [ref=e120]: I
+              - img [ref=e122]
+              - generic [ref=e124]:
+                - generic [ref=e125]:
+                  - text: I – Inspiración
+                  - emphasis [ref=e126]: (Soplo)
+                - generic [ref=e127]: Conectar con la verdad interna.
+            - listitem [ref=e128]:
+              - generic [ref=e129]: S
+              - img [ref=e131]
+              - generic [ref=e134]:
+                - generic [ref=e135]:
+                  - text: S – Salto / Soltar
+                  - emphasis [ref=e136]: (Desapego)
+                - generic [ref=e137]: El puente entre el diseño y la realidad.
+            - listitem [ref=e138]:
+              - generic [ref=e139]: A
+              - img [ref=e141]
+              - generic [ref=e146]:
+                - generic [ref=e147]:
+                  - text: A – Arte
+                  - emphasis [ref=e148]: (Expresión)
+                - generic [ref=e149]: Pulir la obra que ya eres. Elegir tu estilo.
+            - listitem [ref=e150]:
+              - generic [ref=e151]: R
+              - img [ref=e153]
+              - generic [ref=e155]:
+                - generic [ref=e156]:
+                  - text: R – Resiliencia
+                  - emphasis [ref=e157]: (Firmeza)
+                - generic [ref=e158]: Estructura consciente ante el movimiento externo.
+            - listitem [ref=e159]:
+              - generic [ref=e160]: T
+              - img [ref=e162]
+              - generic [ref=e165]:
+                - generic [ref=e166]:
+                  - text: T – Todo
+                  - emphasis [ref=e167]: (Integración / Habitar)
+                - generic [ref=e168]: La obra habitada y coherente.
+      - generic [ref=e169]:
+        - generic [ref=e172]: ◆
+        - paragraph [ref=e174]:
+          - text: No es magia. No es intuición sin dirección.
+          - emphasis [ref=e175]: Es un proceso estructurado para reconstruirte desde la raíz.
+        - generic [ref=e176]:
+          - link "✦ Estoy lista para el cambio" [ref=e177] [cursor=pointer]:
+            - /url: https://wa.me/34625330619?text=Hola%20Meli!%20Estoy%20lista%20para%20el%20cambio.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20empezamos%3F
+          - link "✦ Doy el primer paso" [ref=e178] [cursor=pointer]:
+            - /url: https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20dar%20el%20primer%20paso.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20funciona%3F
+      - img
+      - img
+    - img [ref=e180]
+    - region "Tres pilares. Una sola dirección." [ref=e182]:
+      - img
+      - img
+      - img
+      - img
+      - img
+      - img
+      - img
+      - img
+      - generic [ref=e183]:
+        - generic [ref=e184]:
+          - paragraph [ref=e185]: ✦ LOS PILARES ✦
+          - heading "Tres pilares. Una sola dirección." [level=2] [ref=e188]
+          - paragraph [ref=e189]: La estructura que sostiene cada proceso.
+          - paragraph [ref=e190]: No se trata de motivarte ni de darte herramientas sueltas. Acompaño procesos reales de transformación profunda a través de un método propio que integra 3 pilares fundamentales y un plano maestro de trabajo.
+        - generic [ref=e191]:
+          - generic [ref=e192]:
+            - paragraph [ref=e195]: "01"
+            - heading "DISEÑO" [level=3] [ref=e196]
+            - paragraph [ref=e197]: Claridad y dirección.
+            - paragraph [ref=e198]: Vemos tu mapa actual, identificamos patrones, creencias y estructuras que están definiendo tu realidad.
+          - generic [ref=e199]:
+            - img [ref=e201]
+            - paragraph [ref=e203]: "02"
+            - heading "ACCIÓN" [level=3] [ref=e204]
+            - paragraph [ref=e205]: Decisión y movimiento.
+            - paragraph [ref=e206]: Transformamos esa claridad en decisiones concretas y acciones alineadas para que empieces a vivir distinto.
+          - generic [ref=e207]:
+            - img [ref=e209]
+            - paragraph [ref=e212]: "03"
+            - heading "AJUSTE" [level=3] [ref=e213]
+            - paragraph [ref=e214]: Integración y evolución.
+            - paragraph [ref=e215]: Revisamos, recalibramos y sostenemos el proceso para que el cambio sea real y duradero.
+        - generic [ref=e216]:
+          - paragraph [ref=e217]: No trabajo con parches.
+          - paragraph [ref=e218]:
+            - emphasis [ref=e219]: Trabajo con estructura.
+    - img [ref=e221]
+    - region "No todas estás en el mismo momento." [ref=e223]:
+      - img
+      - img
+      - generic [ref=e224]:
+        - generic [ref=e225]:
+          - paragraph [ref=e226]: ✦ Servicios ✦
+          - heading "No todas estás en el mismo momento." [level=2] [ref=e229]
+          - paragraph [ref=e230]: Elegí por dónde empezar.
+          - paragraph [ref=e231]: Cada proceso está pensado para acompañarte según dónde estás hoy.
+        - generic [ref=e232]:
+          - article [ref=e233]:
+            - generic [ref=e234]:
+              - generic [ref=e235]: I.
+              - img [ref=e236]
+            - heading "ACTIVACIÓN" [level=3] [ref=e242]
+            - paragraph [ref=e243]: CLARIDAD PARA AVANZAR
+            - paragraph [ref=e244]:
+              - strong [ref=e245]: ¿Para quién es?
+              - text: Si estás bloqueada, confundida o necesitás claridad puntual.
+            - paragraph [ref=e246]: ¿Qué trabajamos?
+            - list [ref=e247]:
+              - listitem [ref=e248]: + ✦ Desbloqueo emocional
+              - listitem [ref=e249]: + ✦ Claridad sobre una situación
+              - listitem [ref=e250]: + ✦ Movimiento energético
+            - generic [ref=e251]:
+              - generic [ref=e252]: Resultado
+              - paragraph [ref=e253]: Salís con claridad y dirección concreta.
+            - link "Quiero claridad ahora →" [ref=e255] [cursor=pointer]:
+              - /url: https://wa.me/34625330619?text=Hola%20Meli!%20Vi%20tu%20web%20y%20quiero%20reservar%20una%20*Activaci%C3%B3n*.%20%C2%BFMe%20cont%C3%A1s%20los%20pr%C3%B3ximos%20pasos%3F
+          - article [ref=e256]:
+            - generic [ref=e257]:
+              - generic [ref=e258]: II.
+              - img [ref=e259]
+            - heading "ACOMPAÑAMIENTO 1:1" [level=3] [ref=e267]
+            - paragraph [ref=e268]: PROCESO Y TRANSFORMACIÓN
+            - paragraph [ref=e269]:
+              - strong [ref=e270]: ¿Para quién es?
+              - text: Si querés sostener un proceso y dejar de repetir patrones.
+            - paragraph [ref=e271]: ¿Qué trabajamos?
+            - list [ref=e272]:
+              - listitem [ref=e273]: + ✦ Orden mental y emocional
+              - listitem [ref=e274]: + ✦ Decisiones conscientes
+              - listitem [ref=e275]: + ✦ Cambio de hábitos y estructura
+            - generic [ref=e276]:
+              - generic [ref=e277]: Resultado
+              - paragraph [ref=e278]: Empezás a vivir distinto, no solo a entender.
+            - link "Quiero empezar mi proceso →" [ref=e280] [cursor=pointer]:
+              - /url: https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20info%20sobre%20el%20*Acompa%C3%B1amiento%201%3A1*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20es%20el%20proceso%3F
+          - article [ref=e281]:
+            - generic [ref=e282]:
+              - generic [ref=e283]: III.
+              - img [ref=e284]
+            - heading "MÉTODO MELISART" [level=3] [ref=e297]
+            - paragraph [ref=e298]: TRANSFORMACIÓN PROFUNDA
+            - paragraph [ref=e299]:
+              - strong [ref=e300]: ¿Para quién es?
+              - text: Si estás lista para un cambio profundo y estructural.
+            - paragraph [ref=e301]: ¿Qué trabajamos?
+            - list [ref=e302]:
+              - listitem [ref=e303]: + ✦ Reconstrucción completa
+              - listitem [ref=e304]: + ✦ Identidad, decisiones y dirección
+              - listitem [ref=e305]: + ✦ Diseño de una nueva realidad
+            - generic [ref=e306]:
+              - generic [ref=e307]: Resultado
+              - paragraph [ref=e308]: Dejás de repetir tu historia y empezás a crear una nueva.
+            - link "Estoy lista para ir en serio →" [ref=e310] [cursor=pointer]:
+              - /url: https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20aplicar%20al%20*M%C3%A9todo%20MelisArt*.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20arranca%20el%20proceso%3F
+        - generic [ref=e311]:
+          - paragraph [ref=e312]:
+            - text: No es una sesión. No es motivación momentánea. Es un proceso.
+            - text: Y el nivel de cambio depende de cuánto estés dispuesta a involucrarte.
+          - paragraph [ref=e313]: ✦ ¿No sabés por dónde empezar?
+          - link "Hablemos y te acompaño a elegir →" [ref=e314] [cursor=pointer]:
+            - /url: https://wa.me/34625330619?text=Hola%20Meli!%20No%20s%C3%A9%20bien%20por%20d%C3%B3nde%20empezar.%20%C2%BFMe%20acompa%C3%B1%C3%A1s%20a%20elegir%3F
+            - img [ref=e315]
+            - text: Hablemos y te acompaño a elegir →
+    - img [ref=e318]
+    - region "Diseñadora y arquitecta en formación." [ref=e320]:
+      - img
+      - generic [ref=e321]:
+        - generic [ref=e322]:
+          - figure "Melisa Rodríguez" [ref=e323]:
+            - img "Melisa Rodríguez, creadora del Método MelisArt" [ref=e325]
+            - generic [ref=e326]: Melisa Rodríguez
+          - generic [ref=e328]:
+            - paragraph [ref=e329]: — Quién soy
+            - heading "Diseñadora y arquitecta en formación." [level=2] [ref=e331]:
+              - text: Diseñadora
+              - emphasis [ref=e332]: y arquitecta en formación.
+            - paragraph [ref=e333]: "Soy diseñadora de profesión y arquitecta en formación. Durante años diseñé espacios que sostenían vidas ajenas hasta que entendí que la misma lógica con la que se proyecta una casa se puede aplicar a una identidad: cimientos, estructura, luz, escala humana."
+            - paragraph [ref=e334]: "Hoy acompaño a personas a rediseñar su realidad desde la conciencia. Mi trabajo cruza diseño, arquitectura en formación, mentoría y trabajo emocional profundo: tomo herramientas del diseño y las uso para que dejes de habitar una vida que no elegiste."
+            - list "Lo que hago" [ref=e335]:
+              - listitem [ref=e336]:
+                - img [ref=e338]
+                - generic [ref=e344]:
+                  - generic [ref=e345]: DISEÑADORA
+                  - generic [ref=e346]: DE PROFESIÓN
+              - listitem [ref=e347]:
+                - img [ref=e349]
+                - generic [ref=e355]:
+                  - generic [ref=e356]: MENTORA & ACOMPAÑANTE
+                  - generic [ref=e357]: 1:1
+              - listitem [ref=e358]:
+                - img [ref=e360]
+                - generic [ref=e364]: CREADORA DEL MÉTODO MELISART
+        - generic [ref=e365]:
+          - img [ref=e367]
+          - blockquote [ref=e371]:
+            - paragraph [ref=e372]: No te acompaño a sentirte mejor.
+            - paragraph [ref=e373]:
+              - emphasis [ref=e374]: Te acompaño a vivir distinto.
+      - img
+      - img
+    - img [ref=e376]
+    - region "Mi historia no empieza en el cambio." [ref=e378]:
+      - img
+      - generic [ref=e379]:
+        - generic [ref=e380]:
+          - heading "Mi historia no empieza en el cambio." [level=2] [ref=e381]
+          - paragraph [ref=e382]:
+            - emphasis [ref=e383]: Empieza en lo que sostuve sin elegir.
+        - generic [ref=e384]:
+          - article [ref=e385]:
+            - generic [ref=e386]:
+              - generic [ref=e387]: Capítulo I
+              - generic [ref=e388]: I
+            - generic [ref=e389]:
+              - paragraph [ref=e390]: La Base Original
+              - paragraph [ref=e392]: LO QUE SE CONSTRUYÓ SIN QUE LO ELIJAS
+              - heading "Lo que se construyó sin que lo elijas." [level=3] [ref=e393]
+              - paragraph [ref=e394]: "Una infancia marcada por heridas profundas que estructuraron una forma de vivir: la del aguante, la fuerza, el \"bancarla\". Aprendí a sostener estructuras que nunca elegí, creyendo que sostener era construir. Pero no. Era resistir."
+          - article [ref=e395]:
+            - generic [ref=e396]:
+              - generic [ref=e397]: Capítulo II
+              - generic [ref=e398]: II
+            - generic [ref=e399]:
+              - paragraph [ref=e400]: La Grieta
+              - paragraph [ref=e402]: EL MOMENTO DONDE TODO DEJA DE SOSTENER
+              - heading "El momento donde el muro deja de sostener." [level=3] [ref=e403]
+              - paragraph [ref=e404]: Pérdidas materiales irreparables en mi propio hogar y quiebres vinculares que no pude sostener con voluntad. Por primera vez tuve que mirar la obra por dentro. Lo que parecía firme tenía fisuras de origen. La grieta no era el problema. Era la información que había estado evitando.
+          - article [ref=e405]:
+            - generic [ref=e406]:
+              - generic [ref=e407]: Capítulo III
+              - generic [ref=e408]: III
+            - generic [ref=e409]:
+              - paragraph [ref=e410]: La Hoja en Blanco
+              - paragraph [ref=e412]: EL MOMENTO DE ELECCIÓN REAL
+              - heading "La decisión de empezar de nuevo." [level=3] [ref=e413]
+              - paragraph [ref=e414]: "La decisión radical de irme. No solo de país: de identidad. Salir de lo conocido para dejar de habitar estructuras prestadas y empezar a diseñar la propia. Ahí nació el método. No desde teoría. Desde tener que reconstruirme desde cero."
+        - blockquote [ref=e415]:
+          - paragraph [ref=e416]:
+            - text: No te acompaño a sentirte mejor.
+            - text: Te acompaño a
+            - emphasis [ref=e417]: vivir distinto.
+    - img [ref=e419]
+    - region "Tres disciplinas, una sola Obra." [ref=e421]:
+      - img
+      - generic [ref=e422]:
+        - generic [ref=e423]:
+          - paragraph [ref=e424]: Cómo trabajo
+          - heading "Tres disciplinas, una sola Obra." [level=2] [ref=e427]:
+            - text: Tres disciplinas,
+            - emphasis [ref=e428]: una sola Obra.
+          - paragraph [ref=e429]: No se trata solo de tomar conciencia. Se trata de sostener cambios en el tiempo. En cada encuentro vas a entender lo que te pasa y llevarte herramientas concretas para aplicarlo en tu vida.
+        - list "Las tres disciplinas que integro en cada proceso" [ref=e430]:
+          - listitem [ref=e431]:
+            - generic [ref=e432]:
+              - img [ref=e433]
+              - generic [ref=e436]: I
+            - heading "EMOCIONAL" [level=3] [ref=e437]
+            - paragraph [ref=e438]: Identificamos lo que te pasa y los patrones que se repiten.
+            - paragraph [ref=e439]: Diagnóstico
+          - listitem [ref=e440]:
+            - generic [ref=e441]:
+              - img [ref=e442]
+              - generic [ref=e447]: II
+            - heading "ENERGÉTICA" [level=3] [ref=e448]
+            - paragraph [ref=e449]: Accedemos a información profunda a través del tarot, la canalización y la activación.
+            - paragraph [ref=e450]: Diseño
+          - listitem [ref=e451]:
+            - generic [ref=e452]:
+              - img [ref=e453]
+              - generic [ref=e455]: III
+            - heading "ACCIÓN CONCRETA" [level=3] [ref=e456]
+            - paragraph [ref=e457]: Bajamos todo a decisiones reales y pasos claros.
+            - paragraph [ref=e458]: Obra
+        - paragraph [ref=e460]:
+          - text: Claridad sin acción no transforma. Acción sin claridad no se sostiene.
+          - strong [ref=e461]: Acá trabajamos ambas.
+    - img [ref=e463]
+    - region "Historias reales de transformación" [ref=e465]:
+      - generic [ref=e466]:
+        - generic [ref=e467]:
+          - paragraph [ref=e468]: ✦ Testimonios ✦
+          - heading "Historias reales de transformación" [level=2] [ref=e471]:
+            - text: Historias reales de
+            - emphasis [ref=e472]: transformación
+          - paragraph [ref=e473]: Personas reales. Procesos reales. Cambios reales.
+        - generic [ref=e474]:
+          - button "Testimonio anterior" [ref=e475] [cursor=pointer]:
+            - img [ref=e476]
+          - article [ref=e571]:
+            - generic: "\""
+            - paragraph [ref=e572]: "\"Te quiero agradecer mucho por tu acompañamiento durante todo este tiempo.\""
+            - paragraph [ref=e574]: Siempre te he sentido muy equilibrada entre abierta, comprensiva y empática y contundente, directa y enfocada. Esto me ha ayudado mucho a sentirme aceptada en mi propio ritmo y también ser apoyada y motivada a seguir a través de acciones reales (para no aflojar demás en ciertos momentos) a alcanzar mis propósitos. Te agradezco infinitamente.
+            - generic [ref=e575]:
+              - generic [ref=e576]: A
+              - generic [ref=e577]:
+                - generic [ref=e578]: Angelika
+                - generic [ref=e579]: Testimonio
+          - button "Siguiente testimonio" [ref=e489] [cursor=pointer]:
+            - img [ref=e490]
+        - tablist "Testimonios" [ref=e493]:
+          - tab "Testimonio 1" [ref=e494] [cursor=pointer]
+          - tab "Testimonio 2" [ref=e495] [cursor=pointer]
+          - tab "Testimonio 3" [ref=e496] [cursor=pointer]
+          - tab "Testimonio 4" [selected] [ref=e497] [cursor=pointer]
+        - generic [ref=e498]:
+          - generic [ref=e499]: ◈ "Pasé de la confusión a la claridad."
+          - generic [ref=e500]: ◈ "Empecé a tener dirección."
+          - generic [ref=e501]: ◈ "Me ayudó a desbloquearme."
+          - generic [ref=e502]: ◈ "No es solo lo que sabe, es cómo acompaña."
+        - generic [ref=e503]:
+          - paragraph [ref=e504]:
+            - text: Si ellos pudieron salir de ahí,
+            - emphasis [ref=e505]: ✦ vos también podés. ✦
+          - generic [ref=e506]:
+            - link "✦ Estoy lista para el cambio" [ref=e507] [cursor=pointer]:
+              - /url: https://wa.me/34625330619?text=Hola%20Meli!%20Estoy%20lista%20para%20el%20cambio.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20empezamos%3F
+            - link "Quiero empezar de a poco" [ref=e508] [cursor=pointer]:
+              - /url: https://wa.me/34625330619?text=Hola%20Meli!%20Quiero%20dar%20el%20primer%20paso.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20funciona%3F
+      - img
+      - img
+    - img [ref=e510]
+    - region "Hoy diseñamos una vida posible." [ref=e512]:
+      - img
+      - generic: ✦
+      - generic: ✦
+      - generic: ✦
+      - generic: ✦
+      - generic: ✦
+      - generic [ref=e513]:
+        - img "Meli — Arquitecta de Realidades" [ref=e515]
+        - generic [ref=e516]:
+          - paragraph [ref=e517]: — ✦ EL ACTA DE INICIO DE OBRA ✦ —
+          - generic [ref=e519]: ◆
+          - heading "Hoy diseñamos una vida posible." [level=2] [ref=e520]:
+            - text: Hoy diseñamos
+            - text: una vida posible.
+          - generic [ref=e521]:
+            - paragraph [ref=e522]: Tu vida dejó de ser un intento.
+            - paragraph [ref=e523]: Ahora se convierte en una obra.
+          - link "Escribime por WhatsApp y empezamos" [ref=e524] [cursor=pointer]:
+            - /url: https://wa.me/34625330619?text=Hola%20Meli!%20No%20s%C3%A9%20bien%20por%20d%C3%B3nde%20empezar.%20%C2%BFMe%20acompa%C3%B1%C3%A1s%20a%20elegir%3F
+            - img [ref=e526]
+            - generic [ref=e529]: DESDE ESTE MOMENTO, ME DECLARO EN OBRA.
+          - paragraph [ref=e530]: Escribime por WhatsApp y empezamos.
+    - img [ref=e532]
+  - contentinfo [ref=e534]:
+    - generic [ref=e535]:
+      - link "MelisArt — inicio" [ref=e536] [cursor=pointer]:
+        - /url: "#top"
+        - img "MelisArt Logo" [ref=e537]
+        - generic [ref=e538]:
+          - generic [ref=e539]: MelisArt
+          - generic [ref=e540]: Arquitecta de Realidades
+      - paragraph [ref=e541]: Donde la construcción, la conciencia y el alma son una misma Obra.
+    - generic [ref=e544]: ◆
+    - generic [ref=e546]:
+      - link "Instagram" [ref=e547] [cursor=pointer]:
+        - /url: https://instagram.com/melisart
+        - generic [ref=e549]: Instagram @melisart
+      - generic [ref=e550]: ·
+      - link "Correo electrónico" [ref=e551] [cursor=pointer]:
+        - /url: mailto:hola@melisart.com
+        - img [ref=e552]
+        - generic [ref=e555]: hola@melisart.com
+      - generic [ref=e556]: ·
+      - link "WhatsApp" [ref=e557] [cursor=pointer]:
+        - /url: https://wa.me/34625330619?text=Hola%20Meli!%20No%20s%C3%A9%20bien%20por%20d%C3%B3nde%20empezar.%20%C2%BFMe%20acompa%C3%B1%C3%A1s%20a%20elegir%3F
+        - img [ref=e558]
+        - generic [ref=e560]: WhatsApp
+    - generic [ref=e563]: ◆
+    - generic [ref=e565]:
+      - paragraph [ref=e566]: © 2026 MelisArt – Arquitecta de Realidades.
+      - paragraph [ref=e567]: Tu vida dejó de ser un intento. Se vuelve una Obra.
+  - link "Escribinos por WhatsApp" [ref=e568] [cursor=pointer]:
+    - /url: https://wa.me/34625330619?text=Hola%20Meli!%20No%20s%C3%A9%20bien%20por%20d%C3%B3nde%20empezar.%20%C2%BFMe%20acompa%C3%B1%C3%A1s%20a%20elegir%3F
+    - img [ref=e569]

@@ -267,11 +267,7 @@ body.menu-open .header { z-index: 210; }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    ellipse at 30% 50%,
-    rgba(14, 6, 28, 0.15) 0%,
-    transparent 70%
-  );
+  background: transparent;
   pointer-events: none;
   z-index: -1;
 }
@@ -1817,13 +1813,34 @@ body.menu-open .header { z-index: 210; }
   color: #C8922A;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  /* Imagen: más compacta en mobile */
+  .sobre-mi__perfil-arc {
+    width: 240px;
+    height: 360px;
+    border-radius: 120px 120px 8px 8px;
+  }
+
+  /* Card de frase con brújula: visible en mobile, diseño vertical */
   .sobre-mi__frase-card {
+    display: flex;
     flex-direction: column;
     text-align: center;
     padding: 24px 20px;
-    gap: 16px;
+    gap: 14px;
+    margin: 32px auto 0;
   }
+
+  /* 5.svg: visible en mobile como decoración de fondo */
+  .sobre-mi__corner--right {
+    display: block;
+    right: -80px;
+    height: 420px;
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 600px) {
   .sobre-mi__frase-sep {
     width: 60px;
     height: 1px;
@@ -1853,6 +1870,12 @@ body.menu-open .header { z-index: 210; }
 @media (max-width: 767px) {
   .sobre-mi__corner {
     display: none;
+  }
+  .sobre-mi__corner--right {
+    display: block;
+    right: -80px;
+    height: 420px;
+    opacity: 0.35;
   }
 }
 
@@ -2394,11 +2417,33 @@ body.menu-open .header { z-index: 210; }
   }
 
   .testimonio-card {
-    padding: 32px 24px;
+    padding: 24px 20px;
+  }
+
+  .testimonio-card__comilla {
+    font-size: 56px;
   }
 
   .testimonio-card__quote {
-    font-size: 20px;
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+
+  .testimonio-card__text {
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 20px;
+  }
+
+  /* 4.svg visible como decoración de fondo en mobile */
+  .testimonios__corner--left {
+    display: block !important;
+    left: -80px;
+    height: 420px;
+    opacity: 0.35;
+  }
+  .testimonios__corner--right {
+    display: none;
   }
 }
 
@@ -2776,6 +2821,25 @@ body.menu-open .header { z-index: 210; }
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* Servicios: header más compacto en mobile */
+  .servicio {
+    gap: var(--space-3);
+    padding: var(--space-5) var(--space-5);
+  }
+  .servicio__header {
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .servicio__edificio {
+    width: 24px;
+    height: 34px;
+  }
+  .servicio__num {
+    font-size: 1.05rem;
+  }
 }
 
 /* =========================================================
@@ -3093,13 +3157,21 @@ body.menu-open .header { z-index: 210; }
 /* Geometría sagrada esquina superior derecha */
 .metodo2__geo {
   position: absolute;
-  top: 20px;
-  right: 80px;
   width: 320px;
   opacity: 0.75;
   pointer-events: none;
   user-select: none;
   z-index: 0;
+}
+
+.metodo2__geo--top {
+  top: 50px;
+  left: 5%;
+}
+
+.metodo2__geo--bottom {
+  bottom: 100px;
+  right: 8%;
 }
 
 /* Sparkles */
@@ -3109,12 +3181,12 @@ body.menu-open .header { z-index: 210; }
   z-index: 0;
   animation: sparkle-pulse 3s infinite ease-in-out;
 }
-.metodo2__sparkle--1 { width: 14px; top: 15%; left: 60%; animation-delay: 0s; }
-.metodo2__sparkle--2 { width: 10px; top: 30%; left: 20%; animation-delay: 0.8s; }
-.metodo2__sparkle--3 { width: 12px; top: 60%; left: 75%; animation-delay: 1.6s; }
-.metodo2__sparkle--4 { width: 8px;  top: 45%; left: 40%; animation-delay: 2.4s; }
-.metodo2__sparkle--5 { width: 14px; top: 75%; left: 55%; animation-delay: 0.4s; }
-.metodo2__sparkle--6 { width: 10px; top: 85%; left: 30%; animation-delay: 1.2s; }
+.metodo2__sparkle--1 { width: 14px; top: 25%; left: 35%; animation-delay: 0s; }
+.metodo2__sparkle--2 { width: 10px; top: 50%; left: 70%; animation-delay: 0.8s; }
+.metodo2__sparkle--3 { width: 12px; top: 70%; left: 42%; animation-delay: 1.6s; }
+.metodo2__sparkle--4 { width: 8px;  top: 35%; left: 65%; animation-delay: 2.4s; }
+.metodo2__sparkle--5 { width: 14px; top: 55%; left: 30%; animation-delay: 0.4s; }
+.metodo2__sparkle--6 { width: 10px; top: 75%; left: 60%; animation-delay: 1.2s; }
 
 /* Ramitas lavanda */
 /* BLOQUE 1: Header centrado */
@@ -3270,7 +3342,14 @@ body.menu-open .header { z-index: 210; }
 
 @media (max-width: 767px) {
   .metodo2__decoration-line {
-    display: none;
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .metodo2__decoration-symbol {
+    font-size: 1rem;
   }
 }
 
@@ -3505,6 +3584,12 @@ body.menu-open .header { z-index: 210; }
   .metodo2__corner {
     display: none;
   }
+  .metodo2__corner--left {
+    display: block !important;
+    left: -80px;
+    height: 420px;
+    opacity: 0.35;
+  }
 }
 
 /* z-index para contenido */
@@ -3527,15 +3612,19 @@ body.menu-open .header { z-index: 210; }
 /* Decoraciones geométricas */
 .pilares__geo {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   width: 200px;
   height: 200px;
   pointer-events: none;
   z-index: 0;
 }
-.pilares__geo--left  { left: -20px; }
-.pilares__geo--right { right: -20px; }
+.pilares__geo--left  {
+  left: 3%;
+  top: 5%;
+}
+.pilares__geo--right {
+  right: 4%;
+  bottom: 8%;
+}
 
 /* Sparkles */
 .pilares__sparkle {
@@ -3548,7 +3637,22 @@ body.menu-open .header { z-index: 210; }
 }
 
 @media (max-width: 767px) {
-  .pilares__geo { opacity: 0.10; }
+  .pilares__geo {
+    opacity: 0.10;
+    width: 150px;
+    height: 150px;
+  }
+  .pilares__geo--left {
+    top: 15%;
+    transform: none;
+    left: -30px;
+  }
+  .pilares__geo--right {
+    top: auto;
+    bottom: 15%;
+    transform: none;
+    right: -30px;
+  }
 }
 
 .pilares__header {
@@ -3722,7 +3826,13 @@ body.menu-open .header { z-index: 210; }
   }
 
   .pilares__anchor {
-    padding: 24px 24px;
+    padding: 18px 20px;
+    margin-top: 36px;
+  }
+
+  .pilares__anchor-line1,
+  .pilares__anchor-line2 {
+    font-size: 19px;
   }
 }
 
@@ -3874,6 +3984,20 @@ body.menu-open .header { z-index: 210; }
 
 .servicios__bottom .btn--gold svg {
   fill: #FFFFFF;
+}
+
+.btn__text--mobile { display: none; }
+.btn__text--desktop { display: inline; }
+
+@media (max-width: 768px) {
+  .servicios__bottom .btn--gold {
+    align-self: center;
+    width: auto;
+    font-size: 0.9rem;
+    padding: 12px 22px;
+  }
+  .btn__text--desktop { display: none; }
+  .btn__text--mobile { display: inline; }
 }
 
 /* ---------- SOBRE MÍ: credenciales ---------- */
@@ -4354,4 +4478,11 @@ body.menu-open .header { z-index: 210; }
 }
 #whatsapp-sticky:hover {
   transform: scale(1.08);
+}
+
+/* ---------- HERO: mobile adjustments ---------- */
+@media (max-width: 768px) {
+  .hero__copy::before {
+    background: none !important;
+  }
 }
