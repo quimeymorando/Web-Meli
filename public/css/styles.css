@@ -4330,3 +4330,31 @@ body.menu-open .header { z-index: 210; }
   margin-top: -2px;
 }
 }
+
+/* ---- WhatsApp sticky mobile ---- */
+#whatsapp-sticky {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #whatsapp-sticky {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 24px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.40);
+    z-index: 9999;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+  #whatsapp-sticky:hover {
+    transform: scale(1.08);
+  }
+}
