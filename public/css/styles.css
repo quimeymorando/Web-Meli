@@ -2622,34 +2622,14 @@ body.menu-open .header { z-index: 210; }
   line-height: 1.3;
 }
 
-/* Link WhatsApp secundario */
-.contacto__wa-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.contacto__wa-ico {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  color: #7B5BAA;
-  transition: color 0.2s ease;
-}
-
-.contacto__wa-link span {
+/* Texto secundario */
+.contacto__wa-text {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 16px;
-  color: #3B2568;
-  transition: color 0.2s ease;
-}
-
-.contacto__wa-link:hover .contacto__wa-ico,
-.contacto__wa-link:hover span {
-  color: #C8922A;
+  color: #1E1035;
+  margin: 0;
+  line-height: 1.4;
 }
 
 /* ---- Mobile ---- */

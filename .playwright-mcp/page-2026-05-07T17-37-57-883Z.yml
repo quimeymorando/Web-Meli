@@ -1,0 +1,405 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Coralina — inicio" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Coralina" [ref=e5]
+      - navigation "Primary" [ref=e6]:
+        - link "Trabajos" [ref=e7] [cursor=pointer]:
+          - /url: "#trabajos"
+        - link "Servicios" [ref=e8] [cursor=pointer]:
+          - /url: "#servicios"
+        - link "Sobre mí" [ref=e9] [cursor=pointer]:
+          - /url: "#sobre-mi"
+        - link "Contacto" [ref=e10] [cursor=pointer]:
+          - /url: "#faq"
+      - generic [ref=e11]:
+        - group "Language" [ref=e12]:
+          - generic [ref=e13]:
+            - button "Switch to ES" [pressed] [ref=e14] [cursor=pointer]:
+              - generic [ref=e15]: 🇦🇷
+              - generic [ref=e16]: ES
+            - generic [ref=e17]: ·
+          - generic [ref=e18]:
+            - button "Switch to EN" [ref=e19] [cursor=pointer]:
+              - generic [ref=e20]: 🇺🇸
+              - generic [ref=e21]: EN
+            - generic [ref=e22]: ·
+          - button "Switch to PT" [ref=e24] [cursor=pointer]:
+            - generic [ref=e25]: 🇧🇷
+            - generic [ref=e26]: PT
+        - link "Hablemos →" [ref=e27] [cursor=pointer]:
+          - /url: "#"
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - img
+      - generic [ref=e30]:
+        - heading "CORALINA" [level=1] [ref=e31]
+        - heading "Tu web no es tu tarjeta de presentación. Es tu mejor empleada." [level=2] [ref=e32]
+        - paragraph [ref=e33]: Y si no está trabajando por vos, no está haciendo su trabajo. Diseño webs con alma que conectan, comunican y convierten — pensadas para tu negocio.
+        - generic [ref=e34]:
+          - link "Hablemos →" [ref=e35] [cursor=pointer]:
+            - /url: "#"
+          - link "Ver trabajos →" [ref=e36] [cursor=pointer]:
+            - /url: "#trabajos"
+      - generic [ref=e38]: scroll
+    - generic [ref=e42]:
+      - generic [ref=e44]: EL PROBLEMA
+      - heading "Tu web existe. Pero no está trabajando por vos." [level=2] [ref=e45]
+      - generic [ref=e46]:
+        - paragraph [ref=e47]:
+          - generic [ref=e48]: La gente entra, mira, y se va.
+          - text: Sin escribirte. Sin preguntar. Sin hacer nada.
+        - paragraph [ref=e49]:
+          - generic [ref=e50]: Pusiste tu foto, escribiste quién sos, elegiste los colores.
+          - generic [ref=e51]: Y aun así se siente incompleta.
+          - text: Como si le faltara algo que no sabés nombrar.
+        - paragraph [ref=e52]:
+          - generic [ref=e53]: Tal vez la hiciste vos en un fin de semana.
+          - generic [ref=e54]: Tal vez la encargaste y quedó bien, pero no del todo.
+          - text: Tal vez te da un poco de vergüenza mandar el link.
+      - heading "Eso no es un problema de diseño. Es un problema de dirección." [level=2] [ref=e55]
+      - paragraph [ref=e57]: Y eso se arregla.
+    - generic [ref=e59]:
+      - generic [ref=e61]: LA SOLUCIÓN
+      - heading "Una web que funciona no es una web más bonita. Es una web pensada." [level=2] [ref=e62]
+      - generic [ref=e63]:
+        - paragraph [ref=e64]: Cada sección tiene un trabajo.
+        - paragraph [ref=e65]: Cada frase, una intención.
+        - paragraph [ref=e66]: Cada botón, una dirección.
+      - generic [ref=e67]:
+        - paragraph [ref=e68]: "Cuando eso está bien construido, el visitante no necesita pensar. Solo siente: \"esto es para mí.\" Y actúa."
+        - paragraph [ref=e69]: "Eso es lo que cambia cuando una web tiene dirección: deja de ser un catálogo y se convierte en tu herramienta principal."
+        - paragraph [ref=e70]: No importa si tenés un servicio, una marca personal, un negocio o una experiencia que querés transmitir. Una web bien construida trabaja por vos mientras vos hacés lo tuyo.
+    - generic [ref=e72]:
+      - generic [ref=e74]: EL MÉTODO
+      - heading "Método Inmersión" [level=2] [ref=e75]
+      - paragraph [ref=e77]: Cada web que diseño sigue el mismo proceso. No porque sea una fórmula — sino porque funciona.
+      - generic [ref=e78]:
+        - article [ref=e79]:
+          - generic: "01"
+          - generic [ref=e80]:
+            - heading "Inmersión" [level=3] [ref=e81]
+            - paragraph [ref=e82]: Me sumerjo en tu mundo. Entendemos juntos quién sos, a quién le hablás y qué querés que tu web logre exactamente. Sin esto, todo lo demás es decoración.
+        - article [ref=e83]:
+          - generic: "02"
+          - generic [ref=e84]:
+            - heading "Arquitectura" [level=3] [ref=e85]
+            - paragraph [ref=e86]: Diseñamos la estructura antes de tocar el diseño. Qué secciones, qué dice cada una, cómo fluye la historia. Cada decisión tiene un por qué.
+        - article [ref=e87]:
+          - generic: "03"
+          - generic [ref=e88]:
+            - heading "Construcción" [level=3] [ref=e89]
+            - paragraph [ref=e90]: "Doy forma a todo: paleta, tipografía, copy, animaciones. Construido con IA de última generación y criterio de diseño. Rápido sin perder el alma."
+        - article [ref=e91]:
+          - generic: "04"
+          - generic [ref=e92]:
+            - heading "Lanzamiento" [level=3] [ref=e93]
+            - paragraph [ref=e94]: Tu web en vivo, revisada y lista para trabajar. Te explico cómo funciona, qué podés hacer con ella y seguimos en contacto para lo que necesités.
+      - paragraph [ref=e95]: Esto es lo que diferencia una web que se ve bien de una web que hace algo.
+    - generic [ref=e97]:
+      - generic [ref=e99]: PROYECTOS
+      - heading "No muestro webs. Muestro transformaciones." [level=2] [ref=e100]
+      - paragraph [ref=e102]: Cada proyecto parte de una necesidad real. Acá van algunos de los que más me enorgullecen.
+      - generic [ref=e103]:
+        - link "Coaching & Tarot Evolutivo MelisArt Ver proyecto → Coaching & Tarot Evolutivo MelisArt Melisa tenía un método poderoso. Construimos una landing que transmite la profundidad de su trabajo antes de que ella tenga que explicarlo." [ref=e104] [cursor=pointer]:
+          - /url: https://web-meli.vercel.app/
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]: Coaching & Tarot Evolutivo
+              - heading "MelisArt" [level=3] [ref=e108]
+            - generic [ref=e110]: Ver proyecto →
+          - text: Coaching & Tarot Evolutivo
+          - heading "MelisArt" [level=3] [ref=e111]
+          - paragraph [ref=e112]: Melisa tenía un método poderoso. Construimos una landing que transmite la profundidad de su trabajo antes de que ella tenga que explicarlo.
+        - link "Experiencia · Búzios Retiro al Paraíso Ver proyecto → Experiencia · Búzios Retiro al Paraíso Un retiro con alma que merecía una presencia igual de viva. Bilingüe, con video hero y reserva directa desde el primer scroll." [ref=e113] [cursor=pointer]:
+          - /url: https://www.retiroalparaiso.com/
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - generic [ref=e116]: Experiencia · Búzios
+              - heading "Retiro al Paraíso" [level=3] [ref=e117]
+            - generic [ref=e119]: Ver proyecto →
+          - text: Experiencia · Búzios
+          - heading "Retiro al Paraíso" [level=3] [ref=e120]
+          - paragraph [ref=e121]: Un retiro con alma que merecía una presencia igual de viva. Bilingüe, con video hero y reserva directa desde el primer scroll.
+        - link "Coaching maternal Vos de la Maternidad Ver proyecto → Coaching maternal Vos de la Maternidad Una landing de venta para un programa que ayuda a madres a reconectar con el disfrute. Copy estratégico y estructura pensada para convertir." [ref=e122] [cursor=pointer]:
+          - /url: https://www.tierradorada.ar/quierodisfrutarlamaternidad/
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - generic [ref=e125]: Coaching maternal
+              - heading "Vos de la Maternidad" [level=3] [ref=e126]
+            - generic [ref=e128]: Ver proyecto →
+          - text: Coaching maternal
+          - heading "Vos de la Maternidad" [level=3] [ref=e129]
+          - paragraph [ref=e130]: Una landing de venta para un programa que ayuda a madres a reconectar con el disfrute. Copy estratégico y estructura pensada para convertir.
+        - link "Autonomía Digital Quimey Morando Ver proyecto → Autonomía Digital Quimey Morando Una marca personal de alto ticket para un experto en IA. Diseño premium y posicionamiento de autoridad desde la primera pantalla." [ref=e131] [cursor=pointer]:
+          - /url: https://www.quimeymorando.com/
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - generic [ref=e134]: Autonomía Digital
+              - heading "Quimey Morando" [level=3] [ref=e135]
+            - generic [ref=e137]: Ver proyecto →
+          - text: Autonomía Digital
+          - heading "Quimey Morando" [level=3] [ref=e138]
+          - paragraph [ref=e139]: Una marca personal de alto ticket para un experto en IA. Diseño premium y posicionamiento de autoridad desde la primera pantalla.
+    - generic [ref=e141]:
+      - generic [ref=e143]: SERVICIOS
+      - heading "¿Qué construimos?" [level=2] [ref=e144]
+      - paragraph [ref=e146]: Tres caminos según lo que tu negocio necesita. Todos incluyen diseño, copy y estrategia. Nada sale sin dirección.
+      - generic [ref=e147]:
+        - article [ref=e148]:
+          - generic [ref=e150]: FONDEO
+          - heading "Landing de venta" [level=3] [ref=e151]
+          - paragraph [ref=e152]: Para quien necesita una presencia que trabaje desde el día uno.
+          - list [ref=e153]:
+            - listitem [ref=e154]:
+              - generic [ref=e155]: ✦
+              - generic [ref=e156]: Landing page completa (una página, scroll completo)
+            - listitem [ref=e157]:
+              - generic [ref=e158]: ✦
+              - generic [ref=e159]: Copy estratégico incluido
+            - listitem [ref=e160]:
+              - generic [ref=e161]: ✦
+              - generic [ref=e162]: Paleta y tipografía de tu marca
+            - listitem [ref=e163]:
+              - generic [ref=e164]: ✦
+              - generic [ref=e165]: Versión mobile optimizada
+            - listitem [ref=e166]:
+              - generic [ref=e167]: ✦
+              - generic [ref=e168]: CTA a WhatsApp o formulario
+            - listitem [ref=e169]:
+              - generic [ref=e170]: ✦
+              - generic [ref=e171]: Integración con tu dominio
+            - listitem [ref=e172]:
+              - generic [ref=e173]: ✦
+              - generic [ref=e174]: 1 ronda de revisiones
+            - listitem [ref=e175]:
+              - generic [ref=e176]: ✦
+              - generic [ref=e177]: Entrega en 5 a 7 días hábiles
+          - generic [ref=e178]:
+            - paragraph [ref=e179]: Desde USD 600
+            - link "Quiero mi landing →" [ref=e180] [cursor=pointer]:
+              - /url: "#"
+        - article [ref=e181]:
+          - generic [ref=e182]:
+            - generic [ref=e183]: MAREA
+            - generic [ref=e184]: ★ EL MÁS ELEGIDO
+          - heading "Web profesional" [level=3] [ref=e185]
+          - paragraph [ref=e186]: Para quien necesita una presencia completa, prolija y lista para crecer.
+          - list [ref=e187]:
+            - listitem [ref=e188]:
+              - generic [ref=e189]: ✦
+              - generic [ref=e190]: Hasta 5 páginas con copy estratégico
+            - listitem [ref=e191]:
+              - generic [ref=e192]: ✦
+              - generic [ref=e193]: Paleta, tipografía e identidad de marca
+            - listitem [ref=e194]:
+              - generic [ref=e195]: ✦
+              - generic [ref=e196]: Versión mobile optimizada
+            - listitem [ref=e197]:
+              - generic [ref=e198]: ✦
+              - generic [ref=e199]: CTAs a WhatsApp y formularios
+            - listitem [ref=e200]:
+              - generic [ref=e201]: ✦
+              - generic [ref=e202]: Integración con tu dominio
+            - listitem [ref=e203]:
+              - generic [ref=e204]: ✦
+              - generic [ref=e205]: Animaciones y transiciones
+            - listitem [ref=e206]:
+              - generic [ref=e207]: ✦
+              - generic [ref=e208]: 2 rondas de revisiones
+            - listitem [ref=e209]:
+              - generic [ref=e210]: ✦
+              - generic [ref=e211]: Entrega en 10 a 14 días hábiles
+          - generic [ref=e212]:
+            - paragraph [ref=e213]: Desde USD 1.100
+            - link "Quiero mi web →" [ref=e214] [cursor=pointer]:
+              - /url: "#"
+        - article [ref=e215]:
+          - generic [ref=e217]: PROFUNDIDAD
+          - heading "Web premium" [level=3] [ref=e218]
+          - paragraph [ref=e219]: Para quien quiere una presencia digital que lo diga todo. Sin límites.
+          - list [ref=e220]:
+            - listitem [ref=e221]:
+              - generic [ref=e222]: ✦
+              - generic [ref=e223]: Páginas sin límite con copy estratégico
+            - listitem [ref=e224]:
+              - generic [ref=e225]: ✦
+              - generic [ref=e226]: Identidad de marca completa
+            - listitem [ref=e227]:
+              - generic [ref=e228]: ✦
+              - generic [ref=e229]: Mobile optimizado
+            - listitem [ref=e230]:
+              - generic [ref=e231]: ✦
+              - generic [ref=e232]: Animaciones avanzadas
+            - listitem [ref=e233]:
+              - generic [ref=e234]: ✦
+              - generic [ref=e235]: Integraciones (Calendly, MailerLite, formularios, chatbot)
+            - listitem [ref=e236]:
+              - generic [ref=e237]: ✦
+              - generic [ref=e238]: Optimización SEO básica
+            - listitem [ref=e239]:
+              - generic [ref=e240]: ✦
+              - generic [ref=e241]: 3 rondas de revisiones
+            - listitem [ref=e242]:
+              - generic [ref=e243]: ✦
+              - generic [ref=e244]: Entrega en 3 a 4 semanas
+          - generic [ref=e245]:
+            - paragraph [ref=e246]: Desde USD 2.000
+            - link "Hablemos →" [ref=e247] [cursor=pointer]:
+              - /url: "#"
+      - article [ref=e249]:
+        - generic [ref=e250]:
+          - text: MANTENIMIENTO MENSUAL
+          - heading "¿Querés mantener tu web actualizada?" [level=3] [ref=e251]
+          - paragraph [ref=e252]: Cambios de contenido, soporte técnico y actualizaciones.
+        - generic [ref=e253]:
+          - paragraph [ref=e254]: Desde USD 80 / mes
+          - link "Consultame →" [ref=e255] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e257]:
+        - paragraph [ref=e258]: ¿No sabés cuál es el tuyo?
+        - link "Escribime y lo vemos juntos. →" [ref=e259] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e261]:
+      - heading "¿Y si no me gusta el resultado?" [level=2] [ref=e262]
+      - paragraph [ref=e264]: Es la pregunta que todos tienen y nadie dice. Acá va la respuesta honesta.
+      - generic [ref=e265]:
+        - paragraph [ref=e266]: El Método Inmersión existe exactamente para que eso no pase. Antes de diseñar una sola pantalla, nos sentamos a entender qué necesitás, qué te representa y adónde va tu negocio. Sin esa conversación, no arranco.
+        - paragraph [ref=e267]: Y cuando arranco, te muestro avances antes de la entrega final. Nada aparece de sorpresa.
+      - generic [ref=e269]:
+        - heading "Lo que garantizo:" [level=3] [ref=e270]
+        - list [ref=e271]:
+          - listitem [ref=e272]:
+            - generic [ref=e273]: ✦
+            - generic [ref=e274]: Un proceso con etapas claras y comunicación real
+          - listitem [ref=e275]:
+            - generic [ref=e276]: ✦
+            - generic [ref=e277]: Avances para revisar antes de entregar
+          - listitem [ref=e278]:
+            - generic [ref=e279]: ✦
+            - generic [ref=e280]: Las rondas de revisión de tu paquete, cumplidas
+          - listitem [ref=e281]:
+            - generic [ref=e282]: ✦
+            - generic [ref=e283]: Tiempos acordados desde el día uno
+          - listitem [ref=e284]:
+            - generic [ref=e285]: ✦
+            - generic [ref=e286]: Una web que te represente — o seguimos hasta que lo haga
+      - generic [ref=e288]:
+        - heading "Lo que no garantizo:" [level=3] [ref=e289]
+        - paragraph [ref=e290]: No puedo prometerte X clientes nuevos. Tu web es la herramienta — cómo la usás, qué contenido le ponés y cómo la mostrás depende de vos. Lo que sí garantizo es que la herramienta va a estar bien construida y lista para hacer su trabajo.
+      - generic [ref=e292]:
+        - heading "¿Cómo funciona el pago?" [level=3] [ref=e293]
+        - paragraph [ref=e294]: 50% al inicio · 50% al entregar la versión final. Así los dos estamos comprometidos desde el principio.
+    - generic [ref=e296]:
+      - heading "Imaginá esto." [level=2] [ref=e297]
+      - generic [ref=e298]:
+        - paragraph [ref=e299]: Alguien llega a tu web. No te conoce. No fue recomendado. Te encontró, entró, y en los primeros dos scrolls supo que le estabas hablando a ellos.
+        - paragraph [ref=e300]: Sin que vos estuvieras ahí para explicar nada.
+      - paragraph [ref=e301]: Tu web hizo esa presentación. Sola.
+      - paragraph [ref=e303]: A las 3 de la mañana, un domingo, mientras viajabas.
+      - paragraph [ref=e305]: "Compartís el link con orgullo, sin el \"igual está medio básica\". Mandás tu dirección en un email y no necesitás agregar nada más. Alguien te pregunta en qué trabajás y simplemente decís: \"mirá mi web.\""
+      - paragraph [ref=e306]: Eso es una web que trabaja por vos.
+      - paragraph [ref=e308]: "No te da fama de un día para el otro. Pero hace algo igual de valioso: te libera para enfocarte en lo que realmente importa."
+    - generic [ref=e310]:
+      - generic [ref=e313]: C
+      - generic [ref=e314]:
+        - generic [ref=e315]: SOBRE MÍ
+        - heading "Soy Coralina." [level=2] [ref=e316]
+        - generic [ref=e317]:
+          - paragraph [ref=e318]: No vengo del diseño tradicional. Y eso, resulta, es mi mayor ventaja.
+          - paragraph [ref=e319]: "Siempre supe que quería hacer algo con diseño. Llegué por el camino más raro: una carrera abandonada, un amor viejo por la gráfica, y el descubrimiento de que la IA podía hacer realidad lo que siempre imaginé."
+          - paragraph [ref=e320]: "En una tarde entendí algo que cambió todo: lo que siempre soñé, potenciado con la tecnología de hoy, no solo era posible. Era exactamente lo que venía buscando."
+          - paragraph [ref=e321]: Hoy diseño desde Búzios, con el mar de fondo y una computadora.
+        - generic [ref=e323]:
+          - paragraph [ref=e324]: "Creo que cada marca merece una web que la represente de verdad. No una plantilla con su nombre encima. No algo que \"está bien para ya\". Algo que cuando lo vean digan: \"sí, eso soy yo.\""
+          - paragraph [ref=e325]: No creo en el diseño sin propósito. No creo en webs que existen solo para existir.
+        - paragraph [ref=e326]: Eso es lo que traigo a cada proyecto. Criterio, tecnología y alma. Las tres cosas juntas.
+    - generic [ref=e328]:
+      - generic [ref=e330]: TESTIMONIOS
+      - heading "Lo que dicen quienes ya trabajaron conmigo." [level=2] [ref=e331]
+      - paragraph [ref=e333]: Testimonios de muestra · próximamente reales
+      - generic [ref=e334]:
+        - article [ref=e335]:
+          - generic: ❝
+          - paragraph [ref=e336]: Antes mi web era un catálogo. Después de trabajar con Coralina, es lo primero que mando cuando alguien me pregunta a qué me dedico — y se entiende todo sin que yo agregue una palabra.
+          - generic [ref=e340]:
+            - paragraph [ref=e341]: María Solano
+            - paragraph [ref=e342]: Coach de transición profesional
+        - article [ref=e343]:
+          - generic: ❝
+          - paragraph [ref=e344]: El proceso fue tan claro que en cada etapa sentí que ya estaba avanzando. No me llegó una sorpresa al final — me llegó algo que ya había co-construido.
+          - generic [ref=e348]:
+            - paragraph [ref=e349]: Tomás Lavalle
+            - paragraph [ref=e350]: Fundador, estudio de fotografía
+        - article [ref=e351]:
+          - generic: ❝
+          - paragraph [ref=e352]: Coralina entendió la marca mejor que yo. Lo que tenía en la cabeza pero no podía explicar, lo plasmó en la web. Y ahora cuando comparto el link, siento orgullo.
+          - generic [ref=e356]:
+            - paragraph [ref=e357]: Lucía Fernández
+            - paragraph [ref=e358]: Terapeuta integrativa
+    - generic [ref=e360]:
+      - generic [ref=e362]: PREGUNTAS FRECUENTES
+      - heading "¿Tenés dudas?" [level=2] [ref=e363]
+      - list [ref=e365]:
+        - listitem [ref=e366]:
+          - button "¿Cuánto tarda el proceso?" [ref=e367] [cursor=pointer]:
+            - generic [ref=e368]: ¿Cuánto tarda el proceso?
+            - generic [ref=e369]: +
+        - listitem [ref=e370]:
+          - button "¿Qué necesito tener listo para empezar?" [ref=e371] [cursor=pointer]:
+            - generic [ref=e372]: ¿Qué necesito tener listo para empezar?
+            - generic [ref=e373]: +
+        - listitem [ref=e374]:
+          - button "¿El precio incluye dominio y hosting?" [ref=e375] [cursor=pointer]:
+            - generic [ref=e376]: ¿El precio incluye dominio y hosting?
+            - generic [ref=e377]: +
+        - listitem [ref=e378]:
+          - button "¿Necesito saber de tecnología para manejar la web?" [ref=e379] [cursor=pointer]:
+            - generic [ref=e380]: ¿Necesito saber de tecnología para manejar la web?
+            - generic [ref=e381]: +
+        - listitem [ref=e382]:
+          - button "¿Puedo pedir cambios después de la entrega final?" [ref=e383] [cursor=pointer]:
+            - generic [ref=e384]: ¿Puedo pedir cambios después de la entrega final?
+            - generic [ref=e385]: +
+        - listitem [ref=e386]:
+          - button "¿Trabajás con clientes en cualquier país?" [ref=e387] [cursor=pointer]:
+            - generic [ref=e388]: ¿Trabajás con clientes en cualquier país?
+            - generic [ref=e389]: +
+        - listitem [ref=e390]:
+          - button "¿Hacés webs en otros idiomas?" [ref=e391] [cursor=pointer]:
+            - generic [ref=e392]: ¿Hacés webs en otros idiomas?
+            - generic [ref=e393]: +
+        - listitem [ref=e394]:
+          - button "¿Cuál es la diferencia entre los paquetes?" [ref=e395] [cursor=pointer]:
+            - generic [ref=e396]: ¿Cuál es la diferencia entre los paquetes?
+            - generic [ref=e397]: +
+    - generic [ref=e399]:
+      - heading "Tu web puede estar trabajando por vos antes de que termine este mes." [level=2] [ref=e400]
+      - generic [ref=e401]:
+        - paragraph [ref=e402]: Tengo 5 lugares disponibles por mes.
+        - paragraph [ref=e403]: Cuando se llenan, se llenan.
+      - paragraph [ref=e405]: Si llegaste hasta acá, ya sabés si esto es para vos. Lo único que falta es el primer paso.
+      - link "Hablemos por WhatsApp →" [ref=e408] [cursor=pointer]:
+        - /url: "#"
+      - heading "¿Cómo sigue?" [level=3] [ref=e410]
+      - generic [ref=e411]:
+        - paragraph [ref=e412]: 01 · Me escribís y te respondo en menos de 24 horas.
+        - paragraph [ref=e413]: 02 · Coordinamos una llamada corta para conocernos y entender tu proyecto.
+        - paragraph [ref=e414]: 03 · Si hay match, arrancamos con el Método Inmersión.
+      - paragraph [ref=e416]: Sin compromisos hasta que los dos estemos seguros.
+  - contentinfo [ref=e417]:
+    - generic [ref=e418]:
+      - generic [ref=e419]:
+        - generic [ref=e420]:
+          - img "Coralina" [ref=e421]
+          - generic [ref=e422]: Coralina
+        - generic [ref=e423]: © 2026 · Diseño web con alma
+      - navigation "Social" [ref=e424]:
+        - link "Instagram" [ref=e425] [cursor=pointer]:
+          - /url: "#"
+        - link "LinkedIn" [ref=e426] [cursor=pointer]:
+          - /url: "#"
+        - link "WhatsApp" [ref=e427] [cursor=pointer]:
+          - /url: "#"
+    - paragraph [ref=e428]: Hecho con IA y criterio · Búzios, Brasil
