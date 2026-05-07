@@ -3688,7 +3688,10 @@ body.menu-open .header { z-index: 210; }
 
 .testimonios__cierre-text em {
   font-style: italic;
-  color: var(--color-dorado);
+  background: linear-gradient(135deg, #D4A843, #E8C460);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .testimonios__ctas {
