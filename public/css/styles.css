@@ -2789,7 +2789,7 @@ body.menu-open .header { z-index: 210; }
   font-family: var(--font-sans);
   font-size: 11px;
   letter-spacing: 0.18em;
-  background: linear-gradient(135deg, #C8952A 0%, #F0D060 35%, #E8C460 50%, #F5E88A 65%, #D4A843 100%);
+  background: linear-gradient(135deg, #5C3A9A 0%, #8B62C4 25%, #C8B0E0 50%, #8B62C4 75%, #5C3A9A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2816,11 +2816,11 @@ body.menu-open .header { z-index: 210; }
   flex: 1;
   max-width: 48px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #F0D060, transparent);
+  background: linear-gradient(90deg, transparent, #C8B0E0, transparent);
 }
 
 .metodo2__divider-diamond {
-  background: linear-gradient(135deg, #C8952A 0%, #F0D060 35%, #E8C460 50%, #F5E88A 65%, #D4A843 100%);
+  background: linear-gradient(135deg, #5C3A9A 0%, #8B62C4 25%, #C8B0E0 50%, #8B62C4 75%, #5C3A9A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2885,7 +2885,7 @@ body.menu-open .header { z-index: 210; }
 
 .metodo2__decoration-symbol {
   font-size: 1.2rem;
-  background: linear-gradient(135deg, #C8952A 0%, #F0D060 35%, #E8C460 50%, #F5E88A 65%, #D4A843 100%);
+  background: linear-gradient(135deg, #5C3A9A 0%, #8B62C4 25%, #C8B0E0 50%, #8B62C4 75%, #5C3A9A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2929,7 +2929,7 @@ body.menu-open .header { z-index: 210; }
   font-family: var(--font-display);
   font-size: 3.25rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #C8952A 0%, #F0D060 35%, #E8C460 50%, #F5E88A 65%, #D4A843 100%);
+  background: linear-gradient(135deg, #5C3A9A 0%, #8B62C4 25%, #C8B0E0 50%, #8B62C4 75%, #5C3A9A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2963,7 +2963,7 @@ body.menu-open .header { z-index: 210; }
 .metodo2__icono-wrap svg {
   width: 22px;
   height: 22px;
-  stroke: #E8C460;
+  stroke: #8B62C4;
   stroke-width: 1.5;
   fill: none;
   opacity: 1;
@@ -2994,7 +2994,7 @@ body.menu-open .header { z-index: 210; }
 .metodo2__nombre em {
   font-style: italic;
   font-weight: 400;
-  background: linear-gradient(135deg, #C8952A 0%, #F0D060 35%, #E8C460 50%, #F5E88A 65%, #D4A843 100%);
+  background: linear-gradient(135deg, #5C3A9A 0%, #8B62C4 25%, #C8B0E0 50%, #8B62C4 75%, #5C3A9A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -3048,7 +3048,7 @@ body.menu-open .header { z-index: 210; }
 
 .metodo2__frase em {
   font-style: italic;
-  background: linear-gradient(135deg, #C8952A 0%, #F0D060 35%, #E8C460 50%, #F5E88A 65%, #D4A843 100%);
+  background: linear-gradient(135deg, #5C3A9A 0%, #8B62C4 25%, #C8B0E0 50%, #8B62C4 75%, #5C3A9A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -3717,7 +3717,7 @@ body.menu-open .header { z-index: 210; }
 .metodo2 .metodo2__eyebrow,
 .metodo2 .metodo2__modulo .metodo2__nombre em,
 .metodo2 .metodo2__frase em {
-  background: linear-gradient(135deg, #C8952A 0%, #F0D060 35%, #E8C460 50%, #F5E88A 65%, #D4A843 100%);
+  background: linear-gradient(135deg, #5C3A9A 0%, #8B62C4 25%, #C8B0E0 50%, #8B62C4 75%, #5C3A9A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
