@@ -2678,7 +2678,21 @@ body.menu-open .header { z-index: 210; }
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    filter: blur(3px);
+    position: relative;
+  }
+
+  .contacto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../final.jpeg');
+    background-position: center center;
+    background-size: cover;
+    filter: blur(0.8px);
+    z-index: -1;
   }
 
   .contacto__layout {
