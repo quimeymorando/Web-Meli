@@ -3075,16 +3075,6 @@ body.menu-open .header { z-index: 210; }
 .metodo2__sparkle--6 { width: 10px; top: 85%; left: 30%; animation-delay: 1.2s; }
 
 /* Ramitas lavanda */
-.metodo2__lavanda {
-  position: absolute;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.45;
-}
-.metodo2__lavanda--bl { bottom: 0; left: 0;    width: 120px; height: 200px; }
-.metodo2__lavanda--br { bottom: 0; right: 0;   width: 120px; height: 200px; }
-.metodo2__lavanda--tl { top: 20px; left: 20px; width: 80px;  height: 140px; opacity: 0.30; }
-
 /* BLOQUE 1: Header centrado */
 .metodo2__header {
   text-align: center;
