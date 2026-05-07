@@ -2392,19 +2392,19 @@ body.menu-open .header { z-index: 210; }
   margin-top: var(--space-3);
 }
 
-.contacto__cta-btn {
+.contacto__cta-btn.btn--gold {
   background: linear-gradient(135deg, #D4A843, #E8C460);
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: var(--w-semibold);
   padding: var(--space-4) var(--space-7);
   font-size: 1.05rem;
   box-shadow: 0 12px 32px rgba(212, 168, 67, 0.3);
 }
 
-.contacto__cta-btn:hover {
+.contacto__cta-btn.btn--gold:hover {
   filter: brightness(1.08);
   transform: translateY(-2px);
-  color: #ffffff;
+  color: #ffffff !important;
   box-shadow: 0 16px 40px rgba(212, 168, 67, 0.45);
 }
 
