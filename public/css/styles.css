@@ -3052,9 +3052,10 @@ body.menu-open .header { z-index: 210; }
 /* Geometría sagrada esquina superior derecha */
 .metodo2__geo {
   position: absolute;
-  top: -40px;
-  right: -40px;
-  width: 280px;
+  top: 20px;
+  right: 80px;
+  width: 320px;
+  opacity: 0.75;
   pointer-events: none;
   user-select: none;
   z-index: 0;
