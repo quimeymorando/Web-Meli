@@ -1,0 +1,31 @@
+- generic [active] [ref=e1]:
+  - textbox "Search" [ref=e2]
+  - generic [ref=e3]:
+    - heading "~ /" [level=1] [ref=e4]:
+      - link "~" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - text: /
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "public 6/5/2026 2:51:42 p.m." [ref=e8] [cursor=pointer]:
+          - /url: /public
+          - generic [ref=e9]: public
+          - generic [ref=e10]: 6/5/2026 2:51:42 p.m.
+      - listitem [ref=e11]:
+        - link "MelisArt_Brief_Maestro copy.md 13749 27/4/2026 3:36:41 p.m." [ref=e12] [cursor=pointer]:
+          - /url: /MelisArt_Brief_Maestro%20copy.md
+          - generic [ref=e13]: MelisArt_Brief_Maestro copy.md
+          - generic [ref=e14]: "13749"
+          - generic [ref=e15]: 27/4/2026 3:36:41 p.m.
+      - listitem [ref=e16]:
+        - link "MelisArt_Brief_Maestro.md 0 27/4/2026 3:36:39 p.m." [ref=e17] [cursor=pointer]:
+          - /url: /MelisArt_Brief_Maestro.md
+          - generic [ref=e18]: MelisArt_Brief_Maestro.md
+          - generic [ref=e19]: "0"
+          - generic [ref=e20]: 27/4/2026 3:36:39 p.m.
+      - listitem [ref=e21]:
+        - link "README.md 1816 27/4/2026 8:31:04 p.m." [ref=e22] [cursor=pointer]:
+          - /url: /README.md
+          - generic [ref=e23]: README.md
+          - generic [ref=e24]: "1816"
+          - generic [ref=e25]: 27/4/2026 8:31:04 p.m.

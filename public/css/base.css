@@ -143,24 +143,16 @@ p { line-height: var(--lh-relaxed); }
   transform: translateY(-2px);
 }
 
-/* Botón primario: gradient dorado brillante */
+/* Botón primario: violeta sólido con sombra dorada al hover */
 .btn--primary {
-  background: linear-gradient(135deg, #B8820A 0%, #D4A843 40%, #E8C460 65%, #C8922A 100%);
-  color: #FFFFFF;
-  border: none;
-  border-radius: 50px;
-  padding: 16px 36px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.25s ease;
+  background-color: var(--color-violeta-profundo);
+  color: var(--color-crema-claro);
   box-shadow: var(--shadow-md);
 }
 
 .btn--primary:hover {
-  filter: brightness(1.08);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(184,130,10,0.35);
+  background-color: var(--color-violeta-noche);
+  box-shadow: var(--shadow-gold);
 }
 
 /* Botón secundario: outline dorado sobre crema */

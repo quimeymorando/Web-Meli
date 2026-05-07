@@ -34,7 +34,7 @@
   const header = document.querySelector('.header');
   if (header) {
     const onScroll = () => {
-      header.classList.toggle('is-scrolled', window.scrollY > 8);
+      header.classList.toggle('is-scrolled', window.scrollY > 60);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
@@ -103,16 +103,26 @@
     revealEls.forEach((el) => el.classList.add('is-visible'));
   }
 
-  /* ---------- GEOMETRÍA SAGRADA: rotación lenta hero ---------- */
-  const ornament = document.querySelector('.hero__bg-ornament');
-  if (ornament && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    let angle = 0;
-    const rotate = () => {
-      angle += 0.003;
-      ornament.style.transform = `rotate(${angle}deg)`;
-      requestAnimationFrame(rotate);
-    };
-    requestAnimationFrame(rotate);
+  /* ---------- MÓDULOS MÉTODO: stagger reveal ---------- */
+  const modulos = document.querySelectorAll('.metodo2__modulo');
+  if ('IntersectionObserver' in window && modulos.length > 0) {
+    const moduloObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const i = parseInt(entry.target.dataset.modulo || '0', 10);
+            setTimeout(() => {
+              entry.target.classList.add('is-visible');
+            }, i * 60);
+            moduloObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
+    );
+    modulos.forEach((el) => moduloObserver.observe(el));
+  } else {
+    modulos.forEach((el) => el.classList.add('is-visible'));
   }
 
 })();
