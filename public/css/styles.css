@@ -1429,7 +1429,7 @@ body.menu-open .header { z-index: 210; }
 
 @media (min-width: 900px) {
   .sobre-mi__perfil {
-    grid-template-columns: 5fr 7fr;
+    grid-template-columns: 6fr 7fr;
     gap: var(--space-8);
   }
 }
@@ -1450,9 +1450,9 @@ body.menu-open .header { z-index: 210; }
 }
 
 .sobre-mi__perfil-arc {
-  width: 320px;
-  height: 420px;
-  border-radius: 160px 160px 12px 12px;
+  width: 380px;
+  height: 520px;
+  border-radius: 190px 190px 12px 12px;
   overflow: hidden;
   border: 2px solid rgba(212, 168, 67, 0.60);
   box-shadow: var(--shadow-md), var(--shadow-gold);
