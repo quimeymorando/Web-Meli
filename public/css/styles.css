@@ -3045,7 +3045,7 @@ body.menu-open .header { z-index: 210; }
 .metodo2 {
   position: relative;
   overflow: visible;
-  padding: var(--space-10) 0;
+  padding: 0 0 var(--space-10) 0;
   background: linear-gradient(160deg, #EDE8F5 0%, #D9CCF0 50%, #C8B4E0 100%);
 }
 
