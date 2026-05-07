@@ -3802,15 +3802,16 @@ body.menu-open .header { z-index: 210; }
 }
 
 .servicios__grid > .servicio:nth-child(3) .servicio__cta .btn--ghost {
-  background-color: transparent;
-  color: var(--color-crema-claro);
+  background-color: var(--color-dorado);
+  color: #FFFFFF;
   border: 1.5px solid var(--color-dorado);
+  font-weight: 600;
 }
 
 .servicios__grid > .servicio:nth-child(3) .servicio__cta .btn--ghost:hover {
-  background-color: var(--color-dorado);
-  color: var(--color-violeta-profundo);
-  border-color: var(--color-dorado);
+  background-color: var(--color-dorado-claro);
+  color: #FFFFFF;
+  border-color: var(--color-dorado-claro);
 }
 
 .servicios__bottom {
