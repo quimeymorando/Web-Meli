@@ -2119,7 +2119,7 @@ body.menu-open .header { z-index: 210; }
 .testimonios {
   background: linear-gradient(160deg, #EDE8F5 0%, #D9CCF0 50%, #C8B4E0 100%);
   position: relative;
-  overflow: clip;
+  overflow: visible;
 }
 
 /* Ornamento geométrico: ojo de la providencia / triángulo con círculo */
@@ -3975,6 +3975,32 @@ body.menu-open .header { z-index: 210; }
   flex-wrap: wrap;
   gap: var(--space-3);
   justify-content: center;
+}
+
+/* Esquinas decorativas inferiores */
+.testimonios__corner {
+  position: absolute;
+  bottom: 0;
+  height: 550px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.testimonios__corner--left {
+  left: -120px;
+}
+
+.testimonios__corner--right {
+  right: -120px;
+}
+
+@media (max-width: 767px) {
+  .testimonios__corner {
+    display: none;
+  }
 }
 
 /* ---------- CONTACTO: card oscura ---------- */
