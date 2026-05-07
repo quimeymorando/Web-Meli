@@ -2663,9 +2663,14 @@ body.menu-open .header { z-index: 210; }
 }
 
 .testimonios .btn--gold {
-  background-color: var(--color-dorado-claro);
-  color: var(--color-violeta-profundo);
-  box-shadow: 0 8px 24px rgba(232, 196, 96, 0.35);
+  background: linear-gradient(135deg, #D4A843, #E8C460);
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(212, 168, 67, 0.3);
+}
+
+.testimonios .btn--gold:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
 }
 
 .testimonios .btn--ghost {
