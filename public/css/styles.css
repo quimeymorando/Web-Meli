@@ -3567,7 +3567,9 @@ body.menu-open .header { z-index: 210; }
   font-style: italic;
   font-size: var(--fs-small);
   color: var(--color-violeta-profundo);
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: border-color var(--t-fast), background var(--t-fast);
 }
 
