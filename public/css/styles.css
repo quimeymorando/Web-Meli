@@ -2678,6 +2678,7 @@ body.menu-open .header { z-index: 210; }
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    filter: blur(3px);
   }
 
   .contacto__layout {
