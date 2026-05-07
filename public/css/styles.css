@@ -3443,7 +3443,7 @@ body.menu-open .header { z-index: 210; }
 .metodo2__corner {
   position: absolute;
   bottom: 0;
-  height: 420px;
+  height: 550px;
   width: auto;
   margin: 0;
   padding: 0;
@@ -3452,11 +3452,11 @@ body.menu-open .header { z-index: 210; }
 }
 
 .metodo2__corner--left {
-  left: 0;
+  left: -20px;
 }
 
 .metodo2__corner--right {
-  right: 0;
+  right: -20px;
 }
 
 @media (max-width: 767px) {
