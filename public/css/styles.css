@@ -3847,6 +3847,14 @@ body.menu-open .header { z-index: 210; }
   opacity: 0.8;
 }
 
+.servicios__bottom .btn--gold {
+  color: #FFFFFF;
+}
+
+.servicios__bottom .btn--gold svg {
+  fill: #FFFFFF;
+}
+
 /* ---------- SOBRE MÍ: credenciales ---------- */
 .sobre-mi__creds {
   list-style: none;
