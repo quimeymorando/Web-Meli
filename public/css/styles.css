@@ -220,11 +220,23 @@ body.menu-open .header { z-index: 210; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('../foto-hero.jpeg');
+  background-image: url('../foto-hero.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+@supports (background-image: url('data:image/webp;base64,')) {
+  .hero {
+    background-image: url('../foto-hero.webp');
+  }
+}
+
+@supports not (background-image: url('data:image/webp;base64,')) {
+  .hero {
+    background-image: url('../foto-hero-compressed.jpeg');
+  }
 }
 
 .hero::before {
@@ -2753,7 +2765,7 @@ body.menu-open .header { z-index: 210; }
 @media (max-width: 768px) {
   .contacto {
     min-height: 100vh;
-    background-image: url('../final.jpeg');
+    background-image: url('../final.webp');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2768,11 +2780,21 @@ body.menu-open .header { z-index: 210; }
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../final.jpeg');
+    background-image: url('../final.webp');
     background-position: center center;
     background-size: cover;
     filter: blur(6px);
     z-index: -1;
+  }
+
+  @supports not (background-image: url('data:image/webp;base64,')) {
+    .contacto {
+      background-image: url('../final-compressed.jpeg');
+    }
+
+    .contacto::before {
+      background-image: url('../final-compressed.jpeg');
+    }
   }
 
   .contacto__layout {
