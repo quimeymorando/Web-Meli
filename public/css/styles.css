@@ -1820,6 +1820,15 @@ body.menu-open .header { z-index: 210; }
 }
 
 @media (max-width: 768px) {
+  /* Header: glassmorphism en mobile */
+  .header {
+    background-color: rgba(250, 247, 242, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom-color: rgba(196, 168, 224, 0.2);
+    border-bottom: 1px solid rgba(196, 168, 224, 0.2);
+  }
+
   /* Imagen: más compacta en mobile */
   .sobre-mi__perfil-arc {
     width: 240px;
@@ -2831,13 +2840,17 @@ body.menu-open .header { z-index: 210; }
   .contacto__copy {
     width: 100%;
     margin-left: 0;
-    padding: 40px 24px 60px 24px;
+    padding: 120px 24px 60px 24px;
     text-align: center;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 2;
     background: transparent;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .contacto__label {
