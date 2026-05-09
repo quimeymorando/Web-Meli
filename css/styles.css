@@ -13,18 +13,18 @@
   height: var(--header-h);
   display: flex;
   align-items: center;
-  background-color: transparent;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  border-bottom: 1px solid transparent;
+  background-color: rgba(250, 247, 242, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(196, 168, 224, 0.2);
   transition: border-color var(--t-base), background-color var(--t-base), backdrop-filter var(--t-base);
 }
 
 .header.is-scrolled {
   border-bottom-color: rgba(196, 168, 224, 0.3);
-  background-color: rgba(250, 247, 242, 0.95);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(250, 247, 242, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .header__inner {
@@ -86,7 +86,7 @@
   }
   .nav__link {
     font-size: 0.88rem;
-    color: var(--color-tinta-suave);
+    color: var(--color-violeta-profundo);
     position: relative;
     padding-block: var(--space-2);
     transition: color var(--t-fast);
@@ -102,7 +102,7 @@
     background-color: var(--color-dorado);
     transition: width var(--t-base), left var(--t-base);
   }
-  .nav__link:hover { color: var(--color-violeta-profundo); }
+  .nav__link:hover { color: var(--color-dorado); }
   .nav__link:hover::after { width: 100%; left: 0; }
 }
 
@@ -220,7 +220,7 @@ body.menu-open .header { z-index: 210; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('../foto-hero.webp');
+  background-image: url('../public/foto-hero.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -229,13 +229,13 @@ body.menu-open .header { z-index: 210; }
 
 @supports (background-image: url('data:image/webp;base64,')) {
   .hero {
-    background-image: url('../foto-hero.webp');
+    background-image: url('../public/foto-hero.webp');
   }
 }
 
 @supports not (background-image: url('data:image/webp;base64,')) {
   .hero {
-    background-image: url('../foto-hero-compressed.jpeg');
+    background-image: url('../public/foto-hero-compressed.jpeg');
   }
 }
 
@@ -2774,7 +2774,7 @@ body.menu-open .header { z-index: 210; }
 @media (max-width: 768px) {
   .contacto {
     min-height: 100vh;
-    background-image: url('../final.webp');
+    background-image: url('../public/final.webp');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2789,7 +2789,7 @@ body.menu-open .header { z-index: 210; }
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../final.webp');
+    background-image: url('../public/final.webp');
     background-position: center center;
     background-size: cover;
     filter: blur(6px);
@@ -2798,11 +2798,11 @@ body.menu-open .header { z-index: 210; }
 
   @supports not (background-image: url('data:image/webp;base64,')) {
     .contacto {
-      background-image: url('../final-compressed.jpeg');
+      background-image: url('../public/final-compressed.jpeg');
     }
 
     .contacto::before {
-      background-image: url('../final-compressed.jpeg');
+      background-image: url('../public/final-compressed.jpeg');
     }
   }
 
